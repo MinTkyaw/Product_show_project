@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>22mm Mulberry Silk Basic Men's Shirt - LuxeSilk</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style/ProductDetail.css">
+    <link rel="stylesheet" href="css/ProductDetail.css">
 </head>
 
 <body>
@@ -36,11 +36,11 @@
                 <!-- Product Image -->
                 <div class="col-lg-6 mb-4">
                     <div class="image-zoom-container" id="imageZoomContainer">
-                        <img src="img/bedsheet/double1.jpg" alt="Cushion Cover" class="product-image"
+                        <img src="img/clothing/oneSet5.jpg" alt="Cushion Cover" class="product-image"
                             id="mainProductImage">
                         <div class="zoom-lens" id="zoomLens"></div>
                         <div class="zoom-result" id="zoomResult">
-                            <img src="img/bedsheet/double1.jpg" alt="Zoomed Product" id="zoomResultImg">
+                            <img src="img/clothing/oneSet5.jpg" alt="Zoomed Product" id="zoomResultImg">
                         </div>
                         <div class="zoom-instructions">
                             ✨ Hover to see magical zoom
@@ -51,36 +51,36 @@
                 <!-- Product Information -->
                 <div class="col-lg-6">
                     <!-- Product Title -->
-                    <h1 class="product-title">Women's Readymade Myanmar Traditional Outfit (One Set)</h1>
+                    <h1 class="product-title">WomenWear3</h1>
 
                     <!-- Color Selection -->
                     <div class="color-section mb-4">
                         <h5 class="text-primary-custom mb-3">Available Colors</h5>
                         <div class="color-options d-flex gap-3 flex-wrap">
                             <div class="color-option-container text-center">
-                                <div class="color-option active" style="background: #a3cefa" data-color="Sky Blue"
-                                    data-image="img/bedsheet/double1.jpg" data-zoom-image="img/bedsheet/double1.jpg"
-                                    title="SkyBlue">
+                                <div class="color-option active" style="background: #aa7177 " data-color="DustyRose"
+                                    data-image="img/clothing/oneSet5.jpg" data-zoom-image="img/clothing/oneSet5.jpg"
+                                    title="DustyRose">
                                 </div>
-                                <small class="color-name mt-1 d-block text-tertiary-custom">Sky Blue</small>
+                                <small class="color-name mt-1 d-block text-tertiary-custom">Dusty Rose</small>
                             </div>
                             <div class="color-option-container text-center">
-                                <div class="color-option" style="background: #e576d4;" data-color="Orchid Pink"
-                                    data-image="img/bedsheet/double2.jpg" data-zoom-image="img/bedsheet/double2.jpg"
-                                    title="OrchidPink"></div>
-                                <small class="color-name mt-1 d-block text-tertiary-custom">Orchid Pink</small>
+                                <div class="color-option" style="background: #d2d3d9 ;" data-color="PaleSilver"
+                                    data-image="img/clothing/oneSet6.jpg" data-zoom-image="img/clothing/oneSet6.jpg"
+                                    title="PaleSilver"></div>
+                                <small class="color-name mt-1 d-block text-tertiary-custom">Pale Silver</small>
                             </div>
                             <div class="color-option-container text-center">
-                                <div class="color-option" style="background: #bfe1f0" data-color="Ice Blue"
-                                    data-image="img/bedsheet/double3.jpg" data-zoom-image="img/bedsheet/double3.jpg"
-                                    title="IceBlue"></div>
-                                <small class="color-name mt-1 d-block text-tertiary-custom">Ice Blue</small>
+                                <div class="color-option" style="background: #a4a7b6 " data-color="CoolGray"
+                                    data-image="img/clothing/oneSet7.jpg" data-zoom-image="img/clothing/oneSet7.jpg"
+                                    title="CoolGray"></div>
+                                <small class="color-name mt-1 d-block text-tertiary-custom">Cool Gray</small>
                             </div>
                             <div class="color-option-container text-center">
-                                <div class="color-option" style="background: #fdcb99" data-color="Peach"
-                                    data-image="img/bedsheet/double4.jpg" data-zoom-image="img/bedsheet/double4.jpg"
-                                    title="Peach"></div>
-                                <small class="color-name mt-1 d-block text-tertiary-custom">Peach</small>
+                                <div class="color-option" style="background: #915851 " data-color="ClayBrown"
+                                    data-image="img/clothing/oneSet9.jpg" data-zoom-image="img/clothing/oneSet9.jpg"
+                                    title="ClayBrown"></div>
+                                <small class="color-name mt-1 d-block text-tertiary-custom">Clay Brown</small>
                             </div>
                         </div>
                         <div class="selected-color mt-3">
@@ -124,16 +124,16 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <ul class="features-list">
-                                    <li>2-Piece Set: Blouse & Longyi (Htamein)</li>
-                                    <li>Premium Cotton or Silk Blend</li>
-                                    <li>Intricate Traditional Patterns</li>
+                                    <li>100% Cotton or Silk Blend</li>
+                                    <li>Traditional Floral Patterns</li>
+                                    <li>Comfortable Wrap Style</li>
                                 </ul>
                             </div>
                             <div class="col-md-6">
                                 <ul class="features-list">
-                                    <li>Comfort Fit with Tailored Finish</li>
                                     <li>Breathable & Lightweight</li>
                                     <li>Machine Washable</li>
+                                    <li>Fade Resistant</li>
                                 </ul>
                             </div>
                         </div>
@@ -168,11 +168,10 @@
                     <!-- Description Tab -->
                     <div class="tab-pane fade show active" id="description" role="tabpanel">
                         <div class="mt-4">
-                            <h3 class="text-primary-custom">Elegant Myanmar Readymade Outfit</h3>
-                            <p class="mb-3">This graceful women's traditional outfit includes a matching blouse and
-                                htamein.
-                                Designed for comfort and cultural charm, perfect for ceremonies, festivals, or daily
-                                elegance.</p>
+                            <h3 class="text-primary-custom">Elegant Htamein for Everyday Wear</h3>
+                            <p class="mb-3">This traditional women's longyi (Htamein) features soft fabric,
+                                vibrant patterns, and a graceful fit. Ideal for daily wear, festivals, or cultural
+                                events.</p>
                         </div>
                     </div>
 
@@ -183,15 +182,15 @@
                                 <tbody>
                                     <tr>
                                         <th scope="row">Material</th>
-                                        <td>Cotton, Silk Blend, or Satin</td>
+                                        <td>100% Cotton or Silk Blend</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">Set Includes</th>
-                                        <td>Blouse + Longyi (Htamein)</td>
+                                        <th scope="row">Length</th>
+                                        <td>40–44 inches (approx.)</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">Fit</th>
-                                        <td>Tailored / Comfort Fit</td>
+                                        <td>Free Size / Adjustable</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">Weight</th>
@@ -216,11 +215,11 @@
                         <div class="care-instructions mt-4">
                             <h3 class="text-primary-custom">Care Instructions</h3>
                             <ul>
-                                <li>Hand wash gently or use delicate machine cycle</li>
+                                <li>Hand wash or machine wash on gentle cycle</li>
                                 <li>Use mild detergent, avoid bleach</li>
-                                <li>Hang dry in shade to preserve fabric quality</li>
-                                <li>Iron blouse and longyi on low to medium heat</li>
-                                <li>Store on hangers or neatly folded</li>
+                                <li>Hang dry in shade to preserve color</li>
+                                <li>Iron on low heat as needed</li>
+                                <li>Store folded or on hangers to prevent creases</li>
                             </ul>
 
                         </div>
@@ -299,7 +298,7 @@
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    <script src="js/productDetail.js"></script>
+    <script src="productDetail.js"></script>
 </body>
 
 </html>

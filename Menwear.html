@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>22mm Mulberry Silk Basic Men's Shirt - LuxeSilk</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style/ProductDetail.css">
+    <link rel="stylesheet" href="css/ProductDetail.css">
 </head>
 
 <body>
@@ -36,11 +36,11 @@
                 <!-- Product Image -->
                 <div class="col-lg-6 mb-4">
                     <div class="image-zoom-container" id="imageZoomContainer">
-                        <img src="img/bedsheet/double1.jpg" alt="Cushion Cover" class="product-image"
+                        <img src="img/clothing/paso1.webp" alt="Cushion Cover" class="product-image"
                             id="mainProductImage">
                         <div class="zoom-lens" id="zoomLens"></div>
                         <div class="zoom-result" id="zoomResult">
-                            <img src="img/bedsheet/double1.jpg" alt="Zoomed Product" id="zoomResultImg">
+                            <img src="img/clothing/paso1.webp" alt="Zoomed Product" id="zoomResultImg">
                         </div>
                         <div class="zoom-instructions">
                             ✨ Hover to see magical zoom
@@ -58,29 +58,29 @@
                         <h5 class="text-primary-custom mb-3">Available Colors</h5>
                         <div class="color-options d-flex gap-3 flex-wrap">
                             <div class="color-option-container text-center">
-                                <div class="color-option active" style="background: #a3cefa" data-color="Sky Blue"
-                                    data-image="img/bedsheet/double1.jpg" data-zoom-image="img/bedsheet/double1.jpg"
-                                    title="SkyBlue">
+                                <div class="color-option active" style="background: #2c303d " data-color="GunmetalGray"
+                                    data-image="img/clothing/paso1.webp" data-zoom-image="img/clothing/paso1.webp"
+                                    title="GunmetalGray">
                                 </div>
-                                <small class="color-name mt-1 d-block text-tertiary-custom">Sky Blue</small>
+                                <small class="color-name mt-1 d-block text-tertiary-custom">Gunmetal Gray</small>
                             </div>
                             <div class="color-option-container text-center">
-                                <div class="color-option" style="background: #e576d4;" data-color="Orchid Pink"
-                                    data-image="img/bedsheet/double2.jpg" data-zoom-image="img/bedsheet/double2.jpg"
-                                    title="OrchidPink"></div>
-                                <small class="color-name mt-1 d-block text-tertiary-custom">Orchid Pink</small>
+                                <div class="color-option" style="background: #371325 ;" data-color="RaisinBlack"
+                                    data-image="img/clothing/paso2.webp" data-zoom-image="img/clothing/paso2.webp"
+                                    title="RaisinBlack"></div>
+                                <small class="color-name mt-1 d-block text-tertiary-custom">Raisin Black</small>
                             </div>
                             <div class="color-option-container text-center">
-                                <div class="color-option" style="background: #bfe1f0" data-color="Ice Blue"
-                                    data-image="img/bedsheet/double3.jpg" data-zoom-image="img/bedsheet/double3.jpg"
-                                    title="IceBlue"></div>
-                                <small class="color-name mt-1 d-block text-tertiary-custom">Ice Blue</small>
+                                <div class="color-option" style="background: #788467 " data-color="MossGray"
+                                    data-image="img/clothing/paso3.webp" data-zoom-image="img/clothing/paso3.webp"
+                                    title="MossGray"></div>
+                                <small class="color-name mt-1 d-block text-tertiary-custom">Moss Gray</small>
                             </div>
                             <div class="color-option-container text-center">
-                                <div class="color-option" style="background: #fdcb99" data-color="Peach"
-                                    data-image="img/bedsheet/double4.jpg" data-zoom-image="img/bedsheet/double4.jpg"
-                                    title="Peach"></div>
-                                <small class="color-name mt-1 d-block text-tertiary-custom">Peach</small>
+                                <div class="color-option" style="background: #091125 " data-color="RichNavy"
+                                    data-image="img/clothing/paso4.webp" data-zoom-image="img/clothing/paso4.webp"
+                                    title="RichNavy"></div>
+                                <small class="color-name mt-1 d-block text-tertiary-custom">Rich Navy</small>
                             </div>
                         </div>
                         <div class="selected-color mt-3">
@@ -297,7 +297,7 @@
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    <script src="js/productDetail.js"></script>
+    <script src="productDetail.js"></script>
 </body>
 
 </html>
