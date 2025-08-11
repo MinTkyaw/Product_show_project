@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-primary nav-shadow">
+      <div class="container">
+        <a
+          class="navbar-brand text-white icon-text animate__animated animate__fadeInDown d-flex align-items-center"
+          href="index.html"
+          ><img
+            src="img/Zarifa-logo.svg"
+            alt="zarifa-logo"
+            class="navbar-brand-logo"
+          />Zarifa</a
+        >
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-white">
+            <li class="nav-item">
+              <a
+                class="nav-link active text-white fs-6 animate__animated animate__fadeInDown"
+                aria-current="page"
+                href="#"
+                ><i class="fa-solid fa-house nav-icons-padding"></i>Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white animate__animated animate__fadeInDown"
+                href="#"
+                ><i class="fa-solid fa-circle-info nav-icons-padding"></i
+                >About</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link text-white dropdown-toggle fs-6 animate__animated animate__fadeInDown"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                ><i class="fa-solid fa-shop nav-icons-padding"></i>Products
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Products</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white fs-6 animate__animated animate__fadeInDown"
+                href="#"
+                ><i class="fa-solid fa-address-book nav-icons-padding"></i
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="py-5 min-vh-100">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-2 mb-md-3">
+          <div class="col-xl-9 col-xxl-8">
+            <p class="text-muted mb-0" data-aos="zoom-in">Our Products</p>
+            <h2 class="display-6 fw-bold text-primary" data-aos="zoom-in">
+              Silk
+            </h2>
+            <p class="mb-0" data-aos="zoom-in">
+              Experience everyday elegance with our soft, breathable cotton
+              collection. Designed for comfort and crafted with care, these
+              pieces are perfect for casual outings, workdays, or relaxed
+              evenings.
+            </p>
+            <p class="d-inline-flex gap-1 m-0" data-aos="zoom-in">
+              <a
+                class="fw-bold text-decoration-none d-block m-auto"
+                data-bs-toggle="collapse"
+                href="#collapseExample"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                <ul
+                  class="text-justify dynamic-txts ps-0 lh-lg position-relative typing-text-width mx-auto"
+                >
+                  <li class="list-unstyled position-absolute top-0">
+                    <span>Looking for silk collection?</span>
+                  </li>
+                  <li class="list-unstyled position-absolute top-0">
+                    <span
+                      >Explore our luxurious collection here<i
+                        class="fa-solid fa-angle-down"
+                      ></i
+                    ></span>
+                  </li>
+                </ul>
+              </a>
+            </p>
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body bg-primary text-white">
+                Explore our silk collection — crafted with rich textures and
+                elegant designs, perfect for special occasions or when you want
+                to feel truly exquisite.<br />
+                <a
+                  class="btn btn-light text-primary silk-link-button mx-auto mt-3"
+                  href="cotton.html"
+                  >Cotton</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown mb-5 d-inline-block">
+          <a
+            class="btn btn-primary dropdown-toggle"
+            href="#"
+            role="button"
+            data-aos="fade-up"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Types
+          </a>
+
+          <ul class="dropdown-menu">
+            <li>
+              <a
+                class="dropdown-item"
+                href="javascript:void(0)"
+                onclick="showCards('blouses')"
+                >Blouses / Shirts</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="javascript:void(0)"
+                onclick="showCards('jeans')"
+                >Jeans / Pants</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="javascript:void(0)"
+                onclick="showCards('bedsheets')"
+                >Bedsheets</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="javascript:void(0)"
+                onclick="showCards('towels')"
+                >Towels</a
+              >
+            </li>
+          </ul>
+        </div>
+        <h3
+          class="text-center fw-bold mb-5 text-primary"
+          id="productTypeTitle"
+          data-aos="fade-up"
+        >
+          Blouses / Shirts
+        </h3>
+        <!-- Card Sections -->
+        <div class="row g-4">
+          <!-- Blouses / Shirts -->
+          <div class="col-md-4 mb-lg-0 mt-0 card-group blouses">
+            <div
+              class="card text-white border-0 justify-content-end position-relative"
+              data-aos="zoom-in-up"
+            >
+              <div class="ratio ratio-1x1">
+                <img class="img-fluid object-fit-cover" src="img/blouse1.jpg" />
+              </div>
+              <div
+                class="position-absolute bottom-0 w-100 p-2 p-lg-4 bg-dark"
+                style="--bs-bg-opacity: 0.3"
+              >
+                <h5 class="fw-bold">John Doe</h5>
+                <div>Programmer</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-lg-0 card-group blouses">
+            <div
+              class="card text-white border-0 justify-content-end position-relative"
+              data-aos="zoom-in-up"
+            >
+              <img
+                class="img-fluid"
+                src="https://freefrontend.dev/assets/square.png"
+              />
+              <div
+                class="position-absolute bottom-0 w-100 p-2 p-lg-4 bg-dark"
+                style="--bs-bg-opacity: 0.3"
+              >
+                <h5 class="fw-bold">John Doe</h5>
+                <div>Programmer</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-lg-0 card-group blouses">
+            <div
+              class="card text-white border-0 justify-content-end position-relative"
+              data-aos="zoom-in-up"
+            >
+              <img
+                class="img-fluid"
+                src="https://freefrontend.dev/assets/square.png"
+              />
+              <div
+                class="position-absolute bottom-0 w-100 p-2 p-lg-4 bg-dark"
+                style="--bs-bg-opacity: 0.3"
+              >
+                <h5 class="fw-bold">John Doe</h5>
+                <div>Programmer</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Jeans / Pants -->
+          <div class="col-md-4 card-group jeans d-none">
+            <div class="card border-0" data-aos="zoom-in-up">
+              <img
+                src="https://freefrontend.dev/assets/rectangle-wide.png"
+                class="img-fluid rounded"
+              />
+              <div class="card-body text-center mt-4">
+                <h5>Classic Jeans</h5>
+                <p>Denim comfort and lasting style in one pair.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 card-group jeans d-none">
+            <div class="card border-0" data-aos="zoom-in-up">
+              <img
+                src="https://freefrontend.dev/assets/rectangle-wide.png"
+                class="img-fluid rounded"
+              />
+              <div class="card-body text-center mt-4">
+                <h5>Chino Pants</h5>
+                <p>Perfect blend of style and ease for all seasons.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 card-group jeans d-none">
+            <div class="card border-0" data-aos="zoom-in-up">
+              <img
+                src="https://freefrontend.dev/assets/rectangle-wide.png"
+                class="img-fluid rounded"
+              />
+              <div class="card-body text-center mt-4">
+                <h5>Stretch Pants</h5>
+                <p>Flexible and fitted cotton pants for active days.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bedsheets -->
+          <div class="col-md-4 card-group bedsheets d-none">
+            <div class="card border-0" data-aos="zoom-in-up">
+              <img
+                src="https://freefrontend.dev/assets/rectangle-wide.png"
+                class="img-fluid rounded"
+              />
+              <div class="card-body text-center mt-4">
+                <h5>Floral Bedsheet</h5>
+                <p>Soft cotton bedsheet with floral design.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 card-group bedsheets d-none">
+            <div class="card border-0" data-aos="zoom-in-up">
+              <img
+                src="https://freefrontend.dev/assets/rectangle-wide.png"
+                class="img-fluid rounded"
+              />
+              <div class="card-body text-center mt-4">
+                <h5>Luxury Set</h5>
+                <p>Silky smooth bedding for restful sleep.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 card-group bedsheets d-none">
+            <div class="card border-0" data-aos="zoom-in-up">
+              <img
+                src="https://freefrontend.dev/assets/rectangle-wide.png"
+                class="img-fluid rounded"
+              />
+              <div class="card-body text-center mt-4">
+                <h5>Minimal Design</h5>
+                <p>Crisp, clean lines for modern bedroom aesthetics.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Towels -->
+          <div class="col-md-4 card-group towels d-none">
+            <div class="card border-0" data-aos="zoom-in-up">
+              <img
+                src="https://freefrontend.dev/assets/rectangle-wide.png"
+                class="img-fluid rounded"
+              />
+              <div class="card-body text-center mt-4">
+                <h5>Soft Towel</h5>
+                <p>Super absorbent and quick drying cotton towel.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 card-group towels d-none">
+            <div class="card border-0" data-aos="zoom-in-up">
+              <img
+                src="https://freefrontend.dev/assets/rectangle-wide.png"
+                class="img-fluid rounded"
+              />
+              <div class="card-body text-center mt-4">
+                <h5>Luxury Bath Towel</h5>
+                <p>Extra thick and plush feel for spa-like experience.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 card-group towels d-none">
+            <div class="card border-0" data-aos="zoom-in-up">
+              <img
+                src="https://freefrontend.dev/assets/rectangle-wide.png"
+                class="img-fluid rounded"
+              />
+              <div class="card-body text-center mt-4">
+                <h5>Travel Towel</h5>
+                <p>Compact and lightweight towel for on-the-go needs.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <nav
+      aria-label="Page navigation example"
+      class="text-white"
+      data-aos="zoom-in-up"
+    >
+      <ul class="pagination justify-content-center">
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- footer -->
+    <footer class="py-4 text-primary">
+      <!-- Changed background -->
+      <div class="container">
+        <div class="row g-4">
+          <!-- Logo Column - Full width on mobile -->
+          <div class="col-12 col-lg-3 mb-4 mb-lg-0" data-aos="fade-up">
+            <div class="d-flex align-items-center mb-3">
+              <img
+                src="./img/Zarifa-logo.svg"
+                alt="Zarifa Logo"
+                width="55"
+                class="img-fluid"
+              />
+              <span class="fs-3 fw-bolder ms-2 icon-text">Zarifa</span>
+              <!-- Added text-white -->
+            </div>
+            <p class="mb-1">JKT Digital Institute</p>
+            <p class="mb-1">Tel: +1 123-456-7890</p>
+            <p class="mb-3">
+              <a
+                href="mailto:hello@yourdomain.com"
+                class="text-decoration-none"
+              >
+                <!-- Changed to white -->
+                hello@yourdomain.com
+              </a>
+            </p>
+          </div>
+
+          <!-- Links Columns - Stack on mobile -->
+          <div class="col-12 col-lg-8 offset-lg-1 row g-4">
+            <!-- Quick Links -->
+            <div class="col-6 col-md-4 mt-3">
+              <h4 class="h5 mb-3" data-aos="fade-up">Quick Links</h4>
+              <!-- Smaller heading -->
+              <ul class="list-unstyled" data-aos="fade-up">
+                <li class="mb-2">
+                  <a href="#" class="text-decoration-none">Home</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="text-decoration-none">About</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="text-decoration-none">Product</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="text-decoration-none">Contact</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Useful Info -->
+            <div class="col-6 col-md-4 mt-3">
+              <h4 class="h5 mb-3" data-aos="fade-up">Useful Info</h4>
+              <ul class="list-unstyled" data-aos="fade-up">
+                <li class="mb-2">
+                  <a href="#" class="text-decoration-none">Our Products</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="text-decoration-none">Best Products</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Socials -->
+            <div class="col-12 col-md-4 mt-3">
+              <!-- Full width on small devices -->
+              <h4 class="h5 mb-3" data-aos="fade-up">Socials</h4>
+              <ul class="list-unstyled" data-aos="fade-up">
+                <li class="mb-2">
+                  <a
+                    href="#"
+                    class="text-decoration-none d-flex align-items-center"
+                  >
+                    <i class="fab fa-pinterest me-2"></i> Pinterest
+                  </a>
+                </li>
+                <li class="mb-2">
+                  <a
+                    href="#"
+                    class="text-decoration-none d-flex align-items-center"
+                  >
+                    <i class="fab fa-x-twitter me-2"></i> Twitter
+                  </a>
+                </li>
+                <li class="mb-2">
+                  <a
+                    href="#"
+                    class="text-decoration-none d-flex align-items-center"
+                  >
+                    <i class="fab fa-facebook me-2"></i> Facebook
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Copyright Section -->
+        <div
+          class="border-top border-secondary mt-4 pt-4 d-flex flex-column flex-lg-row justify-content-between"
+        >
+          <div class="small mb-3 mb-lg-0 text-black-50">
+            © 2025 Zafira.dev. All rights reserved.
+          </div>
+          <div class="small d-flex flex-column flex-lg-row">
+            <a
+              href="#"
+              class="text-white-50 mb-2 mb-lg-0 me-lg-3 text-decoration-none"
+              >Privacy Policy</a
+            >
+            <a href="#" class="text-white-50 text-decoration-none"
+              >Terms of Service</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./node_modules/aos/dist/aos.js"></script>
+    <script>
+      // Initialize AOS with default settings
+      AOS.init({
+        duration: 800, // Slightly faster animation
+        once: false,
+        mirror: true,
+      });
+
+      // Function to animate title change
+      function animateTitleChange(newTitle) {
+        const titleElement = document.getElementById("productTypeTitle");
+
+        // Fade out current title
+        titleElement.style.opacity = 0;
+        titleElement.style.transition = "opacity 300ms ease-out";
+
+        // After fade out completes, change text and fade in
+        setTimeout(() => {
+          titleElement.textContent = newTitle;
+          titleElement.style.opacity = 1;
+
+          // Refresh AOS to trigger fade-up animation again
+          titleElement.removeAttribute("data-aos");
+          void titleElement.offsetWidth; // Trigger reflow
+          titleElement.setAttribute("data-aos", "fade-up");
+          AOS.refresh();
+        }, 300);
+      }
+
+      // Function to set staggered animations for cards
+      function setStaggeredAnimations() {
+        const visibleCards = document.querySelectorAll(
+          ".card-group:not(.d-none) .card"
+        );
+        visibleCards.forEach((card, index) => {
+          card.removeAttribute("data-aos");
+          card.removeAttribute("data-aos-delay");
+          card.classList.remove("aos-animate");
+          card.setAttribute("data-aos", "zoom-in-up");
+          card.setAttribute("data-aos-delay", index * 150);
+        });
+        AOS.refresh();
+      }
+
+      // Set initial animations on page load
+      document.addEventListener("DOMContentLoaded", function () {
+        setStaggeredAnimations();
+      });
+
+      // Modified showCards function
+      function showCards(type) {
+        // Hide all card groups
+        document.querySelectorAll(".card-group").forEach((card) => {
+          card.classList.add("d-none");
+        });
+
+        // Show selected group
+        document.querySelectorAll(`.${type}`).forEach((card) => {
+          card.classList.remove("d-none");
+        });
+
+        // Update title with animation
+        const titleMap = {
+          blouses: "Blouses / Shirts",
+          jeans: "Jeans / Pants",
+          bedsheets: "Bedsheets",
+          towels: "Towels",
+        };
+        animateTitleChange(titleMap[type]);
+
+        // Reapply card animations
+        setStaggeredAnimations();
+      }
+    </script>
+  </body>
+</html>
