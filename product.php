@@ -12,7 +12,7 @@
       <div class="container">
         <a
           class="navbar-brand text-white icon-text animate__animated animate__fadeInDown d-flex align-items-center"
-          href="index.html"
+          href="index.php"
           ><img
             src="img/Zarifa-logo.svg"
             alt="zarifa-logo"
@@ -25,7 +25,7 @@
               <a
                 class="nav-link active text-white fs-6 animate__animated animate__fadeInDown"
                 aria-current="page"
-                href="index.html"
+                href="index.php"
                 data-i18n="nav_home"
                 >Home</a
               >
@@ -41,7 +41,7 @@
             <li class="nav-item d-flex align-items-center me-4">
               <a
                 class="nav-link text-white animate__animated animate__fadeInDown"
-                href="product.html"
+                href="product.php"
                 data-i18n="nav_products"
                 >Products</a
               >
@@ -109,7 +109,7 @@
                 to feel truly exquisite.<br />
                 <a
                   class="btn btn-light text-primary silk-link-button mx-auto mt-3"
-                  href="silk.html"
+                  href="silk.php"
                   >Silk</a
                 >
               </div>
@@ -220,7 +220,7 @@
           </div>
           <!-- Bedding -->
           <a
-            href="blanket.html"
+            href="blanket.php"
             class="col-md-4 mb-lg-0 mt-0 card-group bedding d-none d-block"
           >
             <div
@@ -244,7 +244,7 @@
           </a>
 
           <a
-            href="doubleBedsheet.html"
+            href="doubleBedsheet.php"
             class="col-md-4 mb-lg-0 mt-0 card-group bedding d-none d-block"
           >
             <div
@@ -267,7 +267,7 @@
             </div>
           </a>
           <a
-            href="kingBedsheet.html"
+            href="kingBedsheet.php"
             class="col-md-4 mb-lg-0 mt-0 card-group bedding d-none d-block"
           >
             <div
@@ -292,7 +292,7 @@
 
           <!-- Home Accessories -->
           <a
-            href="cushion.html"
+            href="cushion.php"
             class="col-md-4 mb-lg-0 mt-0 card-group homeAccessories d-none d-block"
           >
             <div
@@ -315,7 +315,7 @@
             </div>
           </a>
           <a
-            href="tableCover.html"
+            href="tableCover.php"
             class="col-md-4 mb-lg-0 mt-0 card-group homeAccessories d-none d-block"
           >
             <div
@@ -338,7 +338,7 @@
             </div>
           </a>
           <a
-            href="towel.html"
+            href="towel.php"
             class="col-md-4 mb-lg-0 mt-0 card-group homeAccessories d-none d-block"
           >
             <div

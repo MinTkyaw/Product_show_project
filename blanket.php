@@ -13,12 +13,11 @@
   </head>
 
   <body>
-    <!-- Navigation -->
     <nav class="navbar navbar-expand-lg bg-primary fixed-top">
       <div class="container">
         <a
           class="navbar-brand text-white icon-text animate__animated animate__fadeInDown d-flex align-items-center"
-          href="index.html"
+          href="index.php"
           ><img
             src="img/Zarifa-logo.svg"
             alt="zarifa-logo"
@@ -31,7 +30,7 @@
               <a
                 class="nav-link active text-white fs-6 animate__animated animate__fadeInDown"
                 aria-current="page"
-                href="index.html"
+                href="index.php"
                 data-i18n="nav_home"
                 >Home</a
               >
@@ -47,7 +46,7 @@
             <li class="nav-item d-flex align-items-center me-4">
               <a
                 class="nav-link text-white animate__animated animate__fadeInDown"
-                href="product.html"
+                href="product.php"
                 data-i18n="nav_products"
                 >Products</a
               >
@@ -78,7 +77,7 @@
           <div class="col-lg-6 mb-4">
             <div class="image-zoom-container" id="imageZoomContainer">
               <img
-                src="img/HomeAccessories/towel1.jpg"
+                src="img/bedding/blanket1.webp"
                 alt="Cushion Cover"
                 class="product-image"
                 id="mainProductImage"
@@ -86,7 +85,7 @@
               <div class="zoom-lens" id="zoomLens"></div>
               <div class="zoom-result" id="zoomResult">
                 <img
-                  src="img/HomeAccessories/towel1.jpg"
+                  src="img/bedding/blanket1.webp"
                   alt="Zoomed Product"
                   id="zoomResultImg"
                 />
@@ -98,63 +97,63 @@
           <!-- Product Information -->
           <div class="col-lg-6">
             <!-- Product Title -->
-            <h1 class="product-title">Towel</h1>
+            <h1 class="product-title">Blanket</h1>
 
             <!-- Color Selection -->
             <div class="color-section mb-4">
-              <h5 class="text-primary-custom mb-3">Design</h5>
+              <h5 class="text-primary-custom mb-3">Available Colors</h5>
               <div class="color-options d-flex gap-3 flex-wrap">
                 <div class="color-option-container text-center">
                   <div
                     class="color-option active"
-                    style="background: #dac393"
+                    style="background: #95111e"
                     data-color="Sky Blue"
-                    data-image="img/HomeAccessories/towel1.jpg"
-                    data-zoom-image="img/HomeAccessories/towel1.jpg"
+                    data-image="img/bedding/blanket1.webp"
+                    data-zoom-image="img/bedding/blanket1.webp"
                     title="SkyBlue"
                   ></div>
                   <small class="color-name mt-1 d-block text-tertiary-custom"
-                    >Temple</small
-                  >
+                    >Crimson
+                  </small>
                 </div>
                 <div class="color-option-container text-center">
                   <div
                     class="color-option"
-                    style="background: #c09337"
+                    style="background: #0f1a1f"
                     data-color="Orchid Pink"
-                    data-image="img/HomeAccessories/towel2.jpg"
-                    data-zoom-image="img/HomeAccessories/towel2.jpg"
+                    data-image="img/bedding/blanket2.webp"
+                    data-zoom-image="img/bedding/blanket2.webp"
                     title="OrchidPink"
                   ></div>
                   <small class="color-name mt-1 d-block text-tertiary-custom"
-                    >Floral Motifs</small
+                    >Dark Slate</small
                   >
                 </div>
                 <div class="color-option-container text-center">
                   <div
                     class="color-option"
-                    style="background: #387eb8"
+                    style="background: #d7b8ae"
                     data-color="Ice Blue"
-                    data-image="img/HomeAccessories/towel3.jpg"
-                    data-zoom-image="img/HomeAccessories/towel3.jpg"
+                    data-image="img/bedding/blanket3.webp"
+                    data-zoom-image="img/bedding/blanket3.webp"
                     title="IceBlue"
                   ></div>
                   <small class="color-name mt-1 d-block text-tertiary-custom"
-                    >Art</small
+                    >Pale Rose</small
                   >
                 </div>
                 <div class="color-option-container text-center">
                   <div
                     class="color-option"
-                    style="background: #234957"
+                    style="background: #1b2143"
                     data-color="Peach"
-                    data-image="img/HomeAccessories/towel4.jpg"
-                    data-zoom-image="img/HomeAccessories/towel4.jpg"
+                    data-image="img/bedding/blanket4.webp"
+                    data-zoom-image="img/bedding/blanket4.webp"
                     title="Peach"
                   ></div>
                   <small class="color-name mt-1 d-block text-tertiary-custom"
-                    >Mahout
-                  </small>
+                    >Indigo</small
+                  >
                 </div>
               </div>
               <div class="selected-color mt-3">
@@ -233,16 +232,16 @@
               <div class="row">
                 <div class="col-md-6">
                   <ul class="features-list">
-                    <li>Highly Absorbent</li>
-                    <li>Soft Terry Texture</li>
-                    <li>Quick Drying</li>
+                    <li>Soft & Warm Comfort</li>
+                    <li>All-Season Use</li>
+                    <li>300–600 GSM Weight</li>
                   </ul>
                 </div>
                 <div class="col-md-6">
                   <ul class="features-list">
-                    <li>500–700 GSM Weight</li>
                     <li>Machine Washable</li>
-                    <li>Skin-Friendly Fabric</li>
+                    <li>Breathable Material</li>
+                    <li>Durable Stitching</li>
                   </ul>
                 </div>
               </div>
@@ -296,11 +295,11 @@
               role="tabpanel"
             >
               <div class="mt-4">
-                <h3 class="text-primary-custom">Towel</h3>
+                <h3 class="text-primary-custom">Blanket</h3>
                 <p class="mb-3">
-                  Highly absorbent towel with a plush feel, perfect for daily
-                  use. Quick-drying and gentle on the skin for a refreshing
-                  experience
+                  Warm and cozy blanket crafted for all-season comfort. Ideal
+                  for layering or standalone use with a soft touch and
+                  breathable fabric.
                 </p>
               </div>
             </div>
@@ -312,21 +311,20 @@
                   <tbody>
                     <tr>
                       <th scope="row">Material</th>
-                      <td>100% Cotton (Combed or Turkish Cotton)</td>
+                      <td>Cotton / Fleece / Wool / Microfiber</td>
                     </tr>
                     <tr>
                       <th scope="row">Weight</th>
-                      <td>500–700 GSM</td>
+                      <td>300–600 GSM</td>
                     </tr>
                     <tr>
-                      <th scope="row">Texture</th>
-                      <td>Soft Terry / Plush</td>
+                      <th scope="row">Style</th>
+                      <td>Textured</td>
                     </tr>
                     <tr>
-                      <th scope="row">Absorbency</th>
-                      <td>High</td>
+                      <th scope="row">Warmth Level</th>
+                      <td>All-Season / Winter Warmth</td>
                     </tr>
-
                     <tr>
                       <th scope="row">Country of Origin</th>
                       <td>China</td>
@@ -345,12 +343,12 @@
               <div class="care-instructions mt-4">
                 <h3 class="text-primary-custom">Care Instructions</h3>
                 <ul>
-                  <li>Machine wash warm before first use</li>
-                  <li>Avoid bleach and fabric softeners</li>
-                  <li>Tumble dry low to maintain softness</li>
-                  <li>Do not iron</li>
-                  <li>Wash separately for first few uses</li>
-                  <li>Store in a dry, well-ventilated space</li>
+                  <li>Machine wash cold on gentle cycle</li>
+                  <li>Use mild detergent, avoid fabric softeners</li>
+                  <li>Air dry or tumble dry on low</li>
+                  <li>Do not bleach or iron</li>
+                  <li>Store in a breathable bag when not in use</li>
+                  <li>Dry clean recommended for delicate materials</li>
                 </ul>
               </div>
             </div>
@@ -444,8 +442,9 @@
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="js/productDetail.js"></script>
     <script src="./node_modules/aos/dist/aos.js"></script>
     <script src="main.js"></script>
-    <script src="productDetail.js"></script>    
+    <script src="productDetail.js"></script>
   </body>
 </html>

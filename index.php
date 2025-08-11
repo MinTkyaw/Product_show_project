@@ -12,7 +12,8 @@
       <div class="container justify-content-between">
         <a
           class="navbar-brand text-white icon-text animate__animated animate__fadeInDown d-flex align-items-center"
-          href="index.html"
+          href="index.php
+          "
           ><img
             src="img/Zarifa-logo.svg"
             alt="zarifa-logo"
@@ -83,7 +84,7 @@
       <div class="container">
         <a
           class="navbar-brand text-white icon-text animate__animated animate__fadeInDown d-flex align-items-center"
-          href="index.html"
+          href="index.php"
           ><img
             src="img/Zarifa-logo.svg"
             alt="zarifa-logo"
@@ -96,7 +97,8 @@
               <a
                 class="nav-link active text-white fs-6 animate__animated animate__fadeInDown"
                 aria-current="page"
-                href="index.html"
+                href="index.php
+                "
                 data-i18n="nav_home"
                 >Home</a
               >
@@ -112,7 +114,7 @@
             <li class="nav-item d-flex align-items-center me-4">
               <a
                 class="nav-link text-white animate__animated animate__fadeInDown"
-                href="product.html"
+                href="product.php"
                 data-i18n="nav_products"
                 >Products</a
               >
