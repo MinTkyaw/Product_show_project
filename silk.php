@@ -12,7 +12,7 @@
       <div class="container">
         <a
           class="navbar-brand text-white icon-text animate__animated animate__fadeInDown d-flex align-items-center"
-          href="index.html"
+          href="index.php"
           ><img
             src="img/Zarifa-logo.svg"
             alt="zarifa-logo"

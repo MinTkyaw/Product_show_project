@@ -13,11 +13,12 @@
   </head>
 
   <body>
+    <!-- Navigation -->
     <nav class="navbar navbar-expand-lg bg-primary fixed-top">
       <div class="container">
         <a
           class="navbar-brand text-white icon-text animate__animated animate__fadeInDown d-flex align-items-center"
-          href="index.html"
+          href="index.php"
           ><img
             src="img/Zarifa-logo.svg"
             alt="zarifa-logo"
@@ -30,7 +31,7 @@
               <a
                 class="nav-link active text-white fs-6 animate__animated animate__fadeInDown"
                 aria-current="page"
-                href="index.html"
+                href="index.php"
                 data-i18n="nav_home"
                 >Home</a
               >
@@ -46,7 +47,7 @@
             <li class="nav-item d-flex align-items-center me-4">
               <a
                 class="nav-link text-white animate__animated animate__fadeInDown"
-                href="product.html"
+                href="product.php"
                 data-i18n="nav_products"
                 >Products</a
               >
@@ -77,7 +78,7 @@
           <div class="col-lg-6 mb-4">
             <div class="image-zoom-container" id="imageZoomContainer">
               <img
-                src="img/bedding/blanket1.webp"
+                src="img/bedding/King1.jpg"
                 alt="Cushion Cover"
                 class="product-image"
                 id="mainProductImage"
@@ -85,7 +86,7 @@
               <div class="zoom-lens" id="zoomLens"></div>
               <div class="zoom-result" id="zoomResult">
                 <img
-                  src="img/bedding/blanket1.webp"
+                  src="img/bedding/King1.jpg"
                   alt="Zoomed Product"
                   id="zoomResultImg"
                 />
@@ -97,7 +98,7 @@
           <!-- Product Information -->
           <div class="col-lg-6">
             <!-- Product Title -->
-            <h1 class="product-title">Blanket</h1>
+            <h1 class="product-title">Bed sheet(King)</h1>
 
             <!-- Color Selection -->
             <div class="color-section mb-4">
@@ -106,54 +107,54 @@
                 <div class="color-option-container text-center">
                   <div
                     class="color-option active"
-                    style="background: #95111e"
+                    style="background: #284f7b"
                     data-color="Sky Blue"
-                    data-image="img/bedding/blanket1.webp"
-                    data-zoom-image="img/bedding/blanket1.webp"
+                    data-image="img/bedding/King1.jpg"
+                    data-zoom-image="img/bedding/King1.jpg"
                     title="SkyBlue"
                   ></div>
                   <small class="color-name mt-1 d-block text-tertiary-custom"
-                    >Crimson
+                    >Steel Blue</small
+                  >
+                </div>
+                <div class="color-option-container text-center">
+                  <div
+                    class="color-option"
+                    style="background: #d29159"
+                    data-color="Orchid Pink"
+                    data-image="img/bedding/King2.jpg"
+                    data-zoom-image="img/bedding/King2.jpg"
+                    title="OrchidPink"
+                  ></div>
+                  <small class="color-name mt-1 d-block text-tertiary-custom"
+                    >Copper
                   </small>
                 </div>
                 <div class="color-option-container text-center">
                   <div
                     class="color-option"
-                    style="background: #0f1a1f"
-                    data-color="Orchid Pink"
-                    data-image="img/bedding/blanket2.webp"
-                    data-zoom-image="img/bedding/blanket2.webp"
-                    title="OrchidPink"
-                  ></div>
-                  <small class="color-name mt-1 d-block text-tertiary-custom"
-                    >Dark Slate</small
-                  >
-                </div>
-                <div class="color-option-container text-center">
-                  <div
-                    class="color-option"
-                    style="background: #d7b8ae"
+                    style="background: #395a91"
                     data-color="Ice Blue"
-                    data-image="img/bedding/blanket3.webp"
-                    data-zoom-image="img/bedding/blanket3.webp"
+                    data-image="img/bedding/King3.jpg"
+                    data-zoom-image="img/bedding/King3.jpg"
                     title="IceBlue"
                   ></div>
                   <small class="color-name mt-1 d-block text-tertiary-custom"
-                    >Pale Rose</small
+                    >Slate Blue</small
                   >
                 </div>
                 <div class="color-option-container text-center">
                   <div
                     class="color-option"
-                    style="background: #1b2143"
+                    style="background: #7c4a50"
                     data-color="Peach"
-                    data-image="img/bedding/blanket4.webp"
-                    data-zoom-image="img/bedding/blanket4.webp"
+                    data-image="img/bedding/King4.jpg"
+                    data-zoom-image="img/bedding/King4.jpg"
                     title="Peach"
                   ></div>
                   <small class="color-name mt-1 d-block text-tertiary-custom"
-                    >Indigo</small
-                  >
+                    >Rosewood
+                  </small>
                 </div>
               </div>
               <div class="selected-color mt-3">
@@ -232,16 +233,16 @@
               <div class="row">
                 <div class="col-md-6">
                   <ul class="features-list">
-                    <li>Soft & Warm Comfort</li>
-                    <li>All-Season Use</li>
-                    <li>300–600 GSM Weight</li>
+                    <li>Fits King Size Beds (108 x 108 in)</li>
+                    <li>Soft & Breathable Fabric</li>
+                    <li>300–600 Thread Count</li>
                   </ul>
                 </div>
                 <div class="col-md-6">
                   <ul class="features-list">
+                    <li>Deep Pocket Fit</li>
                     <li>Machine Washable</li>
-                    <li>Breathable Material</li>
-                    <li>Durable Stitching</li>
+                    <li>Wrinkle Resistant</li>
                   </ul>
                 </div>
               </div>
@@ -295,11 +296,13 @@
               role="tabpanel"
             >
               <div class="mt-4">
-                <h3 class="text-primary-custom">Blanket</h3>
+                <h3 class="text-primary-custom">
+                  Premium Mulberry Cotton cover
+                </h3>
                 <p class="mb-3">
-                  Warm and cozy blanket crafted for all-season comfort. Ideal
-                  for layering or standalone use with a soft touch and
-                  breathable fabric.
+                  Luxuriously large bedsheet tailored for king beds, offering
+                  full coverage and premium comfort. Soft, durable fabric
+                  ensures a restful, elegant sleep.
                 </p>
               </div>
             </div>
@@ -311,23 +314,23 @@
                   <tbody>
                     <tr>
                       <th scope="row">Material</th>
-                      <td>Cotton / Fleece / Wool / Microfiber</td>
+                      <td>100% Cotton / Microfiber</td>
                     </tr>
                     <tr>
                       <th scope="row">Weight</th>
-                      <td>300–600 GSM</td>
+                      <td>Medium (varies by material)</td>
                     </tr>
                     <tr>
-                      <th scope="row">Style</th>
-                      <td>Textured</td>
+                      <th scope="row">Weave</th>
+                      <td>Sateen / Percale</td>
                     </tr>
                     <tr>
-                      <th scope="row">Warmth Level</th>
-                      <td>All-Season / Winter Warmth</td>
+                      <th scope="row">Thread Count</th>
+                      <td>300–600 TC</td>
                     </tr>
                     <tr>
                       <th scope="row">Country of Origin</th>
-                      <td>China</td>
+                      <td>Myanamar</td>
                     </tr>
                     <tr>
                       <th scope="row">Certification</th>
@@ -344,11 +347,11 @@
                 <h3 class="text-primary-custom">Care Instructions</h3>
                 <ul>
                   <li>Machine wash cold on gentle cycle</li>
-                  <li>Use mild detergent, avoid fabric softeners</li>
-                  <li>Air dry or tumble dry on low</li>
-                  <li>Do not bleach or iron</li>
-                  <li>Store in a breathable bag when not in use</li>
-                  <li>Dry clean recommended for delicate materials</li>
+                  <li>Use mild detergent, avoid bleach</li>
+                  <li>Tumble dry low or line dry</li>
+                  <li>Iron on low heat if needed</li>
+                  <li>Do not dry clean unless specified</li>
+                  <li>Store in a cool, dry place</li>
                 </ul>
               </div>
             </div>
@@ -442,7 +445,6 @@
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    <script src="js/productDetail.js"></script>
     <script src="./node_modules/aos/dist/aos.js"></script>
     <script src="main.js"></script>
     <script src="productDetail.js"></script>
