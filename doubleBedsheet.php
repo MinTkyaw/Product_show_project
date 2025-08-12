@@ -218,7 +218,7 @@
               <div class="selected-size mt-5">
                 <span class="text-tertiary-custom">Selected Size: </span>
                 <span class="text-primary-custom fw-bold" id="selectedSize"
-                  >S</span
+                  >King</span
                 >
               </div>
               <div class="mt-2">
