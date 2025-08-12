@@ -78,7 +78,7 @@
           <div class="col-lg-6 mb-4">
             <div class="image-zoom-container" id="imageZoomContainer">
               <img
-                src="img/bedding/double1.jpg"
+                src="img/bedding/single1.jpg"
                 alt="Cushion Cover"
                 class="product-image"
                 id="mainProductImage"
@@ -86,7 +86,7 @@
               <div class="zoom-lens" id="zoomLens"></div>
               <div class="zoom-result" id="zoomResult">
                 <img
-                  src="img/bedding/double1.jpg"
+                  src="img/bedding/single1.jpg"
                   alt="Zoomed Product"
                   id="zoomResultImg"
                 />
@@ -98,7 +98,7 @@
           <!-- Product Information -->
           <div class="col-lg-6">
             <!-- Product Title -->
-            <h1 class="product-title">Bed sheet(Double)</h1>
+            <h1 class="product-title">Bed sheet(single)</h1>
 
             <!-- Color Selection -->
             <div class="color-section mb-4">
@@ -107,53 +107,53 @@
                 <div class="color-option-container text-center">
                   <div
                     class="color-option active"
-                    style="background: #842d33"
-                    data-color="Sky Blue"
-                    data-image="img/bedding/double1.jpg"
-                    data-zoom-image="img/bedding/double1.jpg"
-                    title="SkyBlue"
+                    style="background: #646e63 "
+                    data-color="Ash Moss"
+                    data-image="img/bedding/single1.jpg"
+                    data-zoom-image="img/bedding/single1.jpg"
+                    title="AshMoss"
                   ></div>
                   <small class="color-name mt-1 d-block text-tertiary-custom"
-                    >Burgundy</small
+                    >Ash Moss</small
                   >
                 </div>
                 <div class="color-option-container text-center">
                   <div
                     class="color-option"
-                    style="background: #605732"
-                    data-color="Orchid Pink"
-                    data-image="img/bedding/double2.jpg"
-                    data-zoom-image="img/bedding/double2.jpg"
-                    title="OrchidPink"
+                    style="background: #87877b "
+                    data-color="Fogstone"
+                    data-image="img/bedding/single2.jpg"
+                    data-zoom-image="img/bedding/single2.jpg"
+                    title="Fogstone"
                   ></div>
                   <small class="color-name mt-1 d-block text-tertiary-custom">
-                    Dark Olive
+                    Fogstone
                   </small>
                 </div>
                 <div class="color-option-container text-center">
                   <div
                     class="color-option"
-                    style="background: #aac9ec"
-                    data-color="Ice Blue"
-                    data-image="img/bedding/double3.jpg"
-                    data-zoom-image="img/bedding/double3.jpg"
-                    title="IceBlue"
+                    style="background: #82bdc9 "
+                    data-color="Seabreeze"
+                    data-image="img/bedding/single3.jpg"
+                    data-zoom-image="img/bedding/single3.jpg"
+                    title="Seabreeze"
                   ></div>
                   <small class="color-name mt-1 d-block text-tertiary-custom"
-                    >Baby Blue</small
+                    >Seabreeze</small
                   >
                 </div>
                 <div class="color-option-container text-center">
                   <div
                     class="color-option"
-                    style="background: #a56d7b"
-                    data-color="Peach"
-                    data-image="img/bedding/double4.jpg"
-                    data-zoom-image="img/bedding/double4.jpg"
-                    title="Peach"
+                    style="background: #d05446 "
+                    data-color="Brick Ember"
+                    data-image="img/bedding/single4.jpg"
+                    data-zoom-image="img/bedding/single4.jpg"
+                    title="Brick Ember"
                   ></div>
                   <small class="color-name mt-1 d-block text-tertiary-custom"
-                    >Mauve
+                    >Brick Ember
                   </small>
                 </div>
               </div>
@@ -181,21 +181,20 @@
                 > -->
               </div>
               <div class="size-options d-flex gap-2 flex-wrap">
-              <!-- Size-XS   -->
-              <!-- <button
+                <button
                   class="size-option out-of-stock"
                   data-size="XS"
                   title="Extra Small - Out of Stock"
                 >
                   XS
-                </button> -->
-                <button class="size-option active" data-size="King" title="King">
-                  King
                 </button>
-                <button class="size-option out-of-stock" data-size="Queen" title="Queen - Out of Stock">
-                  Queen
+                <button class="size-option active" data-size="S" title="Small">
+                  S
                 </button>
-                <!-- <button class="size-option" data-size="L" title="Large">
+                <button class="size-option" data-size="M" title="Medium">
+                  M
+                </button>
+                <button class="size-option" data-size="L" title="Large">
                   L
                 </button>
                 <button
@@ -209,16 +208,16 @@
                 <button
                   class="size-option out-of-stock"
                   data-size="XXL"
-                  title="Double Extra Large - Out of Stock"
+                  title="single Extra Large - Out of Stock"
                   disabled
                 >
                   XXL
                 </button>
-              </div> -->
-              <div class="selected-size mt-5">
+              </div>
+              <div class="selected-size mt-3">
                 <span class="text-tertiary-custom">Selected Size: </span>
                 <span class="text-primary-custom fw-bold" id="selectedSize"
-                  >King</span
+                  >S</span
                 >
               </div>
               <div class="mt-2">
@@ -235,7 +234,7 @@
               <div class="row">
                 <div class="col-md-6">
                   <ul class="features-list">
-                    <li>Fits Double Beds (90 x 100 in)</li>
+                    <li>Fits single Beds (90 x 100 in)</li>
                     <li>Soft & Durable Material</li>
                     <li>300–500 Thread Count</li>
                   </ul>
@@ -298,9 +297,9 @@
               role="tabpanel"
             >
               <div class="mt-4">
-                <h3 class="text-primary-custom">Bedsheet(Double)</h3>
+                <h3 class="text-primary-custom">Bedsheet(single)</h3>
                 <p class="mb-3">
-                  Comfortable and perfectly sized for double beds, with a smooth
+                  Comfortable and perfectly sized for single beds, with a smooth
                   finish and easy care. Ideal for everyday use with a snug, cozy
                   feel.
                 </p>

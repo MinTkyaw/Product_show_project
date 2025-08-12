@@ -51,7 +51,7 @@
                 <!-- Product Information -->
                 <div class="col-lg-6">
                     <!-- Product Title -->
-                    <h1 class="product-title">Traditional Men's Longyi (Paso)</h1>
+                    <h1 class="product-title">Traditional Men's Longyi</h1>
 
                     <!-- Color Selection -->
                     <div class="color-section mb-4">
