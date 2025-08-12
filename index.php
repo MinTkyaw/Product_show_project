@@ -404,57 +404,52 @@
           </div>
 
           <div class="carousel-inner">
-            <!-- Slide 1 -->
-            <div class="carousel-item active">
-              <div class="row align-items-center justify-content-center">
-                <div class="col-md-5 col-lg-4">
-                  <!-- Wider image column -->
-                  <img
-                    src="./img/hari-scrunchies.svg"
-                    class="img-fluid rounded shadow-sm"
-                    alt="Jane Smith"
-                  />
-                </div>
-                <div class="col-md-7 col-lg-6">
-                  <!-- Wider content column -->
-                  <div class="card-body ms-md-5 mt-3 mt-md-0">
-                    <h4 class="fw-bold m-0 mb-4">Hair Scrunchies Mix</h4>
-                    <p class="">
-                      You get 4 pieces of 22 Momme 100% 6A mulberry skin hair
-                      scrunchies to good care.
-                    </p>
-                    <br />
-                    <b class="fs-5">$25.99 USD</b>
-                  </div>
-                </div>
-              </div>
-            </div>
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-md-5 col-lg-4 ">
+                                <!-- Wider image column -->
+                                <img src="./img/bedding/double1.jpg" class="img-fluid rounded shadow-sm  "
+                                    alt="Jane Smith" />
+                            </div>
+                            <div class=" col-md-7 col-lg-6">
+                                <!-- Wider content column -->
+                                <div class="card-body ms-md-5 mt-3 mt-md-0">
+                                    <h4 class="fw-bold m-0 mb-4" data-i18n="product_p1_title">Double Bedsheet</h4>
+                                    <p class="" data-i18n="product_p1_para">
+                                        Add a touch of royal elegance to your bedroom with this traditional Jaipuri
+                                        print bedsheet. Crafted from soft, breathable cotton, it features a beautiful
+                                        motif of elephants and intricate patterns, bringing a rich, cultural aesthetic
+                                        to your home.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-            <!-- Slide 2 -->
-            <div class="carousel-item">
-              <div class="row align-items-center justify-content-center">
-                <div class="col-md-5 col-lg-4">
-                  <img
-                    src="./img/pillow-cotton.svg"
-                    class="img-fluid rounded shadow-sm"
-                    alt="Mike Johnson"
-                  />
-                </div>
-                <div class="col-md-7 col-lg-6">
-                  <div class="card-body ms-md-5 mt-3 mt-md-0">
-                    <h4 class="fw-bold m-0 mb-4">
-                      Long-Steple Cotton Euro Sham Set Of 2, Misty Blue
-                    </h4>
-                    <p class="">
-                      Full-stack developer specializing in JavaScript frameworks
-                      and cloud technologies.
-                    </p>
-                    <br />
-                    <b class="fs-5">$34.99 USD</b>
-                  </div>
-                </div>
-              </div>
-            </div>
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-md-5 col-lg-4">
+                                <img src="./img/HomeAccessories/coverBlue.png" class="img-fluid rounded shadow-sm"
+                                    alt="Mike Johnson" />
+                            </div>
+                            <div class=" col-md-7 col-lg-6">
+                                <div class="card-body ms-md-5 mt-3 mt-md-0">
+                                    <h4 class="fw-bold m-0 mb-4" data-i18n="product_p2_title">
+                                        Blue Cushion
+                                    </h4>
+                                    <p class="" data-i18n="product_p2_para">
+                                        Elevate your home decor with our exquisite silk decorative cushion. This elegant
+                                        cushion is crafted from
+                                        high-quality silk, offering a luxurious feel and a touch of cultural
+                                        sophistication. Perfect for adding a pop of color and texture to your sofa, bed,
+                                        or armchair.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
             <!-- Slide 3 -->
             <div class="carousel-item">
