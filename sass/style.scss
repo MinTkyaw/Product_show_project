@@ -10,6 +10,9 @@ $carousel-indicator-active-bg: #804e22;
 $pagination-bg: #804e22;
 $pagination-color: white;
 
+
+
+
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 //custom css
 
@@ -176,4 +179,11 @@ footer {
   max-width: 100%;
   height: auto;
 
+}
+.navbar-toggler {
+  background-color: white; // semi-transparent white
+  border: none; // optional
+}
+.navbar-toggler:hover{
+  background-color: rgba(255, 255, 255, 0.941); // slightly transparent on hover
 }

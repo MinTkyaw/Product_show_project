@@ -31,6 +31,10 @@ const translations = {
       "Thoughtfully designed sizes and cuts ensure a flattering fit and day-long comfort.",
     products_title: "Our Products",
     products_more: "See more",
+    product_p1_title: "Double Bedsheet",
+    product_p1_para: "Add a touch of royal elegance to your bedroom with this traditional Jaipuri print bedsheet. Crafted from soft, breathable cotton, it features a beautiful motif of elephants and intricate patterns, bringing a rich, cultural aesthetic to your home.",
+    product_p2_title:"Blue Cushion",
+    product_p2_para:"Elevate your home decor with our exquisite silk decorative cushion. This elegant cushion is crafted from high-quality silk, offering a luxurious feel and a touch of cultural sophistication. Perfect for adding a pop of color and texture to your sofa, bed, or armchair.",
     contact_title: "Contact Us",
     contact_para:
       "For any inquiries about our premium cotton and silk collections, customer support, or wholesale opportunities, we’d love to hear from you!",
@@ -75,6 +79,8 @@ const translations = {
       "စိတ်ချလက်ချ စဉ်းစားဖန်တီးထားသော အရွယ်အစားနှင့် အဖြတ်အတောများက ကိုယ်ခန္ဓာနှင့် ကိုက်ညီမှုရှိစေပြီး တစ်နေ့လုံး သက်သောင့်သက်သာဖြစ်စေပါသည်။",
     products_title: "ကျွန်ုပ်တို့၏ ထုတ်ကုန်များ",
     products_more: "နောက်ထပ်ကြည့်ရန်",
+    product_p1_title: "နှစ်ယောက် အိပ်ယာခင်း",
+    product_p1_para: "သင့်အိပ်ခန်းကို ခမ်းနားတင့်တယ်သောအထိအတွေ့ ထည့်သွင်းချင်သူများအတွက် ဒီအိပ်ယာခင်းသည် အလွန်သင့်တော်ပါသည်။ ပေါ့ပါး၍ လေဝင်လေထွက်ကောင်းသည့် ဝါချည်ဖြင့်ပြုလုပ်ထားပြီး လှပသော ဆင်ပုံလေးများနှင့် အသေးစိတ်ဒီဇိုင်းလက်ရာများကို ဖော်ပြထားသဖြင့် သင့်အိမ်အတွင်း ခမ်းနားထည်ဝ်သောအလှအပ တစ်ရပ်ကို လက်ဆင့်ကမ်းပေးနိုင်ပါသည်။",
     contact_title: "ဆက်သွယ်ရန်",
     contact_para:
       "ကျွန်ုပ်တို့၏ အရည်အသွေးကောင်းမွန်သော ပိုးထည် ချည်ထည်များ၊ ဖောက်သည်ဝန်ဆောင်မှုများ သို့မဟုတ် လက်ကားရောင်းချမှုအခွင့်အလမ်းများနှင့် ပတ်သက်၍ မေးမြန်းလိုသည်များရှိပါက၊ ကျွန်ုပ်တို့ကို ဆက်သွယ်ရန် စိတ်လှုပ်ရှားလျက်ရှိပါသည်။",
