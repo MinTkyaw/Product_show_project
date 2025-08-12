@@ -31,7 +31,7 @@ const translations = {
       "Thoughtfully designed sizes and cuts ensure a flattering fit and day-long comfort.",
     products_title: "Our Products",
     products_more: "See more",
-    product_p1_title: "Double Bedsheet",
+    product_p1_title: "Double",
     product_p1_para: "Add a touch of royal elegance to your bedroom with this traditional Jaipuri print bedsheet. Crafted from soft, breathable cotton, it features a beautiful motif of elephants and intricate patterns, bringing a rich, cultural aesthetic to your home.",
     product_p2_title:"Blue Cushion",
     product_p2_para:"Elevate your home decor with our exquisite silk decorative cushion. This elegant cushion is crafted from high-quality silk, offering a luxurious feel and a touch of cultural sophistication. Perfect for adding a pop of color and texture to your sofa, bed, or armchair.",
