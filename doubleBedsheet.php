@@ -171,29 +171,31 @@
                 class="d-flex justify-content-between align-items-center mb-3"
               >
                 <h5 class="text-primary-custom mb-0">Available Sizes</h5>
-                <a
+                <!-- sizeguide -->
+                <!-- <a
                   href="#"
                   class="size-guide-link"
                   data-bs-toggle="modal"
                   data-bs-target="#sizeGuideModal"
                   >Size Guide</a
-                >
+                > -->
               </div>
               <div class="size-options d-flex gap-2 flex-wrap">
-                <button
+              <!-- Size-XS   -->
+              <!-- <button
                   class="size-option out-of-stock"
                   data-size="XS"
                   title="Extra Small - Out of Stock"
                 >
                   XS
+                </button> -->
+                <button class="size-option active" data-size="King" title="King">
+                  King
                 </button>
-                <button class="size-option active" data-size="S" title="Small">
-                  S
+                <button class="size-option out-of-stock" data-size="Queen" title="Queen - Out of Stock">
+                  Queen
                 </button>
-                <button class="size-option" data-size="M" title="Medium">
-                  M
-                </button>
-                <button class="size-option" data-size="L" title="Large">
+                <!-- <button class="size-option" data-size="L" title="Large">
                   L
                 </button>
                 <button
@@ -212,8 +214,8 @@
                 >
                   XXL
                 </button>
-              </div>
-              <div class="selected-size mt-3">
+              </div> -->
+              <div class="selected-size mt-5">
                 <span class="text-tertiary-custom">Selected Size: </span>
                 <span class="text-primary-custom fw-bold" id="selectedSize"
                   >S</span

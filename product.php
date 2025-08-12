@@ -225,7 +225,7 @@
           </div>
         </a>
         <a
-          href="kingBedsheet.php"
+          href="doubleBedsheet.php"
           class="col-md-4 mb-lg-0 mt-0 card-group bedding d-none d-block">
           <div
             class="card text-white border-0 justify-content-end position-relative"
@@ -233,7 +233,7 @@
             <div class="ratio ratio-1x1">
               <img
                 class="img-fluid object-fit-cover"
-                src="img/bedding/King1.jpg" />
+                src="img/bedding/double1.jpg" />
             </div>
             <div
               class="position-absolute bottom-0 w-100 p-2 p-lg-4 bg-dark"

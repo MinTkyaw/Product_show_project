@@ -171,13 +171,14 @@
                 class="d-flex justify-content-between align-items-center mb-3"
               >
                 <h5 class="text-primary-custom mb-0">Available Sizes</h5>
-                <a
+                <!-- sizeguide -->
+                <!-- <a
                   href="#"
                   class="size-guide-link"
                   data-bs-toggle="modal"
                   data-bs-target="#sizeGuideModal"
                   >Size Guide</a
-                >
+                > -->
               </div>
               <div class="size-options d-flex gap-2 flex-wrap">
                 <button
