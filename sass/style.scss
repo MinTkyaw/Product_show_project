@@ -177,3 +177,10 @@ footer {
   height: auto;
 
 }
+.navbar-toggler {
+  background-color: white; // semi-transparent white
+  border: none; // optional
+}
+.navbar-toggler:hover{
+  background-color: rgba(255, 255, 255, 0.941); // slightly transparent on hover
+}
