@@ -63,24 +63,24 @@
             <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto my-4 my-lg-0 ">
                     <li class="nav-item d-flex align-items-center m-auto text-center">
-                        <a class="nav-link active text-white fs-6 animate__animated animate__fadeInDown"
+                        <a class="nav-link active text-white fs-6 animate__animated animate__fadeInDown animate__delay-02s"
                             aria-current="page" href="index.php
                 " data-i18n="nav_home">Home</a>
                     </li>
                     <li class="nav-item d-flex align-items-center m-auto">
-                        <a class="nav-link text-white animate__animated animate__fadeInDown" href="#"
+                        <a class="nav-link text-white animate__animated animate__fadeInDown animate__delay-03s" href="#"
                             data-i18n="nav_about">About</a>
                     </li>
                     <li class="nav-item d-flex align-items-center m-auto">
-                        <a class="nav-link text-white animate__animated animate__fadeInDown" href="product.php"
+                        <a class="nav-link text-white animate__animated animate__fadeInDown animate__delay-04s" href="product.php"
                             data-i18n="nav_products">Products</a>
                     </li>
                     <li class="nav-item d-flex align-items-center m-auto">
-                        <a class="nav-link text-white fs-6 animate__animated animate__fadeInDown" href="#"
+                        <a class="nav-link text-white fs-6 animate__animated animate__fadeInDown animate__delay-05s" href="#"
                             data-i18n="nav_contact">Contact</a>
                     </li>
                 </ul>
-                <button id="langSwitch" class="btn btn-light text-primary">
+                <button id="langSwitch" class="btn btn-light text-primary animate__animated animate__fadeInDown animate__delay-06s">
                     <span class="english-text">မြန်မာ</span>
                     <span class="myanmar-text hidden">English</span>
                 </button>
@@ -119,9 +119,9 @@
       </div>
     </section> -->
     <br />
-    <section class="w-100 bg-cover hero-section__height" style="background-image: url(img/hero-section-bg.svg)">
+    <section class="w-100 bg-cover hero-section__height overflow-hidden animate__animated animate__fadeIn" style="background-image: url(img/hero-section-bg.svg)">
         <div class="container">
-            <h1 id="hero-title" class="fw-bolder w-50 myanmar-font-size position-absolute top-25 pt-5 display-4"
+            <h1 id="hero-title" class="fw-bolder w-50 myanmar-font-size position-absolute top-25 pt-5 display-4 animate__animated animate__fadeInDown .animate__delay-02s"
                 style="color:#303a52"
                 data-i18n="hero_title">
                 Let’s carry the beauty of<br />
@@ -136,7 +136,7 @@
         <div class="container">
             <div class="row gx-4 align-items-center justify-content-between">
                 <div class="col-md-6 order-1 order-md-1">
-                    <div class="mt-3 mt-md-0 me-md-3 me-lg-5">
+                    <div class="mt-3 mt-md-0 me-md-3 me-lg-5 " data-aos="fade-right">
                         <h2 id="about-title" class="display-6 fw-bold text-primary" data-i18n="about_title">
                             About Us
                         </h2>
@@ -369,7 +369,7 @@
         <div class="container-fluid p-lg-0">
             <div class="row g-0 align-items-center">
                 <div class="col-lg-6">
-                    <div class="col-lg-8 mx-auto">
+                    <div class="col-lg-8 mx-auto" data-aos="zoom-in">
                         <h2 id="contact-title" class="display-5 fw-bold" data-i18n="contact_title">
                             Contact Us
                         </h2>
@@ -410,7 +410,7 @@
                         </form>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6" data-aos="zoom-in">
                     <div class="mt-5 mt-lg-0 w-75 mx-auto">
                         <img alt="" class="img-fluid" src="img/3d-view-map.jpg" />
                     </div>
