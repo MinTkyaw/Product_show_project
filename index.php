@@ -119,12 +119,13 @@
       </div>
     </section> -->
     <br />
-    <section class="min-vh-100 w-100 bg-cover" style="background-image: url(img/hero-section-bg.svg)">
+    <section class="w-100 bg-cover hero-section__height" style="background-image: url(img/hero-section-bg.svg)">
         <div class="container">
-            <h1 id="hero-title" class=" fw-bolder w-50  myanmar-font-size position-absolute  top-25 pt-5"
-                style="color:#303a52" data-i18n="hero_title">
+            <h1 id="hero-title" class="fw-bolder w-50 myanmar-font-size position-absolute top-25 pt-5 display-4"
+                style="color:#303a52"
+                data-i18n="hero_title">
                 Let’s carry the beauty of<br />
-                Myanmar culture</span><br />
+                <span class="text-dark">Myanmar culture</span><br />
                 into the future.
             </h1>
             <img src="img/dance-girl.svg" alt="" class="main-img" />
@@ -421,11 +422,11 @@
     <footer class=" py-4 text-primary">
         <!-- Changed background -->
         <div class="container">
-            <div class="row g-4">
+            <div class="row g-4 footer-container">
                 <!-- Added gutter spacing -->
 
                 <!-- Logo Column - Full width on mobile -->
-                <div class="col-12 col-lg-3 mb-4 mb-lg-0" data-aos="fade-up">
+                <div class="col-12 col-lg-3 mb-4 mb-lg-0 right-footer__content" data-aos="fade-up">
                     <div class="d-flex align-items-center mb-3">
                         <img src="./img/Zarifa-logo.svg" alt="Zarifa Logo" width="55" class="img-fluid" />
                         <span class="fs-3 fw-bolder ms-2 icon-text">Zarifa</span>
@@ -442,42 +443,28 @@
                 </div>
 
                 <!-- Links Columns - Stack on mobile -->
-                <div class="col-12 col-lg-8 offset-lg-1 row g-4">
+                <div class="col-12 col-lg-8 offset-lg-1 row g-4 justify-content-end left-footer__content">
                     <!-- Quick Links -->
                     <div class="col-6 col-md-4 mt-3">
                         <h4 class="h5 mb-3" data-aos="fade-up">Quick Links</h4>
                         <!-- Smaller heading -->
                         <ul class="list-unstyled" data-aos="fade-up">
                             <li class="mb-2">
-                                <a href="#" class="text-decoration-none">Home</a>
+                                <a href="#" class="text-decoration-none" data-i18n="nav_home">Home</a>
                             </li>
                             <li class="mb-2">
-                                <a href="#" class="text-decoration-none">About</a>
+                                <a href="#" class="text-decoration-none" data-i18n="nav_about">About</a>
                             </li>
                             <li class="mb-2">
-                                <a href="#" class="text-decoration-none">Product</a>
+                                <a href="#" class="text-decoration-none" data-i18n="nav_products">Product</a>
                             </li>
                             <li class="mb-2">
-                                <a href="#" class="text-decoration-none">Contact</a>
+                                <a href="#" class="text-decoration-none" data-i18n="nav_contact">Contact</a>
                             </li>
                         </ul>
                     </div>
-
-                    <!-- Useful Info -->
-                    <div class="col-6 col-md-4 mt-3">
-                        <h4 class="h5 mb-3" data-aos="fade-up">Useful Info</h4>
-                        <ul class="list-unstyled" data-aos="fade-up">
-                            <li class="mb-2">
-                                <a href="#" class="text-decoration-none">Our Products</a>
-                            </li>
-                            <li class="mb-2">
-                                <a href="#" class="text-decoration-none">Best Products</a>
-                            </li>
-                        </ul>
-                    </div>
-
                     <!-- Socials -->
-                    <div class="col-12 col-md-4 mt-3">
+                    <div class="col-12 col-md-4 mt-3 left-footer__socials">
                         <!-- Full width on small devices -->
                         <h4 class="h5 mb-3" data-aos="fade-up">Socials</h4>
                         <ul class="list-unstyled" data-aos="fade-up">
@@ -507,9 +494,9 @@
                     © 2025 Zafira.dev. All rights reserved.
                 </div>
                 <div class="small d-flex flex-column flex-lg-row">
-                    <a href="#" class="text-white-50 mb-2 mb-lg-0 me-lg-3 text-decoration-none">Privacy
+                    <a href="#" class="text-black-50 mb-2 mb-lg-0 me-lg-3 text-decoration-none">Privacy
                         Policy</a>
-                    <a href="#" class="text-white-50 text-decoration-none">Terms of Service</a>
+                    <a href="#" class="text-black-50 text-decoration-none">Terms of Service</a>
                 </div>
             </div>
         </div>

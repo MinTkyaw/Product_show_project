@@ -58,46 +58,15 @@
     <div class="container">
       <div class="row justify-content-center text-center mb-2 mb-md-3">
         <div class="col-xl-9 col-xxl-8">
-          <p class="text-muted mb-0" data-aos="zoom-in">Our Products</p>
-          <h2 class="display-6 fw-bold text-primary" data-aos="zoom-in">
-            Cotton
+          <p class="text-muted mb-0" data-aos="zoom-in" data-i18n="product_semi-title">Our Products</p>
+          <h2 class="display-6 fw-bold text-primary myanmar-product-title-size" data-aos="zoom-in" data-i18n="product_title" id="product-main">
+            Cotton and Silk 
           </h2>
-          <p class="mb-0" data-aos="zoom-in">
-            Experience everyday elegance with our soft, breathable cotton
-            collection. Designed for comfort and crafted with care, these
-            pieces are perfect for casual outings, workdays, or relaxed
-            evenings.
+          <p class="mb-0" data-aos="zoom-in" data-i18n="product_description">
+            Myanmar silk and cotton products combine the beauty of traditional craftsmanship with the elegance of modern design and premium quality. Our soft and refined cotton fabrics, along with vibrantly beautiful silk, are perfectly crafted for gifts, clothing, home decoration, and more—designed to suit your needs and enhance your everyday life.
           </p>
-          <p class="d-inline-flex gap-1 m-0" data-aos="zoom-in">
-            <a
-              class="fw-bold text-decoration-none d-block m-auto"
-              data-bs-toggle="collapse"
-              href="#collapseExample"
-              role="button"
-              aria-expanded="false"
-              aria-controls="collapseExample">
-              <ul
-                class="text-justify dynamic-txts ps-0 lh-lg position-relative typing-text-width mx-auto">
-                <li class="list-unstyled position-absolute top-0">
-                  <span>Looking for something more luxurious?</span>
-                </li>
-                <li class="list-unstyled position-absolute top-0">
-                  <span>Explore our luxurious collection here<i
-                      class="fa-solid fa-angle-down"></i></span>
-                </li>
-              </ul>
-            </a>
-          </p>
-          <div class="collapse" id="collapseExample">
-            <div class="card card-body bg-primary text-white">
-              Explore our silk collection — crafted with rich textures and
-              elegant designs, perfect for special occasions or when you want
-              to feel truly exquisite.<br />
-              <a
-                class="btn btn-light text-primary silk-link-button mx-auto mt-3"
-                href="silk.php">Silk</a>
-            </div>
-          </div>
+          
+
         </div>
       </div>
       <div class="dropdown mb-5 d-inline-block">
@@ -107,7 +76,9 @@
           role="button"
           data-aos="fade-up"
           data-bs-toggle="dropdown"
-          aria-expanded="false">
+          aria-expanded="false"
+          data-i18n="product_type"
+          >
           Types
         </a>
 
@@ -116,26 +87,28 @@
             <a
               class="dropdown-item"
               href="javascript:void(0)"
-              onclick="showCards('clothing')">Clothing</a>
+              onclick="showCards('clothing')"
+              data-i18n="product_type_clothing"
+              >Clothing</a>
           </li>
           <li>
             <a
               class="dropdown-item"
               href="javascript:void(0)"
-              onclick="showCards('bedding')">Bedding</a>
+              onclick="showCards('bedding')" data-i18n="product_type_bedding">Bedding</a>
           </li>
           <li>
             <a
               class="dropdown-item"
               href="javascript:void(0)"
-              onclick="showCards('homeAccessories')">Home Accessories</a>
+              onclick="showCards('homeAccessories')" data-i18n="product_type_homeAccessories">Home Accessories</a>
           </li>
         </ul>
       </div>
       <h3
         class="text-center fw-bold mb-5 text-primary"
         id="productTypeTitle"
-        data-aos="fade-up">
+        data-aos="fade-up" data-i18n="product_type_title">
         Clothing
       </h3>
       <!-- Card Sections -->
@@ -361,114 +334,88 @@
     </ul>
   </nav>
   <!-- footer -->
-  <footer class="py-4 text-primary">
-    <!-- Changed background -->
-    <div class="container">
-      <div class="row g-4">
-        <!-- Logo Column - Full width on mobile -->
-        <div class="col-12 col-lg-3 mb-4 mb-lg-0" data-aos="fade-up">
-          <div class="d-flex align-items-center mb-3">
-            <img
-              src="./img/Zarifa-logo.svg"
-              alt="Zarifa Logo"
-              width="55"
-              class="img-fluid" />
-            <span class="fs-3 fw-bolder ms-2 icon-text">Zarifa</span>
-            <!-- Added text-white -->
-          </div>
-          <p class="mb-1">JKT Digital Institute</p>
-          <p class="mb-1">Tel: +1 123-456-7890</p>
-          <p class="mb-3">
-            <a
-              href="mailto:hello@yourdomain.com"
-              class="text-decoration-none">
-              <!-- Changed to white -->
-              hello@yourdomain.com
-            </a>
-          </p>
-        </div>
+    <footer class=" py-4 text-primary">
+        <!-- Changed background -->
+        <div class="container">
+            <div class="row g-4 footer-container">
+                <!-- Added gutter spacing -->
 
-        <!-- Links Columns - Stack on mobile -->
-        <div class="col-12 col-lg-8 offset-lg-1 row g-4">
-          <!-- Quick Links -->
-          <div class="col-6 col-md-4 mt-3">
-            <h4 class="h5 mb-3" data-aos="fade-up">Quick Links</h4>
-            <!-- Smaller heading -->
-            <ul class="list-unstyled" data-aos="fade-up">
-              <li class="mb-2">
-                <a href="#" class="text-decoration-none">Home</a>
-              </li>
-              <li class="mb-2">
-                <a href="#" class="text-decoration-none">About</a>
-              </li>
-              <li class="mb-2">
-                <a href="#" class="text-decoration-none">Product</a>
-              </li>
-              <li class="mb-2">
-                <a href="#" class="text-decoration-none">Contact</a>
-              </li>
-            </ul>
-          </div>
+                <!-- Logo Column - Full width on mobile -->
+                <div class="col-12 col-lg-3 mb-4 mb-lg-0 right-footer__content" data-aos="fade-up">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="./img/Zarifa-logo.svg" alt="Zarifa Logo" width="55" class="img-fluid" />
+                        <span class="fs-3 fw-bolder ms-2 icon-text">Zarifa</span>
+                        <!-- Added text-white -->
+                    </div>
+                    <p class="mb-1">JKT Digital Institute</p>
+                    <p class="mb-1">Tel: +1 123-456-7890</p>
+                    <p class="mb-3">
+                        <a href="mailto:hello@yourdomain.com" class="text-decoration-none">
+                            <!-- Changed to white -->
+                            hello@yourdomain.com
+                        </a>
+                    </p>
+                </div>
 
-          <!-- Useful Info -->
-          <div class="col-6 col-md-4 mt-3">
-            <h4 class="h5 mb-3" data-aos="fade-up">Useful Info</h4>
-            <ul class="list-unstyled" data-aos="fade-up">
-              <li class="mb-2">
-                <a href="#" class="text-decoration-none">Our Products</a>
-              </li>
-              <li class="mb-2">
-                <a href="#" class="text-decoration-none">Best Products</a>
-              </li>
-            </ul>
-          </div>
+                <!-- Links Columns - Stack on mobile -->
+                <div class="col-12 col-lg-8 offset-lg-1 row g-4 justify-content-end left-footer__content">
+                    <!-- Quick Links -->
+                    <div class="col-6 col-md-4 mt-3">
+                        <h4 class="h5 mb-3" data-aos="fade-up">Quick Links</h4>
+                        <!-- Smaller heading -->
+                        <ul class="list-unstyled" data-aos="fade-up">
+                            <li class="mb-2">
+                                <a href="#" class="text-decoration-none" data-i18n="nav_home">Home</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#" class="text-decoration-none" data-i18n="nav_about">About</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#" class="text-decoration-none" data-i18n="nav_products">Product</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#" class="text-decoration-none" data-i18n="nav_contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Socials -->
+                    <div class="col-12 col-md-4 mt-3 left-footer__socials">
+                        <!-- Full width on small devices -->
+                        <h4 class="h5 mb-3" data-aos="fade-up">Socials</h4>
+                        <ul class="list-unstyled" data-aos="fade-up">
+                            <li class="mb-2">
+                                <a href="#" class="text-decoration-none d-flex align-items-center">
+                                    <i class="fab fa-pinterest me-2"></i> Pinterest
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#" class="text-decoration-none d-flex align-items-center">
+                                    <i class="fab fa-x-twitter me-2"></i> Twitter
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#" class="text-decoration-none d-flex align-items-center">
+                                    <i class="fab fa-facebook me-2"></i> Facebook
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-          <!-- Socials -->
-          <div class="col-12 col-md-4 mt-3">
-            <!-- Full width on small devices -->
-            <h4 class="h5 mb-3" data-aos="fade-up">Socials</h4>
-            <ul class="list-unstyled" data-aos="fade-up">
-              <li class="mb-2">
-                <a
-                  href="#"
-                  class="text-decoration-none d-flex align-items-center">
-                  <i class="fab fa-pinterest me-2"></i> Pinterest
-                </a>
-              </li>
-              <li class="mb-2">
-                <a
-                  href="#"
-                  class="text-decoration-none d-flex align-items-center">
-                  <i class="fab fa-x-twitter me-2"></i> Twitter
-                </a>
-              </li>
-              <li class="mb-2">
-                <a
-                  href="#"
-                  class="text-decoration-none d-flex align-items-center">
-                  <i class="fab fa-facebook me-2"></i> Facebook
-                </a>
-              </li>
-            </ul>
-          </div>
+            <!-- Copyright Section -->
+            <div class="border-top border-secondary mt-4 pt-4 d-flex flex-column flex-lg-row justify-content-between">
+                <div class="small mb-3 mb-lg-0 text-black-50">
+                    © 2025 Zafira.dev. All rights reserved.
+                </div>
+                <div class="small d-flex flex-column flex-lg-row">
+                    <a href="#" class="text-black-50 mb-2 mb-lg-0 me-lg-3 text-decoration-none">Privacy
+                        Policy</a>
+                    <a href="#" class="text-black-50 text-decoration-none">Terms of Service</a>
+                </div>
+            </div>
         </div>
-      </div>
-
-      <!-- Copyright Section -->
-      <div
-        class="border-top border-secondary mt-4 pt-4 d-flex flex-column flex-lg-row justify-content-between">
-        <div class="small mb-3 mb-lg-0 text-black-50">
-          © 2025 Zafira.dev. All rights reserved.
-        </div>
-        <div class="small d-flex flex-column flex-lg-row">
-          <a
-            href="#"
-            class="text-white-50 mb-2 mb-lg-0 me-lg-3 text-decoration-none">Privacy Policy</a>
-          <a href="#" class="text-white-50 text-decoration-none">Terms of Service</a>
-        </div>
-      </div>
-    </div>
-  </footer>
+    </footer>
   <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="./node_modules/aos/dist/aos.js"></script>
   <script src="main.js"></script>

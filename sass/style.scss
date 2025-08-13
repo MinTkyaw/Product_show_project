@@ -143,7 +143,7 @@ footer {
 }
 // myanmar-language
 .myanmar-font-size {
-  font-size: calc(1rem + 2.1vw); /* Adjust as needed */
+  font-size: calc(1.3rem + 2.1vw); /* Adjust as needed */
   line-height: 1.8; /* Adjust line height as needed */
 }
 
@@ -174,7 +174,7 @@ footer {
 .main-img {
   position: absolute;
   bottom: 0;
-  left: 50%;
+  left: 60%;
   transform: translateX(-50%);
   max-width: 100%;
   height: auto;
@@ -186,4 +186,31 @@ footer {
 }
 .navbar-toggler:hover{
   background-color: rgba(255, 255, 255, 0.941); // slightly transparent on hover
+}
+// nav responsive
+@media (max-width: 991px) {
+  .footer-container{
+    justify-content: center;
+  }
+  .left-footer__content{
+    justify-content: space-evenly !important;
+    text-align: center;
+  }
+  .left-footer__socials ul li a{
+    justify-content: center !important;
+    text-align: center;
+  }
+  .right-footer__content {
+    text-align: center;
+  }
+  .right-footer__content div{
+    justify-content: center;
+  }
+}
+.hero-section__height{
+  min-height: 100dvh;
+}
+.myanmar-product-title-size{
+  font-size: calc(1rem + 2.1vw); /* Adjust as needed */
+  line-height: 2.3; /* Adjust line height as needed */
 }

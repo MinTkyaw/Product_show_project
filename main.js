@@ -50,6 +50,15 @@ const translations = {
 		footer_privacy: "Privacy Policy",
 		footer_terms: "Terms of Service",
 		footer_copyright: "© 2025 Zarifa.dev. All rights reserved.",
+		product_title: "Cotton and Silk",
+		product_description:"Myanmar silk and cotton products combine the beauty of traditional craftsmanship with the elegance of modern design and premium quality. Our soft and refined cotton fabrics, along with vibrantly beautiful silk, are perfectly crafted for gifts, clothing, home decoration, and more—designed to suit your needs and enhance your everyday life.",
+		product_semi_title: "Our Products",
+		product_type: "Types",
+		product_type_clothing: "Clothing",
+		product_type_bedding: "Bedding",
+		product_type_homeAccessories: "Home Accessories",
+
+		
 	},
 	my: {
 		page_title: "Zarifa အထည်ချည်",
@@ -90,7 +99,7 @@ const translations = {
 		product_p2_title: "အပြာရောင်ကူရှင်",
 		product_p2_para:
 			"ဒီအိမ်အလှပြင်ဆင်မှုကို ကျွန်တော်တို့၏ လက်ရာမြောက်သော  ပိုးကူရှင်ဖြင့် မြှင့်တင်လိုက်ပါ။ အရည်အသွေးမြင့် ပိုးသန့်ဖြင့် ပြုလုပ်ထားသောဤ ခေါင်းအုံးသည် ပေါ့ပါးလှပသော အထိအတွေ့နှင့် ယဉ်ကျေးမှုအလှတရားကို ထည့်သွင်းပေးနိုင်ပါသည်။ ခေါင်းလုံး၊ အိပ်ရာ သို့မဟုတ် လက်တင်ခုံပေါ်တွင် အရောင်နှင့် အထိအတွေ့ ထည့်သွင်းချင်သူများအတွက် အကောင်းဆုံး ရွေးချယ်မှုဖြစ်ပါသည်။",
-		product_p3_title: "အနက်ရောက် ပုဆိုး",
+		product_p3_title: "အနက်ရောင် ပုဆိုး",
 		product_p3_para:
 			"ရိုးရာ မြန်မာပုဆိုး၏ အလှတရားကို လက်ဖြင့်ထိုးထားသည့် အနက်ရောင် ဒီဇိုင်းဖြင့် ခံစားလိုက်ပါ။ နူးညံ့ပီး သက်‌တောင့်သက်သာရှိသော ရက်ထည်အနေနှင့် ခံ့ညားသော ဒီဇိုင်းများကြောင့် ပွဲစားဝတ်စုံ၊ အလှဆင်ဝတ်စုံ သို့မဟုတ် လက်ဆောင်ပစ္စည်း အဖြစ် အလွန်သင့်တော်ပါသည်။",
 		contact_title: "ဆက်သွယ်ရန်",
@@ -103,6 +112,13 @@ const translations = {
 		footer_privacy: "ပုဂ္ဂလိကရေးရာ မူဝါဒ",
 		footer_terms: "ဝန်ဆောင်မှု၏ စည်းမျဉ်းများ",
 		footer_copyright: "© 2025 Zarifa.dev. အခွင့်အရေးများ ထိန်းသိမ်းထားသည်။",
+		product_title: "ပိုးထည် နှင့် ချည်ထည်",
+		product_description:"မြန်မာပိုးထည်နှင့် ချည်ထည်များသည် ရိုးရာလက်မှုပညာနှင့် ခေတ်မီဒီဇိုင်းအဆင့်မြင့်အရည်အသွေးကို ပေါင်းစည်းထားသော ထုတ်ကုန်ပစ္စည်းများဖြစ်ပါသည်။ နူးညံ့သော ချည်အထည်များနှင့် အရောင်လှပတင့်တယ်သော ပိုးထည်များသည် လက်ဆောင်ပစ္စည်း၊ အဝတ်အစား၊ အိမ်အလှဆင် အစရှိသဖြင့် သင့်ဌာနနှင့် သင့်ရဲ့နေ့စဉ်ဘဝအတွက် တိကျသင့်တော်စွာ ဖန်တီးထားပါသည်။",
+		product_semi_title: "ကျွန်ုပ်တို့၏ ထုတ်ကုန်များ",
+		product_type: "အမျိုးအစားများ",
+		product_type_clothing: "အဝတ်အစား",
+		product_type_bedding: "အိပ်ယာခင်း",
+		product_type_homeAccessories: "အိမ်အလှဆင်ပစ္စည်းများ",
 	},
 };
 
@@ -175,6 +191,7 @@ function updateFontSizeForLanguage(lang) {
 	const featureFitTitle = document.getElementById("feature-fit-title");
 	const productTitle = document.getElementById("products-title");
 	const contactTitle = document.getElementById("contact-title");
+	const ProductMain = document.getElementById("product-main");
 	if (!heroTitle) return;
 
 	if (lang === "my") {
@@ -189,6 +206,7 @@ function updateFontSizeForLanguage(lang) {
 		featureFitTitle?.classList.add("myanmar-feature-title-size");
 		productTitle?.classList.add("myanmar-features-header-size");
 		contactTitle?.classList.add("myanmar-about-size");
+		ProductMain?.classList.add("myanmar-product-title-size");
 	} else {
 		heroTitle.classList.remove("myanmar-font-size");
 		aboutTitle?.classList.remove("myanmar-about-size");
@@ -201,6 +219,7 @@ function updateFontSizeForLanguage(lang) {
 		featureFitTitle?.classList.remove("myanmar-feature-title-size");
 		productTitle?.classList.remove("myanmar-features-header-size");
 		contactTitle?.classList.remove("myanmar-about-size");
+		ProductMain?.classList.remove("myanmar-product-title-size");
 	}
 }
 
