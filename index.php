@@ -268,7 +268,7 @@
                 <h2 id="products-title" class="display-6 fw-bold m-0" data-i18n="products_title">
                     Our Products
                 </h2>
-                <a href="#" class="btn px-4 btn-primary text-white" data-i18n="products_more">See More</a>
+                <a href="product.php" class="btn px-4 btn-primary text-white" data-i18n="products_more">See More</a>
             </div>
             <div id="profileCarousel" class="carousel slide" data-bs-ride="carousel" data-aos="zoom-in-up">
                 <!-- Indicators at the top -->
@@ -285,8 +285,8 @@
                         <div class="row align-items-center justify-content-center">
                             <div class="col-md-5 col-lg-4 ">
                                 <!-- Wider image column -->
-                                <img src="./img/bedding/double1.jpg" class="img-fluid rounded shadow-sm  "
-                                    alt="Jane Smith" />
+                                <img src="./img/bedding/double1.jpg" class="img-fluid rounded shadow-sm object-fit-cover "
+                                    alt="Jane Smith" style="aspect-ratio: 1/1;"/>
                             </div>
                             <div class=" col-md-7 col-lg-6">
                                 <!-- Wider content column -->
@@ -307,8 +307,8 @@
                     <div class="carousel-item">
                         <div class="row align-items-center justify-content-center">
                             <div class="col-md-5 col-lg-4">
-                                <img src="./img/HomeAccessories/coverBlue.png" class="img-fluid rounded shadow-sm"
-                                    alt="Mike Johnson" />
+                                <img src="./img/HomeAccessories/coverBlue.png" class="img-fluid rounded shadow-sm object-fit-cover"
+                                    alt="Mike Johnson" style="aspect-ratio: 1/1;"/>
                             </div>
                             <div class=" col-md-7 col-lg-6">
                                 <div class="card-body ms-md-5 mt-3 mt-md-0">
@@ -330,22 +330,19 @@
                     <!-- Slide 3 -->
                     <div class="carousel-item">
                         <div class="row align-items-center justify-content-center">
-                            <div class="col-md-5 col-lg-4">
-                                <img src="./img/cotton-flat-sheet.svg" class="img-fluid rounded shadow-sm"
-                                    alt="Sarah Williams" />
+                            <div class="col-md-5 col-lg-4 ">
+                                <img src="./img/clothing/paso1.webp" class="img-fluid rounded shadow-sm object-fit-cover"
+                                    alt="Sarah Williams" style="aspect-ratio: 1/1;"/>
                             </div>
                             <div class="col-md-7 col-lg-6">
                                 <div class="card-body ms-md-5 mt-3 mt-md-0">
-                                    <h4 class="fw-bold m-0 mb-4">
-                                        Long-Steple Cotton Flat Sheet, Misty Blue
+                                    <h4 class="fw-bold m-0 mb-4" data-i18n="product_p3_title">
+                                        Black Pusoe
                                     </h4>
-                                    <p class="">
-                                        100% Luxury Long-Steple Cotton, Sateen Weave, Genuine
-                                        300TC; Ultra soft and comfortable; OEKO-TEK Standard
-                                        tested baby safe fabric.
+                                    <p class="" data-i18n="product_p3_para">
+                                        Experience the timeless beauty of the traditional Myanmar Pusoe, crafted in elegant black with a handwoven Ikat design. Made from soft, comfortable fabric with refined patterns, it is perfect for ceremonial wear, stylish daily outfits, or as a meaningful gift.
                                     </p>
                                     <br />
-                                    <b class="fs-5">$69.99 USD</b>
                                 </div>
                             </div>
                         </div>
