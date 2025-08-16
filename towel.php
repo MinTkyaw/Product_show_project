@@ -108,23 +108,23 @@
                   <div
                     class="color-option active"
                     style="background: #dac393"
-                    data-color="Sky Blue"
+                    data-color="Rosy Brown"
                     data-image="img/HomeAccessories/towel1.jpg"
                     data-zoom-image="img/HomeAccessories/towel1.jpg"
-                    title="SkyBlue"
+                    title="RosyBrown"
                   ></div>
                   <small class="color-name mt-1 d-block text-tertiary-custom"
-                    >Temple</small
+                    >Rosy Brown</small
                   >
                 </div>
                 <div class="color-option-container text-center">
                   <div
                     class="color-option"
                     style="background: #c09337"
-                    data-color="Orchid Pink"
+                    data-color="Floral Motifs"
                     data-image="img/HomeAccessories/towel2.jpg"
                     data-zoom-image="img/HomeAccessories/towel2.jpg"
-                    title="OrchidPink"
+                    title="FloralMotifs"
                   ></div>
                   <small class="color-name mt-1 d-block text-tertiary-custom"
                     >Floral Motifs</small
@@ -134,10 +134,10 @@
                   <div
                     class="color-option"
                     style="background: #387eb8"
-                    data-color="Ice Blue"
+                    data-color="Art"
                     data-image="img/HomeAccessories/towel3.jpg"
                     data-zoom-image="img/HomeAccessories/towel3.jpg"
-                    title="IceBlue"
+                    title="Art"
                   ></div>
                   <small class="color-name mt-1 d-block text-tertiary-custom"
                     >Art</small
@@ -147,10 +147,10 @@
                   <div
                     class="color-option"
                     style="background: #234957"
-                    data-color="Peach"
+                    data-color="Mahout"
                     data-image="img/HomeAccessories/towel4.jpg"
                     data-zoom-image="img/HomeAccessories/towel4.jpg"
-                    title="Peach"
+                    title="Mahout"
                   ></div>
                   <small class="color-name mt-1 d-block text-tertiary-custom"
                     >Mahout
@@ -160,7 +160,7 @@
               <div class="selected-color mt-3">
                 <span class="text-tertiary-custom">Selected: </span>
                 <span class="text-primary-custom fw-bold" id="selectedColor"
-                  >Sky Blue</span
+                  >Rosy Brown</span
                 >
               </div>
             </div>

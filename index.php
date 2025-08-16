@@ -72,7 +72,7 @@
                             data-i18n="nav_about">About</a>
                     </li>
                     <li class="nav-item d-flex align-items-center m-auto">
-                        <a class="nav-link text-white animate__animated animate__fadeInDown" href="product.php"
+                        <a class="nav-link text-white animate__animated animate__fadeInDown" href="productTest.php"
                             data-i18n="nav_products">Products</a>
                     </li>
                     <li class="nav-item d-flex align-items-center m-auto">
@@ -268,7 +268,7 @@
                 <h2 id="products-title" class="display-6 fw-bold m-0" data-i18n="products_title">
                     Our Products
                 </h2>
-                <a href="product.php" class="btn px-4 btn-primary text-white" data-i18n="products_more">See More</a>
+                <a href="productTest.php" class="btn px-4 btn-primary text-white" data-i18n="products_more">See More</a>
             </div>
             <div id="profileCarousel" class="carousel slide" data-bs-ride="carousel" data-aos="zoom-in-up">
                 <!-- Indicators at the top -->

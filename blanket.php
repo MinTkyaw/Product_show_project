@@ -107,10 +107,10 @@
                   <div
                     class="color-option active"
                     style="background: #95111e"
-                    data-color="Sky Blue"
+                    data-color="Crimson"
                     data-image="img/bedding/blanket1.webp"
                     data-zoom-image="img/bedding/blanket1.webp"
-                    title="SkyBlue"
+                    title="Crimson"
                   ></div>
                   <small class="color-name mt-1 d-block text-tertiary-custom"
                     >Crimson
@@ -120,10 +120,10 @@
                   <div
                     class="color-option"
                     style="background: #0f1a1f"
-                    data-color="Orchid Pink"
+                    data-color="Dark Slate"
                     data-image="img/bedding/blanket2.webp"
                     data-zoom-image="img/bedding/blanket2.webp"
-                    title="OrchidPink"
+                    title="DarkSlate"
                   ></div>
                   <small class="color-name mt-1 d-block text-tertiary-custom"
                     >Dark Slate</small
@@ -133,10 +133,10 @@
                   <div
                     class="color-option"
                     style="background: #d7b8ae"
-                    data-color="Ice Blue"
+                    data-color="Pale Rose"
                     data-image="img/bedding/blanket3.webp"
                     data-zoom-image="img/bedding/blanket3.webp"
-                    title="IceBlue"
+                    title="PaleRose"
                   ></div>
                   <small class="color-name mt-1 d-block text-tertiary-custom"
                     >Pale Rose</small
@@ -146,10 +146,10 @@
                   <div
                     class="color-option"
                     style="background: #1b2143"
-                    data-color="Peach"
+                    data-color="Indigo"
                     data-image="img/bedding/blanket4.webp"
                     data-zoom-image="img/bedding/blanket4.webp"
-                    title="Peach"
+                    title="Indigo"
                   ></div>
                   <small class="color-name mt-1 d-block text-tertiary-custom"
                     >Indigo</small
@@ -159,7 +159,7 @@
               <div class="selected-color mt-3">
                 <span class="text-tertiary-custom">Selected: </span>
                 <span class="text-primary-custom fw-bold" id="selectedColor"
-                  >Sky Blue</span
+                  >Crimson</span
                 >
               </div>
             </div>

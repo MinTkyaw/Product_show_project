@@ -108,10 +108,10 @@
                   <div
                     class="color-option active"
                     style="background: #842d33"
-                    data-color="Sky Blue"
+                    data-color="Burgundy"
                     data-image="img/bedding/double1.jpg"
                     data-zoom-image="img/bedding/double1.jpg"
-                    title="SkyBlue"
+                    title="Burgundy"
                   ></div>
                   <small class="color-name mt-1 d-block text-tertiary-custom"
                     >Burgundy</small
@@ -121,10 +121,10 @@
                   <div
                     class="color-option"
                     style="background: #605732"
-                    data-color="Orchid Pink"
+                    data-color="Dark Olive"
                     data-image="img/bedding/double2.jpg"
                     data-zoom-image="img/bedding/double2.jpg"
-                    title="OrchidPink"
+                    title="Dark Olive"
                   ></div>
                   <small class="color-name mt-1 d-block text-tertiary-custom">
                     Dark Olive
@@ -134,10 +134,10 @@
                   <div
                     class="color-option"
                     style="background: #aac9ec"
-                    data-color="Ice Blue"
+                    data-color="Baby Blue"
                     data-image="img/bedding/double3.jpg"
                     data-zoom-image="img/bedding/double3.jpg"
-                    title="IceBlue"
+                    title="BabyBlue"
                   ></div>
                   <small class="color-name mt-1 d-block text-tertiary-custom"
                     >Baby Blue</small
@@ -147,10 +147,10 @@
                   <div
                     class="color-option"
                     style="background: #a56d7b"
-                    data-color="Peach"
+                    data-color="Mauve"
                     data-image="img/bedding/double4.jpg"
                     data-zoom-image="img/bedding/double4.jpg"
-                    title="Peach"
+                    title="Mauve"
                   ></div>
                   <small class="color-name mt-1 d-block text-tertiary-custom"
                     >Mauve
@@ -160,7 +160,7 @@
               <div class="selected-color mt-3">
                 <span class="text-tertiary-custom">Selected: </span>
                 <span class="text-primary-custom fw-bold" id="selectedColor"
-                  >Sky Blue</span
+                  >Burgundy</span
                 >
               </div>
             </div>

@@ -108,10 +108,10 @@
                   <div
                     class="color-option active"
                     style="background: #284f7b"
-                    data-color="Sky Blue"
+                    data-color="Steel Blue"
                     data-image="img/bedding/King1.jpg"
                     data-zoom-image="img/bedding/King1.jpg"
-                    title="SkyBlue"
+                    title="SteelBlue"
                   ></div>
                   <small class="color-name mt-1 d-block text-tertiary-custom"
                     >Steel Blue</small
@@ -121,10 +121,10 @@
                   <div
                     class="color-option"
                     style="background: #d29159"
-                    data-color="Orchid Pink"
+                    data-color="Copper"
                     data-image="img/bedding/King2.jpg"
                     data-zoom-image="img/bedding/King2.jpg"
-                    title="OrchidPink"
+                    title="Copper"
                   ></div>
                   <small class="color-name mt-1 d-block text-tertiary-custom"
                     >Copper
@@ -134,10 +134,10 @@
                   <div
                     class="color-option"
                     style="background: #395a91"
-                    data-color="Ice Blue"
+                    data-color="Slate Blue"
                     data-image="img/bedding/King3.jpg"
                     data-zoom-image="img/bedding/King3.jpg"
-                    title="IceBlue"
+                    title="SlateBlue"
                   ></div>
                   <small class="color-name mt-1 d-block text-tertiary-custom"
                     >Slate Blue</small
@@ -147,10 +147,10 @@
                   <div
                     class="color-option"
                     style="background: #7c4a50"
-                    data-color="Peach"
+                    data-color="Rosewood"
                     data-image="img/bedding/King4.jpg"
                     data-zoom-image="img/bedding/King4.jpg"
-                    title="Peach"
+                    title="Rosewood"
                   ></div>
                   <small class="color-name mt-1 d-block text-tertiary-custom"
                     >Rosewood
@@ -160,7 +160,7 @@
               <div class="selected-color mt-3">
                 <span class="text-tertiary-custom">Selected: </span>
                 <span class="text-primary-custom fw-bold" id="selectedColor"
-                  >Sky Blue</span
+                  >Steel Blue</span
                 >
               </div>
             </div>

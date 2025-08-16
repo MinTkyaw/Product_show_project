@@ -160,7 +160,7 @@
               <div class="selected-color mt-3">
                 <span class="text-tertiary-custom">Selected: </span>
                 <span class="text-primary-custom fw-bold" id="selectedColor"
-                  >Sky Blue</span
+                  >Ash Moss</span
                 >
               </div>
             </div>
