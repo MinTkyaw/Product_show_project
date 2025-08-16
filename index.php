@@ -63,24 +63,24 @@
             <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto my-4 my-lg-0 ">
                     <li class="nav-item d-flex align-items-center m-auto text-center">
-                        <a class="nav-link active text-white fs-6 animate__animated animate__fadeInDown"
+                        <a class="nav-link active text-white fs-6 animate__animated animate__fadeInDown animate__delay-02s"
                             aria-current="page" href="index.php
                 " data-i18n="nav_home">Home</a>
                     </li>
                     <li class="nav-item d-flex align-items-center m-auto">
-                        <a class="nav-link text-white animate__animated animate__fadeInDown" href="#"
+                        <a class="nav-link text-white animate__animated animate__fadeInDown animate__delay-03s" href="#"
                             data-i18n="nav_about">About</a>
                     </li>
                     <li class="nav-item d-flex align-items-center m-auto">
-                        <a class="nav-link text-white animate__animated animate__fadeInDown" href="productTest.php"
+                        <a class="nav-link text-white animate__animated animate__fadeInDown animate__delay-04s" href="product.php"
                             data-i18n="nav_products">Products</a>
                     </li>
                     <li class="nav-item d-flex align-items-center m-auto">
-                        <a class="nav-link text-white fs-6 animate__animated animate__fadeInDown" href="#"
+                        <a class="nav-link text-white fs-6 animate__animated animate__fadeInDown animate__delay-05s" href="#"
                             data-i18n="nav_contact">Contact</a>
                     </li>
                 </ul>
-                <button id="langSwitch" class="btn btn-light text-primary">
+                <button id="langSwitch" class="btn btn-light text-primary animate__animated animate__fadeInDown animate__delay-06s">
                     <span class="english-text">မြန်မာ</span>
                     <span class="myanmar-text hidden">English</span>
                 </button>
@@ -119,12 +119,13 @@
       </div>
     </section> -->
     <br />
-    <section class="min-vh-100 w-100 bg-cover" style="background-image: url(img/hero-section-bg.svg)">
+    <section class="w-100 bg-cover hero-section__height overflow-hidden animate__animated animate__fadeIn" style="background-image: url(img/hero-section-bg.svg)">
         <div class="container">
-            <h1 id="hero-title" class=" fw-bolder w-50  myanmar-font-size position-absolute  top-25 pt-5"
-                style="color:#303a52" data-i18n="hero_title">
+            <h1 id="hero-title" class="fw-bolder w-50 myanmar-font-size position-absolute top-25 pt-5 display-4 animate__animated animate__fadeInDown .animate__delay-02s"
+                style="color:#303a52"
+                data-i18n="hero_title">
                 Let’s carry the beauty of<br />
-                Myanmar culture</span><br />
+                <span class="text-dark">Myanmar culture</span><br />
                 into the future.
             </h1>
             <img src="img/dance-girl.svg" alt="" class="main-img" />
@@ -135,7 +136,7 @@
         <div class="container">
             <div class="row gx-4 align-items-center justify-content-between">
                 <div class="col-md-6 order-1 order-md-1">
-                    <div class="mt-3 mt-md-0 me-md-3 me-lg-5">
+                    <div class="mt-3 mt-md-0 me-md-3 me-lg-5 " data-aos="fade-right">
                         <h2 id="about-title" class="display-6 fw-bold text-primary" data-i18n="about_title">
                             About Us
                         </h2>
@@ -368,7 +369,7 @@
         <div class="container-fluid p-lg-0">
             <div class="row g-0 align-items-center">
                 <div class="col-lg-6">
-                    <div class="col-lg-8 mx-auto">
+                    <div class="col-lg-8 mx-auto" data-aos="zoom-in">
                         <h2 id="contact-title" class="display-5 fw-bold" data-i18n="contact_title">
                             Contact Us
                         </h2>
@@ -409,7 +410,7 @@
                         </form>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6" data-aos="zoom-in">
                     <div class="mt-5 mt-lg-0 w-75 mx-auto">
                         <img alt="" class="img-fluid" src="img/3d-view-map.jpg" />
                     </div>
@@ -421,11 +422,11 @@
     <footer class=" py-4 text-primary">
         <!-- Changed background -->
         <div class="container">
-            <div class="row g-4">
+            <div class="row g-4 footer-container">
                 <!-- Added gutter spacing -->
 
                 <!-- Logo Column - Full width on mobile -->
-                <div class="col-12 col-lg-3 mb-4 mb-lg-0" data-aos="fade-up">
+                <div class="col-12 col-lg-3 mb-4 mb-lg-0 right-footer__content" data-aos="fade-up">
                     <div class="d-flex align-items-center mb-3">
                         <img src="./img/Zarifa-logo.svg" alt="Zarifa Logo" width="55" class="img-fluid" />
                         <span class="fs-3 fw-bolder ms-2 icon-text">Zarifa</span>
@@ -442,42 +443,28 @@
                 </div>
 
                 <!-- Links Columns - Stack on mobile -->
-                <div class="col-12 col-lg-8 offset-lg-1 row g-4">
+                <div class="col-12 col-lg-8 offset-lg-1 row g-4 justify-content-end left-footer__content">
                     <!-- Quick Links -->
                     <div class="col-6 col-md-4 mt-3">
                         <h4 class="h5 mb-3" data-aos="fade-up">Quick Links</h4>
                         <!-- Smaller heading -->
                         <ul class="list-unstyled" data-aos="fade-up">
                             <li class="mb-2">
-                                <a href="#" class="text-decoration-none">Home</a>
+                                <a href="#" class="text-decoration-none" data-i18n="nav_home">Home</a>
                             </li>
                             <li class="mb-2">
-                                <a href="#" class="text-decoration-none">About</a>
+                                <a href="#" class="text-decoration-none" data-i18n="nav_about">About</a>
                             </li>
                             <li class="mb-2">
-                                <a href="#" class="text-decoration-none">Product</a>
+                                <a href="#" class="text-decoration-none" data-i18n="nav_products">Product</a>
                             </li>
                             <li class="mb-2">
-                                <a href="#" class="text-decoration-none">Contact</a>
+                                <a href="#" class="text-decoration-none" data-i18n="nav_contact">Contact</a>
                             </li>
                         </ul>
                     </div>
-
-                    <!-- Useful Info -->
-                    <div class="col-6 col-md-4 mt-3">
-                        <h4 class="h5 mb-3" data-aos="fade-up">Useful Info</h4>
-                        <ul class="list-unstyled" data-aos="fade-up">
-                            <li class="mb-2">
-                                <a href="#" class="text-decoration-none">Our Products</a>
-                            </li>
-                            <li class="mb-2">
-                                <a href="#" class="text-decoration-none">Best Products</a>
-                            </li>
-                        </ul>
-                    </div>
-
                     <!-- Socials -->
-                    <div class="col-12 col-md-4 mt-3">
+                    <div class="col-12 col-md-4 mt-3 left-footer__socials">
                         <!-- Full width on small devices -->
                         <h4 class="h5 mb-3" data-aos="fade-up">Socials</h4>
                         <ul class="list-unstyled" data-aos="fade-up">
@@ -507,9 +494,9 @@
                     © 2025 Zafira.dev. All rights reserved.
                 </div>
                 <div class="small d-flex flex-column flex-lg-row">
-                    <a href="#" class="text-white-50 mb-2 mb-lg-0 me-lg-3 text-decoration-none">Privacy
+                    <a href="#" class="text-black-50 mb-2 mb-lg-0 me-lg-3 text-decoration-none">Privacy
                         Policy</a>
-                    <a href="#" class="text-white-50 text-decoration-none">Terms of Service</a>
+                    <a href="#" class="text-black-50 text-decoration-none">Terms of Service</a>
                 </div>
             </div>
         </div>
