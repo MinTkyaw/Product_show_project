@@ -79,7 +79,7 @@
             <div class="image-zoom-container" id="imageZoomContainer">
               <img
                 src="img/HomeAccessories/table1.jpg"
-                alt="Cushion Cover"
+                alt="Table Cover"
                 class="product-image"
                 id="mainProductImage"
               />
@@ -107,53 +107,57 @@
               </h5>
               <div class="color-options d-flex gap-3 flex-wrap">
                 <div class="color-option-container text-center">
-                  <div
+                  <img
                     class="color-option active"
-                    style="background: #a5a7b3"
+                    src="img/HomeAccessories/table1.jpg"
                     data-color="Slate Gray"
                     data-image="img/HomeAccessories/table1.jpg"
                     data-zoom-image="img/HomeAccessories/table1.jpg"
+                    alt="Slate Gray"
                     title="Slate Gray"
-                  ></div>
+                  />
                   <small class="color-name mt-1 d-block text-tertiary-custom"
                     >Slate Gray</small
                   >
                 </div>
                 <div class="color-option-container text-center">
-                  <div
+                  <img
                     class="color-option"
-                    style="background: #d8dde1"
-                    data-color="Mist "
+                    src="img/HomeAccessories/table2.jpg"
+                    data-color="Mist"
                     data-image="img/HomeAccessories/table2.jpg"
                     data-zoom-image="img/HomeAccessories/table2.jpg"
-                    title="Mist "
-                  ></div>
+                    alt="Mist"
+                    title="Mist"
+                  />
                   <small class="color-name mt-1 d-block text-tertiary-custom"
                     >Mist
                   </small>
                 </div>
                 <div class="color-option-container text-center">
-                  <div
+                  <img
                     class="color-option"
-                    style="background: #cfc5bb"
-                    data-color="Taupe "
+                    src="img/HomeAccessories/table3.jpg"
+                    data-color="Taupe"
                     data-image="img/HomeAccessories/table3.jpg"
                     data-zoom-image="img/HomeAccessories/table3.jpg"
-                    title="Taupe "
-                  ></div>
+                    alt="Taupe"
+                    title="Taupe"
+                  />
                   <small class="color-name mt-1 d-block text-tertiary-custom"
                     >Taupe
                   </small>
                 </div>
                 <div class="color-option-container text-center">
-                  <div
+                  <img
                     class="color-option"
-                    style="background: #008792"
-                    data-color="Teal "
+                    src="img/HomeAccessories/table4.jpg"
+                    data-color="Teal"
                     data-image="img/HomeAccessories/table4.jpg"
                     data-zoom-image="img/HomeAccessories/table4.jpg"
-                    title="Teal "
-                  ></div>
+                    alt="Teal"
+                    title="Teal"
+                  />
                   <small class="color-name mt-1 d-block text-tertiary-custom"
                     >Teal
                   </small>
@@ -327,7 +331,7 @@
                     </tr>
                     <tr>
                       <th scope="row">Country of Origin</th>
-                      <td>Myanamar</td>
+                      <td>Myanmar</td>
                     </tr>
                     <tr>
                       <th scope="row">Certification</th>
