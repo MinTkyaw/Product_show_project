@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../SDFolder/code/Product_Show/cotton&silk"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Product_show_project"
+	}
+}
