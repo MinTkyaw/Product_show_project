@@ -105,53 +105,53 @@
               <h5 class="text-primary-custom mb-3">Available Colors</h5>
               <div class="color-options d-flex gap-3 flex-wrap">
                 <div class="color-option-container text-center">
-                  <div
-                    class="color-option active"
-                    style="background: #a3cefa"
-                    data-color="Sky Blue"
-                    data-image="img/HomeAccessories/coverBlue.png"
-                    data-zoom-image="img/HomeAccessories/coverBlue.png"
-                    title="SkyBlue"
-                  ></div>
+                  <img
+                  class="color-option active"
+                  src="img/HomeAccessories/coverBlue.png"
+                  data-color="Sky Blue"
+                  data-image="img/HomeAccessories/coverBlue.png"
+                  data-zoom-image="img/HomeAccessories/coverBlue.png"
+                  alt="Sky Blue"
+                  title="SkyBlue" />
                   <small class="color-name mt-1 d-block text-tertiary-custom"
                     >Sky Blue</small
                   >
                 </div>
                 <div class="color-option-container text-center">
-                  <div
-                    class="color-option"
-                    style="background: #e576d4"
-                    data-color="Orchid Pink"
-                    data-image="img/HomeAccessories/coverPink.png"
-                    data-zoom-image="img/HomeAccessories/coverPink.png"
-                    title="OrchidPink"
-                  ></div>
+                  <img
+                  class="color-option active"
+                  src="img/HomeAccessories/coverPink.png"
+                  data-color="Orchid Pink"
+                  data-image="img/HomeAccessories/coverPink.png"
+                  data-zoom-image="img/HomeAccessories/coverPink.png"
+                  alt="Orchid Pink"
+                  title="OrchidPink" />
                   <small class="color-name mt-1 d-block text-tertiary-custom"
                     >Orchid Pink</small
                   >
                 </div>
                 <div class="color-option-container text-center">
-                  <div
-                    class="color-option"
-                    style="background: #bfe1f0"
-                    data-color="Ice Blue"
-                    data-image="img/HomeAccessories/coverGreen.png"
-                    data-zoom-image="img/HomeAccessories/coverGreen.png"
-                    title="IceBlue"
-                  ></div>
+                  <img
+                  class="color-option active"
+                  src="img/HomeAccessories/coverGreen.png"
+                  data-color="Ice Blue"
+                  data-image="img/HomeAccessories/coverGreen.png"
+                  data-zoom-image="img/HomeAccessories/coverGreen.png"
+                  alt="Ice Blue"
+                  title="IceBlue" />
                   <small class="color-name mt-1 d-block text-tertiary-custom"
                     >Ice Blue</small
                   >
                 </div>
                 <div class="color-option-container text-center">
-                  <div
-                    class="color-option"
-                    style="background: #fdcb99"
-                    data-color="Peach"
-                    data-image="img/HomeAccessories/coverYellow.png"
-                    data-zoom-image="img/HomeAccessories/coverYellow.png"
-                    title="Peach"
-                  ></div>
+                  <img
+                  class="color-option active"
+                  src="img/HomeAccessories/coverYellow.png"
+                  data-color="Peach"
+                  data-image="img/HomeAccessories/coverYellow.png"
+                  data-zoom-image="img/HomeAccessories/coverYellow.png"
+                  alt="Peach"
+                  title="Peach" />
                   <small class="color-name mt-1 d-block text-tertiary-custom"
                     >Peach</small
                   >

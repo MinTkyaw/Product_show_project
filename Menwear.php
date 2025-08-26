@@ -58,28 +58,47 @@
                         <h5 class="text-primary-custom mb-3">Available Colors</h5>
                         <div class="color-options d-flex gap-3 flex-wrap">
                             <div class="color-option-container text-center">
-                                <div class="color-option active" style="background: #2c303d " data-color="GunmetalGray"
-                                    data-image="img/clothing/paso1.webp" data-zoom-image="img/clothing/paso1.webp"
-                                    title="GunmetalGray">
-                                </div>
+                                <img
+                                    class="color-option active"
+                                    src="img/clothing/paso1.webp"
+                                    data-color="Gunmetal Gray"
+                                    data-image="img/clothing/paso1.webp"
+                                    data-zoom-image="img/clothing/paso1.webp"
+                                    alt="Gunmetal Gray"
+                                    title="GunmetalGray"/>
                                 <small class="color-name mt-1 d-block text-tertiary-custom">Gunmetal Gray</small>
                             </div>
                             <div class="color-option-container text-center">
-                                <div class="color-option" style="background: #371325 ;" data-color="RaisinBlack"
-                                    data-image="img/clothing/paso2.webp" data-zoom-image="img/clothing/paso2.webp"
-                                    title="RaisinBlack"></div>
+                                <img
+                                    class="color-option active"
+                                    src="img/clothing/paso2.webp"
+                                    data-color="Raisin Black"
+                                    data-image="img/clothing/paso2.webp"
+                                    data-zoom-image="img/clothing/paso2.webp"
+                                    alt="Raisin Black"
+                                    title="RaisinBlack"/>
                                 <small class="color-name mt-1 d-block text-tertiary-custom">Raisin Black</small>
                             </div>
                             <div class="color-option-container text-center">
-                                <div class="color-option" style="background: #788467 " data-color="MossGray"
-                                    data-image="img/clothing/paso3.webp" data-zoom-image="img/clothing/paso3.webp"
-                                    title="MossGray"></div>
+                                <img
+                                    class="color-option active"
+                                    src="img/clothing/paso3.webp"
+                                    data-color="Moss Gray"
+                                    data-image="img/clothing/paso3.webp"
+                                    data-zoom-image="img/clothing/paso3.webp"
+                                    alt="Moss Gray"
+                                    title="MossGray"/>
                                 <small class="color-name mt-1 d-block text-tertiary-custom">Moss Gray</small>
                             </div>
                             <div class="color-option-container text-center">
-                                <div class="color-option" style="background: #091125 " data-color="RichNavy"
-                                    data-image="img/clothing/paso4.webp" data-zoom-image="img/clothing/paso4.webp"
-                                    title="RichNavy"></div>
+                                <img
+                                    class="color-option active"
+                                    src="img/clothing/paso4.webp"
+                                    data-color="Rich Navy"
+                                    data-image="img/clothing/paso4.webp"
+                                    data-zoom-image="img/clothing/paso4.webp"
+                                    alt="Rich Navy"
+                                    title="RichNavy"/>
                                 <small class="color-name mt-1 d-block text-tertiary-custom">Rich Navy</small>
                             </div>
                         </div>

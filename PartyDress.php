@@ -58,28 +58,47 @@
                         <h5 class="text-primary-custom mb-3">Available Colors</h5>
                         <div class="color-options d-flex gap-3 flex-wrap">
                             <div class="color-option-container text-center">
-                                <div class="color-option active" style="background: #aa7177 " data-color="DustyRose"
-                                    data-image="img/clothing/partyDress1.jpg" data-zoom-image="img/clothing/partyDress1.jpg"
-                                    title="DustyRose">
-                                </div>
+                                <img
+                                    class="color-option active"
+                                    src="img/clothing/partyDress1.jpg"
+                                    data-color="Dusty Rose"
+                                    data-image="img/clothing/partyDress1.jpg"
+                                    data-zoom-image="img/clothing/partyDress1.jpg"
+                                    alt="Dusty Rose"
+                                    title="DustyRose"/>
                                 <small class="color-name mt-1 d-block text-tertiary-custom">Dusty Rose</small>
                             </div>
                             <div class="color-option-container text-center">
-                                <div class="color-option" style="background: #d2d3d9 ;" data-color="PaleSilver"
-                                    data-image="img/clothing/partyDress2.jpg" data-zoom-image="img/clothing/partyDress2.jpg"
-                                    title="PaleSilver"></div>
+                                <img
+                                    class="color-option active"
+                                    src="img/clothing/partyDress2.jpg"
+                                    data-color="Pale Silver"
+                                    data-image="img/clothing/partyDress2.jpg"
+                                    data-zoom-image="img/clothing/partyDress2.jpg"
+                                    alt="Pale Silver"
+                                    title="PaleSilver"/>
                                 <small class="color-name mt-1 d-block text-tertiary-custom">Pale Silver</small>
                             </div>
                             <div class="color-option-container text-center">
-                                <div class="color-option" style="background: #a4a7b6 " data-color="CoolGray"
-                                    data-image="img/clothing/partyDress3.jpg" data-zoom-image="img/clothing/partyDress3.jpg"
-                                    title="CoolGray"></div>
+                                <img
+                                    class="color-option active"
+                                    src="img/clothing/partyDress3.jpg"
+                                    data-color="Clay Brown"
+                                    data-image="img/clothing/partyDress3.jpg"
+                                    data-zoom-image="img/clothing/partyDress3.jpg"
+                                    alt="Cool Gray"
+                                    title="CoolGray" />
                                 <small class="color-name mt-1 d-block text-tertiary-custom">Cool Gray</small>
                             </div>
                             <div class="color-option-container text-center">
-                                <div class="color-option" style="background: #915851 " data-color="ClayBrown"
-                                    data-image="img/clothing/partyDress4.jpg" data-zoom-image="img/clothing/partyDress4.jpg"
-                                    title="ClayBrown"></div>
+                                <img
+                                    class="color-option active"
+                                    src="img/clothing/partyDress4.jpg"
+                                    data-color="Clay Brown"
+                                    data-image="img/clothing/partyDress4.jpg"
+                                    data-zoom-image="img/clothing/partyDress4.jpg"
+                                    alt="Clay Brown"
+                                    title="ClayBrown" />
                                 <small class="color-name mt-1 d-block text-tertiary-custom">Clay Brown</small>
                             </div>
                         </div>

@@ -58,28 +58,47 @@
                         <h5 class="text-primary-custom mb-3">Available Colors</h5>
                         <div class="color-options d-flex gap-3 flex-wrap">
                             <div class="color-option-container text-center">
-                                <div class="color-option active" style="background: #a0716d " data-color="DustyRose"
-                                    data-image="img/clothing/oneSet1.jpg" data-zoom-image="img/clothing/oneSet1.jpg"
-                                    title="DustyRose">
-                                </div>
+                                <img
+                                    class="color-option active"
+                                    src="img/clothing/oneSet1.jpg"
+                                    data-color="Dusty Rose"
+                                    data-image="img/clothing/oneSet1.jpg"
+                                    data-zoom-image="img/clothing/oneSet1.jpg"
+                                    alt="Dusty Rose"
+                                    title="DustyRose"/>
                                 <small class="color-name mt-1 d-block text-tertiary-custom">Dusty Rose</small>
                             </div>
                             <div class="color-option-container text-center">
-                                <div class="color-option" style="background: #d589c5 ;" data-color="Orchid Pink"
-                                    data-image="img/clothing/oneSet2.jpg" data-zoom-image="img/clothing/oneSet2.jpg"
-                                    title="OrchidPink"></div>
+                                <img
+                                    class="color-option active"
+                                    src="img/clothing/oneSet2.jpg"
+                                    data-color="Orchid Pink"
+                                    data-image="img/clothing/oneSet2.jpg"
+                                    data-zoom-image="img/clothing/oneSet2.jpg"
+                                    alt="Orchid Pink"
+                                    title="OrchidPink"/>
                                 <small class="color-name mt-1 d-block text-tertiary-custom">Orchid Pink</small>
                             </div>
                             <div class="color-option-container text-center">
-                                <div class="color-option" style="background: #461c4f " data-color="DarkPlum"
-                                    data-image="img/clothing/oneSet3.jpg" data-zoom-image="img/clothing/oneSet3.jpg"
-                                    title="DarkPlum"></div>
+                                <img
+                                    class="color-option active"
+                                    src="img/clothing/oneSet3.jpg"
+                                    data-color="Orchid Pink"
+                                    data-image="img/clothing/oneSet3.jpg"
+                                    data-zoom-image="img/clothing/oneSet3.jpg"
+                                    alt="Dark Plum"
+                                    title="DarkPlum"/>
                                 <small class="color-name mt-1 d-block text-tertiary-custom">Dark Plum</small>
                             </div>
                             <div class="color-option-container text-center">
-                                <div class="color-option" style="background: #809a8d " data-color="SageGray"
-                                    data-image="img/clothing/oneSet4.jpg" data-zoom-image="img/clothing/oneSet4.jpg"
-                                    title="SageGray"></div>
+                                <img
+                                    class="color-option active"
+                                    src="img/clothing/oneSet4.jpg"
+                                    data-color="Sage Gray"
+                                    data-image="img/clothing/oneSet4.jpg"
+                                    data-zoom-image="img/clothing/oneSet4.jpg"
+                                    alt="Sage Gray"
+                                    title="Sage Gray"/>
                                 <small class="color-name mt-1 d-block text-tertiary-custom">Sage Gray</small>
                             </div>
                         </div>
