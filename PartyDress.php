@@ -65,7 +65,7 @@
                                     data-image="img/clothing/partyDress1.jpg"
                                     data-zoom-image="img/clothing/partyDress1.jpg"
                                     alt="Dusty Rose"
-                                    title="DustyRose"/>
+                                    title="DustyRose" />
                                 <small class="color-name mt-1 d-block text-tertiary-custom">Dusty Rose</small>
                             </div>
                             <div class="color-option-container text-center">
@@ -76,7 +76,7 @@
                                     data-image="img/clothing/partyDress2.jpg"
                                     data-zoom-image="img/clothing/partyDress2.jpg"
                                     alt="Pale Silver"
-                                    title="PaleSilver"/>
+                                    title="PaleSilver" />
                                 <small class="color-name mt-1 d-block text-tertiary-custom">Pale Silver</small>
                             </div>
                             <div class="color-option-container text-center">
@@ -249,8 +249,8 @@
     </div>
 
     <!-- Size Guide Modal -->
-    <div class="modal fade" id="sizeGuideModal" tabindex="-1" aria-label="sizeGuideModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-center">
+    <div class="modal fade" id="sizeGuideModal" tabindex="-1" aria-labelledby="sizeGuideModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title text-primary-custom" id="sizeGuideModalLabel">
@@ -258,63 +258,168 @@
                     </h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
+
                 <div class="modal-body">
-                    <p class="mb-3">Find your perfect fit. Refer to the chart below for chest, shoulder and sleeves
-                        measurements.</p>
-                    <div class="table-responsive">
-                        <table class="table table-bordered specifications-table">
-                            <thead class="table-light">
-                                <tr>
-                                    <th>Size</th>
-                                    <th>Chest</th>
-                                    <th>Shoulder</th>
-                                    <th>Sleeves</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>XS</td>
-                                    <td>34-36</td>
-                                    <td>16.5</td>
-                                    <td>24</td>
-                                </tr>
-                                <tr>
-                                    <td>S</td>
-                                    <td>36-38</td>
-                                    <td>17</td>
-                                    <td>24.5</td>
-                                </tr>
-                                <tr>
-                                    <td>M</td>
-                                    <td>38-40</td>
-                                    <td>17.5</td>
-                                    <td>25</td>
-                                </tr>
-                                <tr>
-                                    <td>L</td>
-                                    <td>40-42</td>
-                                    <td>18</td>
-                                    <td>25.5</td>
-                                </tr>
-                                <tr>
-                                    <td>XL</td>
-                                    <td>42-44</td>
-                                    <td>18.5</td>
-                                    <td>26</td>
-                                </tr>
-                                <tr>
-                                    <td>XXL</td>
-                                    <td>44-46</td>
-                                    <td>19</td>
-                                    <td>26.5</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <p class="mb-3">Find your perfect fit. Refer to the charts below for different product categories.</p>
+
+                    <div class="accordion" id="sizeGuideAccordion">
+                        <!-- Clothes (default table you had) -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingClothes">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseClothes" aria-expanded="true" aria-controls="collapseClothes">
+                                    Clothing (Chest, Shoulder, Sleeves)
+                                </button>
+                            </h2>
+                            <div id="collapseClothes" class="accordion-collapse collapse show" aria-labelledby="headingClothes" data-bs-parent="#sizeGuideAccordion">
+                                <div class="accordion-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered specifications-table">
+                                            <thead class="table-light">
+                                                <tr>
+                                                    <th>Size</th>
+                                                    <th>Chest</th>
+                                                    <th>Shoulder</th>
+                                                    <th>Sleeves</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>XS</td>
+                                                    <td>34-36</td>
+                                                    <td>16.5</td>
+                                                    <td>24</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>S</td>
+                                                    <td>36-38</td>
+                                                    <td>17</td>
+                                                    <td>24.5</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>M</td>
+                                                    <td>38-40</td>
+                                                    <td>17.5</td>
+                                                    <td>25</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>L</td>
+                                                    <td>40-42</td>
+                                                    <td>18</td>
+                                                    <td>25.5</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>XL</td>
+                                                    <td>42-44</td>
+                                                    <td>18.5</td>
+                                                    <td>26</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>XXL</td>
+                                                    <td>44-46</td>
+                                                    <td>19</td>
+                                                    <td>26.5</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Blanket / Bed Sheet -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingBlanket">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBlanket" aria-expanded="false" aria-controls="collapseBlanket">
+                                    Blanket / Bed Sheet
+                                </button>
+                            </h2>
+                            <div id="collapseBlanket" class="accordion-collapse collapse" aria-labelledby="headingBlanket" data-bs-parent="#sizeGuideAccordion">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li><strong>Single:</strong> 150cm × 230cm</li>
+                                        <li><strong>Double:</strong> 200cm × 230cm</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Scarf -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingScarf">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseScarf" aria-expanded="false" aria-controls="collapseScarf">
+                                    Scarf
+                                </button>
+                            </h2>
+                            <div id="collapseScarf" class="accordion-collapse collapse" aria-labelledby="headingScarf" data-bs-parent="#sizeGuideAccordion">
+                                <div class="accordion-body">
+                                    <p>Free Size (Approx. 70cm × 180cm)</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Myanmar Women Traditional Oneset -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingWomenSet">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWomenSet" aria-expanded="false" aria-controls="collapseWomenSet">
+                                    Myanmar Women Traditional Oneset
+                                </button>
+                            </h2>
+                            <div id="collapseWomenSet" class="accordion-collapse collapse" aria-labelledby="headingWomenSet" data-bs-parent="#sizeGuideAccordion">
+                                <div class="accordion-body">
+                                    <p>Free Size (Fits Small to Large)</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Men Traditional Paso -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingPaso">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePaso" aria-expanded="false" aria-controls="collapsePaso">
+                                    Men Traditional Paso
+                                </button>
+                            </h2>
+                            <div id="collapsePaso" class="accordion-collapse collapse" aria-labelledby="headingPaso" data-bs-parent="#sizeGuideAccordion">
+                                <div class="accordion-body">
+                                    <p>Free Size (Approx. 2m × 1m)</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Table Cover -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTableCover">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTableCover" aria-expanded="false" aria-controls="collapseTableCover">
+                                    Table Cover
+                                </button>
+                            </h2>
+                            <div id="collapseTableCover" class="accordion-collapse collapse" aria-labelledby="headingTableCover" data-bs-parent="#sizeGuideAccordion">
+                                <div class="accordion-body">
+                                    <p>Available in multiple sizes (90cm × 150cm, 120cm × 180cm, etc.)</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Cushion -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingCushion">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCushion" aria-expanded="false" aria-controls="collapseCushion">
+                                    Cushion
+                                </button>
+                            </h2>
+                            <div id="collapseCushion" class="accordion-collapse collapse" aria-labelledby="headingCushion" data-bs-parent="#sizeGuideAccordion">
+                                <div class="accordion-body">
+                                    <p>Standard Sizes: 40cm × 40cm, 45cm × 45cm, 50cm × 50cm</p>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script src="productDetail.js"></script>
