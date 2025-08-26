@@ -105,53 +105,57 @@
               <h5 class="text-primary-custom mb-3">Available Colors</h5>
               <div class="color-options d-flex gap-3 flex-wrap">
                 <div class="color-option-container text-center">
-                  <div
+                  <img
                     class="color-option active"
-                    style="background: #646e63 "
+                    src="img/bedding/single1.jpg"
                     data-color="Ash Moss"
                     data-image="img/bedding/single1.jpg"
                     data-zoom-image="img/bedding/single1.jpg"
+                    alt="Ash Moss"
                     title="AshMoss"
-                  ></div>
+                  ></img>
                   <small class="color-name mt-1 d-block text-tertiary-custom"
                     >Ash Moss</small
                   >
                 </div>
                 <div class="color-option-container text-center">
-                  <div
-                    class="color-option"
-                    style="background: #87877b "
+                  <img
+                    class="color-option active"
+                    src="img/bedding/single2.jpg"
                     data-color="Fogstone"
                     data-image="img/bedding/single2.jpg"
                     data-zoom-image="img/bedding/single2.jpg"
+                    alt="Fogstone"
                     title="Fogstone"
-                  ></div>
+                  ></img>
                   <small class="color-name mt-1 d-block text-tertiary-custom">
                     Fogstone
                   </small>
                 </div>
                 <div class="color-option-container text-center">
-                  <div
-                    class="color-option"
-                    style="background: #82bdc9 "
+                  <img
+                    class="color-option active"
+                    src="img/bedding/single3.jpg"
                     data-color="Seabreeze"
                     data-image="img/bedding/single3.jpg"
                     data-zoom-image="img/bedding/single3.jpg"
+                    alt="Seabreeze"
                     title="Seabreeze"
-                  ></div>
+                  ></img>
                   <small class="color-name mt-1 d-block text-tertiary-custom"
                     >Seabreeze</small
                   >
                 </div>
                 <div class="color-option-container text-center">
-                  <div
-                    class="color-option"
-                    style="background: #d05446 "
+                  <img
+                    class="color-option active"
+                    src="img/bedding/single4.jpg"
                     data-color="Brick Ember"
                     data-image="img/bedding/single4.jpg"
                     data-zoom-image="img/bedding/single4.jpg"
-                    title="Brick Ember"
-                  ></div>
+                    alt="Brick Ember"
+                    title="BrickEmber"
+                  ></img>
                   <small class="color-name mt-1 d-block text-tertiary-custom"
                     >Brick Ember
                   </small>

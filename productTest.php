@@ -3,75 +3,79 @@
 require_once 'config.php'; // Your existing database connection
 
 // Function to get first product by type from a specific table
-function getFirstProductByType($conn, $table, $productType) {
-    try {
-        $sql = "SELECT id, productType, image, description FROM $table 
+function getFirstProductByType($conn, $table, $productType)
+{
+  try {
+    $sql = "SELECT id, productType, image, description FROM $table 
                 WHERE productType LIKE ? 
                 ORDER BY id ASC 
                 LIMIT 1";
-        
-        $stmt = $conn->prepare($sql);
-        $searchTerm = "%$productType%";
-        $stmt->bind_param("s", $searchTerm);
-        $stmt->execute();
-        
-        $result = $stmt->get_result();
-        return $result->fetch_assoc();
-        
-    } catch(Exception $e) {
-        error_log("Error fetching product: " . $e->getMessage());
-        return null;
-    }
+
+    $stmt = $conn->prepare($sql);
+    $searchTerm = "%$productType%";
+    $stmt->bind_param("s", $searchTerm);
+    $stmt->execute();
+
+    $result = $stmt->get_result();
+    return $result->fetch_assoc();
+  } catch (Exception $e) {
+    error_log("Error fetching product: " . $e->getMessage());
+    return null;
+  }
 }
 
 // Get products for each card type
-function getCardProducts($conn) {
-    return [
-        // Clothing products
-        'men_longyi' => getFirstProductByType($conn, 'menclothing', 'longyi'),
-        'one_set_ready' => getFirstProductByType($conn, 'menclothing', 'one set') ?: 
-                          getFirstProductByType($conn, 'womenclothing', 'one set'),
-        'one_set' => getFirstProductByType($conn, 'womenclothing', 'one set'),
-        
-        // Bedding products  
-        'blanket' => getFirstProductByType($conn, 'bedding', 'blanket'),
-        'single_bedsheet' => getFirstProductByType($conn, 'bedding', 'single'),
-        'double_bedsheet' => getFirstProductByType($conn, 'bedding', 'double'),
-        
-        // Home accessories
-        'cushion' => getFirstProductByType($conn, 'homeaccessories', 'cushion'),
-        'table_cover' => getFirstProductByType($conn, 'homeaccessories', 'table'),
-        'towel' => getFirstProductByType($conn, 'homeaccessories', 'towel')
-    ];
+function getCardProducts($conn)
+{
+  return [
+    // Clothing products
+    'men_longyi' => getFirstProductByType($conn, 'menclothing', 'longyi'),
+    'one_set_ready' => getFirstProductByType($conn, 'menclothing', 'one set') ?:
+      getFirstProductByType($conn, 'womenclothing', 'one set'),
+    'party_dress' => getFirstProductByType($conn, 'womenclothing', 'Party Dress(Traditional)'),
+
+    // Bedding products  
+    'blanket' => getFirstProductByType($conn, 'bedding', 'blanket'),
+    'single_bedsheet' => getFirstProductByType($conn, 'bedding', 'single'),
+    'double_bedsheet' => getFirstProductByType($conn, 'bedding', 'double'),
+
+    // Home accessories
+    'cushion' => getFirstProductByType($conn, 'homeaccessories', 'cushion'),
+    'table_cover' => getFirstProductByType($conn, 'homeaccessories', 'table'),
+    'scarf' => getFirstProductByType($conn, 'homeaccessories', 'scarf')
+  ];
 }
 
 // Get the products
 $cardProducts = getCardProducts($conn);
 
 // Function to safely get image path
-function getImagePath($product, $defaultImage = 'img/placeholder.jpg') {
-    if ($product && !empty($product['image'])) {
-        // Check if image path already includes 'img/' directory
-        $imagePath = $product['image'];
-        if (!str_starts_with($imagePath, 'img/') && !str_starts_with($imagePath, 'http')) {
-            $imagePath = 'img/' . $imagePath;
-        }
-        return htmlspecialchars($imagePath);
+function getImagePath($product, $defaultImage = 'img/placeholder.jpg')
+{
+  if ($product && !empty($product['image'])) {
+    // Check if image path already includes 'img/' directory
+    $imagePath = $product['image'];
+    if (!str_starts_with($imagePath, 'img/') && !str_starts_with($imagePath, 'http')) {
+      $imagePath = 'img/' . $imagePath;
     }
-    return $defaultImage;
+    return htmlspecialchars($imagePath);
+  }
+  return $defaultImage;
 }
 
 // Function to safely get product name
-function getProductName($product, $fallbackName) {
-    if ($product && !empty($product['productType'])) {
-        return htmlspecialchars($product['productType']);
-    }
-    return $fallbackName;
+function getProductName($product, $fallbackName)
+{
+  if ($product && !empty($product['productType'])) {
+    return htmlspecialchars($product['productType']);
+  }
+  return $fallbackName;
 }
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -109,9 +113,9 @@ function getProductName($product, $fallbackName) {
       </div>
     </div>
   </nav>
-  
+
   <br /><br /><br />
-  
+
   <section class="py-5 min-vh-100">
     <div class="container">
       <div class="row justify-content-center text-center mb-2 mb-md-3">
@@ -119,7 +123,7 @@ function getProductName($product, $fallbackName) {
           <p class="text-muted mb-0" data-aos="zoom-in">Our Products</p>
           <h2 class="display-6 fw-bold text-primary" data-aos="zoom-in">Cotton</h2>
           <p class="mb-0" data-aos="zoom-in">
-            Experience everyday elegance with our soft, breathable cotton collection. 
+            Experience everyday elegance with our soft, breathable cotton collection.
             Designed for comfort and crafted with care, these pieces are perfect for casual outings, workdays, or relaxed evenings.
           </p>
           <p class="d-inline-flex gap-1 m-0" data-aos="zoom-in">
@@ -142,7 +146,7 @@ function getProductName($product, $fallbackName) {
           </div>
         </div>
       </div>
-      
+
       <div class="dropdown mb-5 d-inline-block">
         <a class="btn btn-primary dropdown-toggle" href="#" role="button" data-aos="fade-up" data-bs-toggle="dropdown" aria-expanded="false">Types</a>
         <ul class="dropdown-menu">
@@ -151,18 +155,18 @@ function getProductName($product, $fallbackName) {
           <li><a class="dropdown-item" href="javascript:void(0)" onclick="showCards('homeAccessories')">Home Accessories</a></li>
         </ul>
       </div>
-      
+
       <h3 class="text-center fw-bold mb-5 text-primary" id="productTypeTitle" data-aos="fade-up">Clothing</h3>
-      
+
       <!-- Dynamic Card Sections -->
       <div class="row g-4">
         <!-- Clothing Cards -->
         <a href="Menwear.php" class="col-md-4 mb-lg-0 mt-0 card-group clothing">
           <div class="card text-white border-0 justify-content-end position-relative" data-aos="zoom-in-up">
             <div class="ratio ratio-1x1">
-              <img class="img-fluid object-fit-cover" 
-                   src="<?= getImagePath($cardProducts['men_longyi'], 'img/clothing/paso1.webp') ?>" 
-                   alt="<?= getProductName($cardProducts['men_longyi'], 'Men\'s Longyi') ?>" />
+              <img class="img-fluid object-fit-cover"
+                src="<?= getImagePath($cardProducts['men_longyi'], 'img/clothing/paso1.webp') ?>"
+                alt="<?= getProductName($cardProducts['men_longyi'], 'Men\'s Longyi') ?>" />
             </div>
             <div class="position-absolute bottom-0 w-100 p-2 p-lg-4 bg-dark" style="--bs-bg-opacity: 0.3">
               <h5 class="fw-bold"><?= getProductName($cardProducts['men_longyi'], 'Longyi (Men)') ?></h5>
@@ -173,36 +177,38 @@ function getProductName($product, $fallbackName) {
         <a href="OneSet1.php" class="col-md-4 mb-lg-0 mt-0 card-group clothing">
           <div class="card text-white border-0 justify-content-end position-relative" data-aos="zoom-in-up">
             <div class="ratio ratio-1x1">
-              <img class="img-fluid object-fit-cover" 
-                   src="<?= getImagePath($cardProducts['one_set_ready'], 'img/clothing/oneSet1.jpg') ?>" 
-                   alt="<?= getProductName($cardProducts['one_set_ready'], 'One Set Ready Made') ?>" />
+              <img class="img-fluid object-fit-cover"
+                src="<?= getImagePath($cardProducts['one_set_ready'], 'img/clothing/oneSet1.jpg') ?>"
+                alt="<?= getProductName($cardProducts['one_set_ready'], 'One Set Ready Made') ?>" />
             </div>
             <div class="position-absolute bottom-0 w-100 p-2 p-lg-4 bg-dark" style="--bs-bg-opacity: 0.3">
               <h5 class="fw-bold"><?= getProductName($cardProducts['one_set_ready'], 'One Set (Ready Made)') ?></h5>
             </div>
           </div>
         </a>
-        
-        <a href="OneSet2.php" class="col-md-4 mb-lg-0 mt-0 card-group clothing">
+
+        <a href="partyDress.php" class="col-md-4 mb-lg-0 mt-0 card-group clothing">
           <div class="card text-white border-0 justify-content-end position-relative" data-aos="zoom-in-up">
             <div class="ratio ratio-1x1">
-              <img class="img-fluid object-fit-cover" 
-                   src="<?= getImagePath($cardProducts['one_set'], 'img/clothing/oneSet5.jpg') ?>" 
-                   alt="<?= getProductName($cardProducts['one_set'], 'One Set') ?>" />
+              <img class="img-fluid object-fit-cover"
+                src="<?= getImagePath($cardProducts['party_dress'], 'img/clothing/partyDress1.jpg') ?>"
+                alt="<?= getProductName($cardProducts['party_dress'], 'Party Dress (Traditional)') ?>" />
             </div>
             <div class="position-absolute bottom-0 w-100 p-2 p-lg-4 bg-dark" style="--bs-bg-opacity: 0.3">
-              <h5 class="fw-bold"><?= getProductName($cardProducts['one_set'], 'One Set') ?></h5>
+              <h5 class="fw-bold"><?= getProductName($cardProducts['party_dress'], 'Party Dress (Traditional)') ?></h5>
             </div>
           </div>
         </a>
+
+
 
         <!-- Bedding Cards -->
         <a href="blanket.php" class="col-md-4 mb-lg-0 mt-0 card-group bedding d-none d-block">
           <div class="card text-white border-0 justify-content-end position-relative" data-aos="zoom-in-up">
             <div class="ratio ratio-1x1">
-              <img class="img-fluid object-fit-cover" 
-                   src="<?= getImagePath($cardProducts['blanket'], 'img/bedding/blanket1.webp') ?>" 
-                   alt="<?= getProductName($cardProducts['blanket'], 'Blanket') ?>" />
+              <img class="img-fluid object-fit-cover"
+                src="<?= getImagePath($cardProducts['blanket'], 'img/bedding/blanket1.webp') ?>"
+                alt="<?= getProductName($cardProducts['blanket'], 'Blanket') ?>" />
             </div>
             <div class="position-absolute bottom-0 w-100 p-2 p-lg-4 bg-dark" style="--bs-bg-opacity: 0.3">
               <h5 class="fw-bold"><?= getProductName($cardProducts['blanket'], 'Blanket') ?></h5>
@@ -213,22 +219,22 @@ function getProductName($product, $fallbackName) {
         <a href="singleBedsheet.php" class="col-md-4 mb-lg-0 mt-0 card-group bedding d-none d-block">
           <div class="card text-white border-0 justify-content-end position-relative" data-aos="zoom-in-up">
             <div class="ratio ratio-1x1">
-              <img class="img-fluid object-fit-cover" 
-                   src="<?= getImagePath($cardProducts['single_bedsheet'], 'img/bedding/single1.jpg') ?>" 
-                   alt="<?= getProductName($cardProducts['single_bedsheet'], 'Single Bedsheet') ?>" />
+              <img class="img-fluid object-fit-cover"
+                src="<?= getImagePath($cardProducts['single_bedsheet'], 'img/bedding/single1.jpg') ?>"
+                alt="<?= getProductName($cardProducts['single_bedsheet'], 'Single Bedsheet') ?>" />
             </div>
             <div class="position-absolute bottom-0 w-100 p-2 p-lg-4 bg-dark" style="--bs-bg-opacity: 0.3">
               <h5 class="fw-bold"><?= getProductName($cardProducts['single_bedsheet'], 'Single Bedsheet') ?></h5>
             </div>
           </div>
         </a>
-        
+
         <a href="doubleBedsheet.php" class="col-md-4 mb-lg-0 mt-0 card-group bedding d-none d-block">
           <div class="card text-white border-0 justify-content-end position-relative" data-aos="zoom-in-up">
             <div class="ratio ratio-1x1">
-              <img class="img-fluid object-fit-cover" 
-                   src="<?= getImagePath($cardProducts['double_bedsheet'], 'img/bedding/double1.jpg') ?>" 
-                   alt="<?= getProductName($cardProducts['double_bedsheet'], 'Double Bedsheet') ?>" />
+              <img class="img-fluid object-fit-cover"
+                src="<?= getImagePath($cardProducts['double_bedsheet'], 'img/bedding/double1.jpg') ?>"
+                alt="<?= getProductName($cardProducts['double_bedsheet'], 'Double Bedsheet') ?>" />
             </div>
             <div class="position-absolute bottom-0 w-100 p-2 p-lg-4 bg-dark" style="--bs-bg-opacity: 0.3">
               <h5 class="fw-bold"><?= getProductName($cardProducts['double_bedsheet'], 'Double Bedsheet') ?></h5>
@@ -240,38 +246,38 @@ function getProductName($product, $fallbackName) {
         <a href="cushion.php" class="col-md-4 mb-lg-0 mt-0 card-group homeAccessories d-none d-block">
           <div class="card text-white border-0 justify-content-end position-relative" data-aos="zoom-in-up">
             <div class="ratio ratio-1x1">
-              <img class="img-fluid object-fit-cover" 
-                   src="<?= getImagePath($cardProducts['cushion'], 'img/HomeAccessories/coverBlue.png') ?>" 
-                   alt="<?= getProductName($cardProducts['cushion'], 'Cushion') ?>" />
+              <img class="img-fluid object-fit-cover"
+                src="<?= getImagePath($cardProducts['cushion'], 'img/HomeAccessories/coverBlue.png') ?>"
+                alt="<?= getProductName($cardProducts['cushion'], 'Cushion') ?>" />
             </div>
             <div class="position-absolute bottom-0 w-100 p-2 p-lg-4 bg-dark" style="--bs-bg-opacity: 0.3">
               <h5 class="fw-bold"><?= getProductName($cardProducts['cushion'], 'Cushion') ?></h5>
             </div>
           </div>
         </a>
-        
+
         <a href="tableCover.php" class="col-md-4 mb-lg-0 mt-0 card-group homeAccessories d-none d-block">
           <div class="card text-white border-0 justify-content-end position-relative" data-aos="zoom-in-up">
             <div class="ratio ratio-1x1">
-              <img class="img-fluid object-fit-cover" 
-                   src="<?= getImagePath($cardProducts['table_cover'], 'img/HomeAccessories/table1.jpg') ?>" 
-                   alt="<?= getProductName($cardProducts['table_cover'], 'Table Cover') ?>" />
+              <img class="img-fluid object-fit-cover"
+                src="<?= getImagePath($cardProducts['table_cover'], 'img/HomeAccessories/table1.jpg') ?>"
+                alt="<?= getProductName($cardProducts['table_cover'], 'Table Cover') ?>" />
             </div>
             <div class="position-absolute bottom-0 w-100 p-2 p-lg-4 bg-dark" style="--bs-bg-opacity: 0.3">
               <h5 class="fw-bold"><?= getProductName($cardProducts['table_cover'], 'Table Cover') ?></h5>
             </div>
           </div>
         </a>
-        
-        <a href="towel.php" class="col-md-4 mb-lg-0 mt-0 card-group homeAccessories d-none d-block">
+
+        <a href="scarf.php" class="col-md-4 mb-lg-0 mt-0 card-group homeAccessories d-none d-block">
           <div class="card text-white border-0 justify-content-end position-relative" data-aos="zoom-in-up">
             <div class="ratio ratio-1x1">
-              <img class="img-fluid object-fit-cover" 
-                   src="<?= getImagePath($cardProducts['towel'], 'img/HomeAccessories/towel1.jpg') ?>" 
-                   alt="<?= getProductName($cardProducts['towel'], 'Towel') ?>" />
+              <img class="img-fluid object-fit-cover"
+                src="<?= getImagePath($cardProducts['scarf'], 'img/HomeAccessories/scarf1.jpg') ?>"
+                alt="<?= getProductName($cardProducts['scarf'], 'Scarf') ?>" />
             </div>
             <div class="position-absolute bottom-0 w-100 p-2 p-lg-4 bg-dark" style="--bs-bg-opacity: 0.3">
-              <h5 class="fw-bold"><?= getProductName($cardProducts['towel'], 'Towel') ?></h5>
+              <h5 class="fw-bold"><?= getProductName($cardProducts['scarf'], 'Scarf') ?></h5>
             </div>
           </div>
         </a>
@@ -428,4 +434,5 @@ function getProductName($product, $fallbackName) {
     }
   </script>
 </body>
+
 </html>

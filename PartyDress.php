@@ -36,11 +36,11 @@
                 <!-- Product Image -->
                 <div class="col-lg-6 mb-4">
                     <div class="image-zoom-container" id="imageZoomContainer">
-                        <img src="img/clothing/oneSet5.jpg" alt="Cushion Cover" class="product-image"
+                        <img src="img/clothing/partyDress1.jpg" alt="Cushion Cover" class="product-image"
                             id="mainProductImage">
                         <div class="zoom-lens" id="zoomLens"></div>
                         <div class="zoom-result" id="zoomResult">
-                            <img src="img/clothing/oneSet5.jpg" alt="Zoomed Product" id="zoomResultImg">
+                            <img src="img/clothing/partyDress1.jpg" alt="Zoomed Product" id="zoomResultImg">
                         </div>
                         <div class="zoom-instructions">
                             ✨ Hover to see magical zoom
@@ -59,26 +59,26 @@
                         <div class="color-options d-flex gap-3 flex-wrap">
                             <div class="color-option-container text-center">
                                 <div class="color-option active" style="background: #aa7177 " data-color="DustyRose"
-                                    data-image="img/clothing/oneSet5.jpg" data-zoom-image="img/clothing/oneSet5.jpg"
+                                    data-image="img/clothing/partyDress1.jpg" data-zoom-image="img/clothing/partyDress1.jpg"
                                     title="DustyRose">
                                 </div>
                                 <small class="color-name mt-1 d-block text-tertiary-custom">Dusty Rose</small>
                             </div>
                             <div class="color-option-container text-center">
                                 <div class="color-option" style="background: #d2d3d9 ;" data-color="PaleSilver"
-                                    data-image="img/clothing/oneSet6.jpg" data-zoom-image="img/clothing/oneSet6.jpg"
+                                    data-image="img/clothing/partyDress2.jpg" data-zoom-image="img/clothing/partyDress2.jpg"
                                     title="PaleSilver"></div>
                                 <small class="color-name mt-1 d-block text-tertiary-custom">Pale Silver</small>
                             </div>
                             <div class="color-option-container text-center">
                                 <div class="color-option" style="background: #a4a7b6 " data-color="CoolGray"
-                                    data-image="img/clothing/oneSet7.jpg" data-zoom-image="img/clothing/oneSet7.jpg"
+                                    data-image="img/clothing/partyDress3.jpg" data-zoom-image="img/clothing/partyDress3.jpg"
                                     title="CoolGray"></div>
                                 <small class="color-name mt-1 d-block text-tertiary-custom">Cool Gray</small>
                             </div>
                             <div class="color-option-container text-center">
                                 <div class="color-option" style="background: #915851 " data-color="ClayBrown"
-                                    data-image="img/clothing/oneSet9.jpg" data-zoom-image="img/clothing/oneSet9.jpg"
+                                    data-image="img/clothing/partyDress4.jpg" data-zoom-image="img/clothing/partyDress4.jpg"
                                     title="ClayBrown"></div>
                                 <small class="color-name mt-1 d-block text-tertiary-custom">Clay Brown</small>
                             </div>

@@ -78,7 +78,7 @@
           <div class="col-lg-6 mb-4">
             <div class="image-zoom-container" id="imageZoomContainer">
               <img
-                src="img/HomeAccessories/towel1.jpg"
+                src="img/HomeAccessories/scarf1.jpg"
                 alt="Cushion Cover"
                 class="product-image"
                 id="mainProductImage"
@@ -86,7 +86,7 @@
               <div class="zoom-lens" id="zoomLens"></div>
               <div class="zoom-result" id="zoomResult">
                 <img
-                  src="img/HomeAccessories/towel1.jpg"
+                  src="img/HomeAccessories/scarf1.jpg"
                   alt="Zoomed Product"
                   id="zoomResultImg"
                 />
@@ -98,60 +98,64 @@
           <!-- Product Information -->
           <div class="col-lg-6">
             <!-- Product Title -->
-            <h1 class="product-title">Towel</h1>
+            <h1 class="product-title">scarf</h1>
 
             <!-- Color Selection -->
             <div class="color-section mb-4">
               <h5 class="text-primary-custom mb-3">Design</h5>
               <div class="color-options d-flex gap-3 flex-wrap">
                 <div class="color-option-container text-center">
-                  <div
+                  <img
                     class="color-option active"
-                    style="background: #dac393"
+                    src="img/HomeAccessories/scarf1.jpg"
                     data-color="Rosy Brown"
-                    data-image="img/HomeAccessories/towel1.jpg"
-                    data-zoom-image="img/HomeAccessories/towel1.jpg"
+                    data-image="img/HomeAccessories/scarf1.jpg"
+                    data-zoom-image="img/HomeAccessories/scarf1.jpg"
+                    alt="Rosy Brown"
                     title="RosyBrown"
-                  ></div>
+                  ></img>
                   <small class="color-name mt-1 d-block text-tertiary-custom"
                     >Rosy Brown</small
                   >
                 </div>
                 <div class="color-option-container text-center">
-                  <div
-                    class="color-option"
-                    style="background: #c09337"
+                  <img
+                    class="color-option active"
+                    src="img/HomeAccessories/scarf2.jpg"
                     data-color="Floral Motifs"
-                    data-image="img/HomeAccessories/towel2.jpg"
-                    data-zoom-image="img/HomeAccessories/towel2.jpg"
+                    data-image="img/HomeAccessories/scarf2.jpg"
+                    data-zoom-image="img/HomeAccessories/scarf2.jpg"
+                    alt="Floral Motifs"
                     title="FloralMotifs"
-                  ></div>
+                  ></img>
                   <small class="color-name mt-1 d-block text-tertiary-custom"
                     >Floral Motifs</small
                   >
                 </div>
                 <div class="color-option-container text-center">
-                  <div
-                    class="color-option"
-                    style="background: #387eb8"
+                  <img
+                    class="color-option active"
+                    src="img/HomeAccessories/scarf3.jpg"
                     data-color="Art"
-                    data-image="img/HomeAccessories/towel3.jpg"
-                    data-zoom-image="img/HomeAccessories/towel3.jpg"
+                    data-image="img/HomeAccessories/scarf3.jpg"
+                    data-zoom-image="img/HomeAccessories/scarf3.jpg"
+                    alt="Art"
                     title="Art"
-                  ></div>
+                  ></img>
                   <small class="color-name mt-1 d-block text-tertiary-custom"
                     >Art</small
                   >
                 </div>
                 <div class="color-option-container text-center">
-                  <div
-                    class="color-option"
-                    style="background: #234957"
+                  <img
+                    class="color-option active"
+                    src="img/HomeAccessories/scarf4.jpg"
                     data-color="Mahout"
-                    data-image="img/HomeAccessories/towel4.jpg"
-                    data-zoom-image="img/HomeAccessories/towel4.jpg"
+                    data-image="img/HomeAccessories/scarf4.jpg"
+                    data-zoom-image="img/HomeAccessories/scarf4.jpg"
+                    alt="Mahout"
                     title="Mahout"
-                  ></div>
+                  ></img>
                   <small class="color-name mt-1 d-block text-tertiary-custom"
                     >Mahout
                   </small>
@@ -297,9 +301,9 @@
               role="tabpanel"
             >
               <div class="mt-4">
-                <h3 class="text-primary-custom">Towel</h3>
+                <h3 class="text-primary-custom">scarf</h3>
                 <p class="mb-3">
-                  Highly absorbent towel with a plush feel, perfect for daily
+                  Highly absorbent scarf with a plush feel, perfect for daily
                   use. Quick-drying and gentle on the skin for a refreshing
                   experience
                 </p>
