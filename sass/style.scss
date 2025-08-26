@@ -10,7 +10,11 @@ $carousel-indicator-active-bg: #804e22;
 $pagination-bg: #804e22;
 $pagination-color: white;
 $nav-link-padding-y:.8rem;
-
+$position-values: (
+  0: 0,
+  50: 20px,
+  100: 100%
+);
 
 
 
@@ -18,9 +22,7 @@ $nav-link-padding-y:.8rem;
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 //custom css
 
-#home-link,#features-link,#product-link,#location-link{
-    scroll-margin-top: 92px;
-}
+
 
 .navbar-brand-logo {
   height: 3.5rem;
@@ -38,6 +40,9 @@ $nav-link-padding-y:.8rem;
 }
 html{
   scroll-behavior: smooth;
+}
+#home-link,#about-link,#features-link,#product-link,#location-link{
+    scroll-margin-top: 91px;
 }
 .icon-text {
   font-family: "Badhorse";
@@ -98,6 +103,23 @@ footer {
 // First item animation
 .dynamic-txts li:nth-child(1) {
   animation-delay: 0s;
+}
+
+#backToTopBtn {
+    z-index: 9999;
+    display: none; /* Hidden by default */
+    border-radius: 50%;
+    padding: 12px 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: opacity 0.3s ease;
+}
+#backToTopBtn.show {
+    display: block;
+    opacity: 1;
+}
+
+#backToTopBtn.hide {
+    opacity: 0;
 }
 
 // Second item animation

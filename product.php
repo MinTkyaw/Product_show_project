@@ -20,8 +20,8 @@
         aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
-        <ul class="navbar-nav mx-auto my-4 my-lg-0 ">
+      <div class="collapse flex-grow-0 navbar-collapse text-center" id="navbarSupportedContent">
+        <!-- <ul class="navbar-nav mx-auto my-4 my-lg-0 ">
           <li class="nav-item d-flex align-items-center m-auto text-center">
             <a class="nav-link active text-white fs-6 animate__animated animate__fadeInDown animate__delay-02s"
               aria-current="page" href="index.php
@@ -39,8 +39,8 @@
             <a class="nav-link text-white fs-6 animate__animated animate__fadeInDown animate__delay-05s" href="#"
               data-i18n="nav_contact">Contact</a>
           </li>
-        </ul>
-        <button id="langSwitch" class="btn btn-light text-primary animate__animated animate__fadeInDown animate__delay-06s">
+        </ul> -->
+        <button id="langSwitch" class="btn btn-light text-primary animate__animated animate__fadeInDown ">
           <span class="english-text">မြန်မာ</span>
           <span class="myanmar-text hidden">English</span>
         </button>
@@ -326,6 +326,7 @@
     </ul>
   </nav>
   <!-- footer -->
+
   <footer class=" py-4 text-primary">
     <!-- Changed background -->
     <div class="container">

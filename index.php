@@ -8,69 +8,65 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
 </head>
-    <style>
-        #home-link,#features-link,#product-link,#location-link{
-            scroll-margin-top: 92px;
-        }
-    </style>
+
 <body>
-        <!-- Navigation bar -->
-        <nav class="navbar navbar-expand-xl bg-primary fixed-top">
-            <!-- Container for the navigation bar -->
-            <div class="container">
-                <!-- Logo of the navigation bar -->
-                <a class="navbar-brand text-white icon-text animate__animated animate__fadeInDown d-flex align-items-center"
-                    href="index.php"><img src="img/Zarifa-logo.svg" alt="zarifa-logo"
-                        class="navbar-brand-logo" /><span>Zarifa</span></a>
-                <!-- Toggle button for collapsing the navigation bar -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!-- Collapsible navigation bar items -->
-                <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto my-4 my-lg-0 column-gap-4 ">
-                        <!-- Home page link -->
-                        <li class="nav-item d-flex align-items-center m-auto text-center">
-                            <a class="nav-link active text-white  animate__animated animate__fadeInDown animate__delay-02s"
-                                aria-current="page" href="#home-link
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-xl bg-primary fixed-top">
+        <!-- Container for the navigation bar -->
+        <div class="container">
+            <!-- Logo of the navigation bar -->
+            <a class="navbar-brand text-white icon-text animate__animated animate__fadeInDown d-flex align-items-center"
+                href="index.php"><img src="img/Zarifa-logo.svg" alt="zarifa-logo"
+                    class="navbar-brand-logo" /><span>Zarifa</span></a>
+            <!-- Toggle button for collapsing the navigation bar -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Collapsible navigation bar items -->
+            <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto my-4 my-lg-0 column-gap-4 ">
+                    <!-- Home page link -->
+                    <li class="nav-item d-flex align-items-center m-auto text-center">
+                        <a class="nav-link active text-white  animate__animated animate__fadeInDown animate__delay-02s"
+                            aria-current="page" href="#home-link
                     " data-i18n="nav_home">Home</a>
-                        </li>
-                        <!-- About page link -->
-                        <li class="nav-item d-flex align-items-center m-auto">
-                            <a class="nav-link text-white animate__animated animate__fadeInDown animate__delay-03s" href="#about-link"
-                                data-i18n="nav_about">About</a>
-                        </li>
-                        <!-- Features page link -->
-                        <li class="nav-item d-flex align-items-center m-auto">
-                            <a class="nav-link text-white animate__animated animate__fadeInDown animate__delay-03s" href="#features-link"
-                                data-i18n="nav_features">Features</a>
-                        </li>
-                        <!-- Products page link -->
-                        <li class="nav-item d-flex align-items-center m-auto">
-                            <a class="nav-link text-white animate__animated animate__fadeInDown animate__delay-04s" href="#product-link"
-                                data-i18n="nav_products">Products</a>
-                        </li>
-                        <!--New Products page link -->
-                        <li class="nav-item d-flex align-items-center m-auto">
-                            <a class="nav-link text-white animate__animated animate__fadeInDown animate__delay-04s" href="product.php"
-                                data-i18n="nav_nproducts">Products</a>
-                        </li>
-                        <!-- Contact page link -->
-                        <li class="nav-item d-flex align-items-center m-auto">
-                            <a class="nav-link text-white  animate__animated animate__fadeInDown animate__delay-05s" href="#location-link"
-                                data-i18n="nav_contact">Contact</a>
-                        </li>
-                    </ul>
-                    <!-- Language switch button -->
-                    <button id="langSwitch" class="btn btn-light text-primary animate__animated animate__fadeInDown animate__delay-06s">
-                        <span class="english-text">မြန်မာ</span>
-                        <span class="myanmar-text hidden">English</span>
-                    </button>
-                </div>
+                    </li>
+                    <!-- About page link -->
+                    <li class="nav-item d-flex align-items-center m-auto">
+                        <a class="nav-link text-white animate__animated animate__fadeInDown animate__delay-03s" href="#about-link"
+                            data-i18n="nav_about">About</a>
+                    </li>
+                    <!-- Features page link -->
+                    <li class="nav-item d-flex align-items-center m-auto">
+                        <a class="nav-link text-white animate__animated animate__fadeInDown animate__delay-03s" href="#features-link"
+                            data-i18n="nav_features">Features</a>
+                    </li>
+                    <!-- Products page link -->
+                    <li class="nav-item d-flex align-items-center m-auto">
+                        <a class="nav-link text-white animate__animated animate__fadeInDown animate__delay-04s" href="#product-link"
+                            data-i18n="nav_products">Products</a>
+                    </li>
+                    <!--New Products page link -->
+                    <li class="nav-item d-flex align-items-center m-auto">
+                        <a class="nav-link text-white animate__animated animate__fadeInDown animate__delay-04s" href="product.php"
+                            data-i18n="nav_nproducts">Products</a>
+                    </li>
+                    <!-- Contact page link -->
+                    <li class="nav-item d-flex align-items-center m-auto">
+                        <a class="nav-link text-white  animate__animated animate__fadeInDown animate__delay-05s" href="#location-link"
+                            data-i18n="nav_contact">Contact</a>
+                    </li>
+                </ul>
+                <!-- Language switch button -->
+                <button id="langSwitch" class="btn btn-light text-primary animate__animated animate__fadeInDown animate__delay-06s">
+                    <span class="english-text">မြန်မာ</span>
+                    <span class="myanmar-text hidden">English</span>
+                </button>
             </div>
-        </nav>
+        </div>
+    </nav>
     <br />
     <!-- Hero section -->
     <!-- This section displays a background image with a heading and an image. -->
@@ -89,6 +85,9 @@
             <img src="img/dance-girl.svg" alt="" class="main-img" />
         </div>
     </section>
+    <button onclick="scrollToTop()" id="backToTopBtn" class="btn btn-primary border border-white position-fixed bottom-50 end-50 z-50">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
     <!-- End of hero section. -->
     <!-- about us Section  -->
     <section class="py-5" id="about-link">
@@ -134,7 +133,7 @@
         </div>
     </section>
     <!-- features -->
-    <section id="features-link" class="py-5 mt-md-5 bg-primary text-white" >
+    <section id="features-link" class="py-5 mt-md-5 bg-primary text-white">
         <div class="container">
             <div class="row justify-content-center text-center mb-3">
                 <div class="col-lg-8 col-xl-7">
@@ -239,7 +238,7 @@
                 <h2 id="products-title" class="display-6 fw-bold m-0" data-i18n="products_title">
                     Our Products
                 </h2>
-                <a href="product.php" class="btn px-4 btn-primary text-white" data-i18n="products_more">See More</a>
+                <a href="product.php" class="btn px-4 btn-primary text-white ps-3" data-i18n="products_more">See More</a>
             </div>
             <div id="profileCarousel" class="carousel slide" data-bs-ride="carousel" data-aos="zoom-in-up">
                 <!-- Indicators at the top -->
@@ -420,16 +419,22 @@
                         <!-- Smaller heading -->
                         <ul class="list-unstyled" data-aos="fade-up">
                             <li class="mb-2">
-                                <a href="#" class="text-decoration-none" data-i18n="nav_home">Home</a>
+                                <a href="#home-link" class="text-decoration-none" data-i18n="nav_home">Home</a>
                             </li>
                             <li class="mb-2">
-                                <a href="#" class="text-decoration-none" data-i18n="nav_about">About</a>
+                                <a href="#about-link" class="text-decoration-none" data-i18n="nav_about">About</a>
                             </li>
                             <li class="mb-2">
-                                <a href="#" class="text-decoration-none" data-i18n="nav_products">Product</a>
+                                <a href="#features-link" class="text-decoration-none" data-i18n="nav_features">Features</a>
                             </li>
                             <li class="mb-2">
-                                <a href="#" class="text-decoration-none" data-i18n="nav_contact">Contact</a>
+                                <a href="#product-link" class="text-decoration-none" data-i18n="nav_products">Product</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="product.php" class="text-decoration-none" data-i18n="nav_nproducts">New Product</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#location-link" class="text-decoration-none" data-i18n="nav_contact">Contact</a>
                             </li>
                         </ul>
                     </div>

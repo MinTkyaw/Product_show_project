@@ -53,14 +53,13 @@ const translations = {
 		footer_terms: "Terms of Service",
 		footer_copyright: "© 2025 Zarifa.dev. All rights reserved.",
 		product_title: "Cotton and Silk",
-		product_description:"Myanmar silk and cotton products combine the beauty of traditional craftsmanship with the elegance of modern design and premium quality. Our soft and refined cotton fabrics, along with vibrantly beautiful silk, are perfectly crafted for gifts, clothing, home decoration, and more—designed to suit your needs and enhance your everyday life.",
+		product_description:
+			"Myanmar silk and cotton products combine the beauty of traditional craftsmanship with the elegance of modern design and premium quality. Our soft and refined cotton fabrics, along with vibrantly beautiful silk, are perfectly crafted for gifts, clothing, home decoration, and more—designed to suit your needs and enhance your everyday life.",
 		product_semi_title: "Our Products",
 		product_type: "Types",
 		product_type_clothing: "Clothing",
 		product_type_bedding: "Bedding",
 		product_type_homeAccessories: "Home Accessories",
-
-		
 	},
 	my: {
 		page_title: "Zarifa အထည်ချည်",
@@ -96,7 +95,7 @@ const translations = {
 		feature_fit_desc:
 			"စိတ်ချလက်ချ စဉ်းစားဖန်တီးထားသော အရွယ်အစားနှင့် အဖြတ်အတောများက ကိုယ်ခန္ဓာနှင့် ကိုက်ညီမှုရှိစေပြီး တစ်နေ့လုံး သက်သောင့်သက်သာဖြစ်စေပါသည်။",
 		products_title: "ကျွန်ုပ်တို့၏ ထုတ်ကုန်များ",
-		products_more: "နောက်ထပ်ကြည့်ရန်",
+		products_more: "ထုတ်ကုန်များကြည့်ရန်",
 		product_p1_title: "နှစ်ယောက် အိပ်ယာခင်း",
 		product_p1_para:
 			"သင့်အိပ်ခန်းကို ခမ်းနားတင့်တယ်သောအထိအတွေ့ ထည့်သွင်းချင်သူများအတွက် ဒီအိပ်ယာခင်းသည် အလွန်သင့်တော်ပါသည်။ ပေါ့ပါး၍ လေဝင်လေထွက်ကောင်းသည့် ဝါချည်ဖြင့်ပြုလုပ်ထားပြီး လှပသော ဆင်ပုံလေးများနှင့် အသေးစိတ်ဒီဇိုင်းလက်ရာများကို ဖော်ပြထားသဖြင့် သင့်အိမ်အတွင်း ခမ်းနားထည်ဝ်သောအလှအပ တစ်ရပ်ကို လက်ဆင့်ကမ်းပေးနိုင်ပါသည်။",
@@ -117,7 +116,8 @@ const translations = {
 		footer_terms: "ဝန်ဆောင်မှု၏ စည်းမျဉ်းများ",
 		footer_copyright: "© 2025 Zarifa.dev. အခွင့်အရေးများ ထိန်းသိမ်းထားသည်။",
 		product_title: "ပိုးထည် နှင့် ချည်ထည်",
-		product_description:"မြန်မာပိုးထည်နှင့် ချည်ထည်များသည် ရိုးရာလက်မှုပညာနှင့် ခေတ်မီဒီဇိုင်းအဆင့်မြင့်အရည်အသွေးကို ပေါင်းစည်းထားသော ထုတ်ကုန်ပစ္စည်းများဖြစ်ပါသည်။ နူးညံ့သော ချည်အထည်များနှင့် အရောင်လှပတင့်တယ်သော ပိုးထည်များသည် လက်ဆောင်ပစ္စည်း၊ အဝတ်အစား၊ အိမ်အလှဆင် အစရှိသဖြင့် သင့်ဌာနနှင့် သင့်ရဲ့နေ့စဉ်ဘဝအတွက် တိကျသင့်တော်စွာ ဖန်တီးထားပါသည်။",
+		product_description:
+			"မြန်မာပိုးထည်နှင့် ချည်ထည်များသည် ရိုးရာလက်မှုပညာနှင့် ခေတ်မီဒီဇိုင်းအဆင့်မြင့်အရည်အသွေးကို ပေါင်းစည်းထားသော ထုတ်ကုန်ပစ္စည်းများဖြစ်ပါသည်။ နူးညံ့သော ချည်အထည်များနှင့် အရောင်လှပတင့်တယ်သော ပိုးထည်များသည် လက်ဆောင်ပစ္စည်း၊ အဝတ်အစား၊ အိမ်အလှဆင် အစရှိသဖြင့် သင့်ဌာနနှင့် သင့်ရဲ့နေ့စဉ်ဘဝအတွက် တိကျသင့်တော်စွာ ဖန်တီးထားပါသည်။",
 		product_semi_title: "ကျွန်ုပ်တို့၏ ထုတ်ကုန်များ",
 		product_type: "အမျိုးအစားများ",
 		product_type_clothing: "အဝတ်အစား",
@@ -225,6 +225,28 @@ function updateFontSizeForLanguage(lang) {
 		contactTitle?.classList.remove("myanmar-about-size");
 		ProductMain?.classList.remove("myanmar-product-title-size");
 	}
+}
+
+// Get the button
+const backToTopBtn = document.getElementById("backToTopBtn");
+
+// Show button when scrolled down
+window.addEventListener("scroll", () => {
+	if (
+		document.body.scrollTop > 200 ||
+		document.documentElement.scrollTop > 200
+	) {
+		backToTopBtn.classList.add("show");
+		backToTopBtn.classList.remove("hide");
+	} else {
+		backToTopBtn.classList.remove("show");
+		backToTopBtn.classList.add("hide");
+	}
+});
+
+// Scroll smoothly to top
+function scrollToTop() {
+	window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
 AOS.init({
