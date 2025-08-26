@@ -8,119 +8,76 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
 </head>
-
+    <style>
+        #home-link,#features-link,#product-link,#location-link{
+            scroll-margin-top: 92px;
+        }
+    </style>
 <body>
-    <!-- <nav class="navbar navbar-expand-lg bg-primary nav-shadow pt-0 fixed-top">
-        <div class="container justify-content-between">
-            <a class="navbar-brand text-white icon-text animate__animated animate__fadeInDown d-flex align-items-center"
-                href="index.php
-          "><img src="img/Zarifa-logo.svg" alt="zarifa-logo" class="navbar-brand-logo" /><span>Zarifa</span></a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-white align-items-center">
-                    <li class="nav-item">
-                        <a class="nav-link active text-white fs-6 animate__animated animate__fadeInDown"
-                            aria-current="page" href="#" data-i18n="nav_home"><i
-                                class="fa-solid fa-house nav-icons-padding"></i>Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white animate__animated animate__fadeInDown" href="#"
-                            data-i18n="nav_about"><i class="fa-solid fa-circle-info nav-icons-padding"></i>About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white animate__animated animate__fadeInDown" href="#"
-                            data-i18n="nav_products"><i class="fa-solid fa-shop nav-icons-padding"></i>Products</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white fs-6 animate__animated animate__fadeInDown" href="#"
-                            data-i18n="nav_contact"><i
-                                class="fa-solid fa-address-book nav-icons-padding"></i>Contact</a>
-                    </li>
-                    <li class="nav-item"></li>
-                </ul>
-            </div>
-            <button id="langSwitch" class="btn btn-sm btn-light">
-                <span class="english-text">မြန်မာ</span>
-                <span class="myanmar-text hidden">English</span>
-            </button>
-        </div>
-    </nav> -->
-    <nav class="navbar navbar-expand-lg bg-primary fixed-top">
-        <div class="container">
-            <a class="navbar-brand text-white icon-text animate__animated animate__fadeInDown d-flex align-items-center"
-                href="index.php"><img src="img/Zarifa-logo.svg" alt="zarifa-logo"
-                    class="navbar-brand-logo" /><span>Zarifa</span></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto my-4 my-lg-0 ">
-                    <li class="nav-item d-flex align-items-center m-auto text-center">
-                        <a class="nav-link active text-white fs-6 animate__animated animate__fadeInDown animate__delay-02s"
-                            aria-current="page" href="index.php
-                " data-i18n="nav_home">Home</a>
-                    </li>
-                    <li class="nav-item d-flex align-items-center m-auto">
-                        <a class="nav-link text-white animate__animated animate__fadeInDown animate__delay-03s" href="#"
-                            data-i18n="nav_about">About</a>
-                    </li>
-                    <li class="nav-item d-flex align-items-center m-auto">
-                        <a class="nav-link text-white animate__animated animate__fadeInDown animate__delay-04s" href="product.php"
-                            data-i18n="nav_products">Products</a>
-                    </li>
-                    <li class="nav-item d-flex align-items-center m-auto">
-                        <a class="nav-link text-white fs-6 animate__animated animate__fadeInDown animate__delay-05s" href="#"
-                            data-i18n="nav_contact">Contact</a>
-                    </li>
-                </ul>
-                <button id="langSwitch" class="btn btn-light text-primary animate__animated animate__fadeInDown animate__delay-06s">
-                    <span class="english-text">မြန်မာ</span>
-                    <span class="myanmar-text hidden">English</span>
+        <!-- Navigation bar -->
+        <nav class="navbar navbar-expand-xl bg-primary fixed-top">
+            <!-- Container for the navigation bar -->
+            <div class="container">
+                <!-- Logo of the navigation bar -->
+                <a class="navbar-brand text-white icon-text animate__animated animate__fadeInDown d-flex align-items-center"
+                    href="index.php"><img src="img/Zarifa-logo.svg" alt="zarifa-logo"
+                        class="navbar-brand-logo" /><span>Zarifa</span></a>
+                <!-- Toggle button for collapsing the navigation bar -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
+                <!-- Collapsible navigation bar items -->
+                <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto my-4 my-lg-0 column-gap-4 ">
+                        <!-- Home page link -->
+                        <li class="nav-item d-flex align-items-center m-auto text-center">
+                            <a class="nav-link active text-white  animate__animated animate__fadeInDown animate__delay-02s"
+                                aria-current="page" href="#home-link
+                    " data-i18n="nav_home">Home</a>
+                        </li>
+                        <!-- About page link -->
+                        <li class="nav-item d-flex align-items-center m-auto">
+                            <a class="nav-link text-white animate__animated animate__fadeInDown animate__delay-03s" href="#about-link"
+                                data-i18n="nav_about">About</a>
+                        </li>
+                        <!-- Features page link -->
+                        <li class="nav-item d-flex align-items-center m-auto">
+                            <a class="nav-link text-white animate__animated animate__fadeInDown animate__delay-03s" href="#features-link"
+                                data-i18n="nav_features">Features</a>
+                        </li>
+                        <!-- Products page link -->
+                        <li class="nav-item d-flex align-items-center m-auto">
+                            <a class="nav-link text-white animate__animated animate__fadeInDown animate__delay-04s" href="#product-link"
+                                data-i18n="nav_products">Products</a>
+                        </li>
+                        <!--New Products page link -->
+                        <li class="nav-item d-flex align-items-center m-auto">
+                            <a class="nav-link text-white animate__animated animate__fadeInDown animate__delay-04s" href="product.php"
+                                data-i18n="nav_nproducts">Products</a>
+                        </li>
+                        <!-- Contact page link -->
+                        <li class="nav-item d-flex align-items-center m-auto">
+                            <a class="nav-link text-white  animate__animated animate__fadeInDown animate__delay-05s" href="#location-link"
+                                data-i18n="nav_contact">Contact</a>
+                        </li>
+                    </ul>
+                    <!-- Language switch button -->
+                    <button id="langSwitch" class="btn btn-light text-primary animate__animated animate__fadeInDown animate__delay-06s">
+                        <span class="english-text">မြန်မာ</span>
+                        <span class="myanmar-text hidden">English</span>
+                    </button>
+                </div>
             </div>
-        </div>
-    </nav>
-
-
-    <!-- <br /><br />
-    <section class="bg-primary py-2">
-      <div class="container">
-        <div class="row gx-4 align-items-center">
-          <div class="col-md-6">
-            <div class="me-md-2 me-lg-5">
-              <img
-                src="img/hero-section-illustration.svg"
-                alt="Myanmar Couple"
-                class="img-fluid rounded-3"
-              />
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="ms-md-2 ms-lg-5 mt-5 mt-md-0">
-              <h1
-                id="hero-title"
-                class="display-5 text-center fw-bolder text-light myanmar-font-size"
-                data-i18n="hero_title"
-              >
-                Let’s carry the beauty of <br />
-                <span class="text-dark">Myanmar culture</span><br />
-                into the future.
-              </h1>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
+        </nav>
     <br />
-    <section class="w-100 bg-cover hero-section__height overflow-hidden animate__animated animate__fadeIn" style="background-image: url(img/hero-section-bg.svg)">
+    <!-- Hero section -->
+    <!-- This section displays a background image with a heading and an image. -->
+    <section class="w-100 bg-cover hero-section__height overflow-hidden animate__animated animate__fadeIn" style="background-image: url(img/hero-section-bg.svg)" id="home-link">
+        <!-- Container for the hero section. -->
         <div class="container">
+            <!-- Heading for the hero section. -->
             <h1 id="hero-title" class="fw-bolder w-50 myanmar-font-size position-absolute top-25 pt-5 display-4 animate__animated animate__fadeInDown .animate__delay-02s"
                 style="color:#303a52"
                 data-i18n="hero_title">
@@ -128,18 +85,25 @@
                 <span class="text-dark">Myanmar culture</span><br />
                 into the future.
             </h1>
+            <!-- Image for the hero section. -->
             <img src="img/dance-girl.svg" alt="" class="main-img" />
         </div>
     </section>
+    <!-- End of hero section. -->
     <!-- about us Section  -->
     <section class="py-5" id="about-link">
+        <!-- Container for the section -->
         <div class="container">
+            <!-- Row for the section -->
             <div class="row gx-4 align-items-center justify-content-between">
+                <!-- Column for the text content -->
                 <div class="col-md-6 order-1 order-md-1">
+                    <!-- Heading for the section -->
                     <div class="mt-3 mt-md-0 me-md-3 me-lg-5 " data-aos="fade-right">
                         <h2 id="about-title" class="display-6 fw-bold text-primary" data-i18n="about_title">
                             About Us
                         </h2>
+                        <!-- Description of the company -->
                         <p class="lh-lg mb-2" data-i18n="about_desc">
                             At <b class="text-primary">Zarifa</b>, our collections blend the
                             softness of pure cotton with the elegance of authentic silk -
@@ -148,13 +112,19 @@
                         </p>
                     </div>
                 </div>
+                <!-- Column for the images of the company's products -->
                 <div class="col-md-6 order-2 order-md-2">
+                    <!-- Row for the images -->
                     <div class="row gx-2 gx-lg-3">
+                        <!-- Column for the cotton tower image -->
                         <div class="col-6" data-aos="flip-up">
+                            <!-- Image of the cotton tower product -->
                             <img class="img-fluid rounded-3 nav-shadow" src="./img/cotton-tower.svg"
                                 alt="Zarifa product" />
                         </div>
+                        <!-- Column for the silk pajama image -->
                         <div class="col-6" data-aos="flip-right">
+                            <!-- Image of the silk pajama product -->
                             <img class="img-fluid rounded-3 nav-shadow" src="./img/silk-pajama.svg"
                                 alt="Zarifa product" />
                         </div>
@@ -164,7 +134,7 @@
         </div>
     </section>
     <!-- features -->
-    <section class="py-5 mt-md-5 bg-primary text-white">
+    <section id="features-link" class="py-5 mt-md-5 bg-primary text-white" >
         <div class="container">
             <div class="row justify-content-center text-center mb-3">
                 <div class="col-lg-8 col-xl-7">
@@ -287,7 +257,7 @@
                             <div class="col-md-5 col-lg-4 ">
                                 <!-- Wider image column -->
                                 <img src="./img/bedding/double1.jpg" class="img-fluid rounded shadow-sm object-fit-cover "
-                                    alt="Jane Smith" style="aspect-ratio: 1/1;"/>
+                                    alt="Jane Smith" style="aspect-ratio: 1/1;" />
                             </div>
                             <div class=" col-md-7 col-lg-6">
                                 <!-- Wider content column -->
@@ -309,7 +279,7 @@
                         <div class="row align-items-center justify-content-center">
                             <div class="col-md-5 col-lg-4">
                                 <img src="./img/HomeAccessories/coverBlue.png" class="img-fluid rounded shadow-sm object-fit-cover"
-                                    alt="Mike Johnson" style="aspect-ratio: 1/1;"/>
+                                    alt="Mike Johnson" style="aspect-ratio: 1/1;" />
                             </div>
                             <div class=" col-md-7 col-lg-6">
                                 <div class="card-body ms-md-5 mt-3 mt-md-0">
@@ -333,7 +303,7 @@
                         <div class="row align-items-center justify-content-center">
                             <div class="col-md-5 col-lg-4 ">
                                 <img src="./img/clothing/paso1.webp" class="img-fluid rounded shadow-sm object-fit-cover"
-                                    alt="Sarah Williams" style="aspect-ratio: 1/1;"/>
+                                    alt="Sarah Williams" style="aspect-ratio: 1/1;" />
                             </div>
                             <div class="col-md-7 col-lg-6">
                                 <div class="card-body ms-md-5 mt-3 mt-md-0">

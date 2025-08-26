@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
 @import "../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 @import "../node_modules/animate.css/animate.min.css";
-$navbar-nav-link-padding-x: 1.5rem;
+
 $font-family-sans-serif: "Bricolage Grotesque", sans-serif;
 $body-bg: #eee9e6;
 $primary: #804e22;
@@ -9,12 +9,18 @@ $h6-font-size: 1.1rem;
 $carousel-indicator-active-bg: #804e22;
 $pagination-bg: #804e22;
 $pagination-color: white;
+$nav-link-padding-y:.8rem;
+
 
 
 
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 //custom css
+
+#home-link,#features-link,#product-link,#location-link{
+    scroll-margin-top: 92px;
+}
 
 .navbar-brand-logo {
   height: 3.5rem;
@@ -29,6 +35,9 @@ $pagination-color: white;
 @font-face {
   font-family: "Badhorse";
   src: url("../Badhorse-Font/Badhorse-Regular.otf");
+}
+html{
+  scroll-behavior: smooth;
 }
 .icon-text {
   font-family: "Badhorse";
@@ -186,6 +195,9 @@ footer {
 }
 .navbar-toggler:hover{
   background-color: rgba(255, 255, 255, 0.941); // slightly transparent on hover
+}
+@media (max-width: px) {
+
 }
 // nav responsive
 @media (max-width: 991px) {
