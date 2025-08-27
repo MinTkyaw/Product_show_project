@@ -412,7 +412,7 @@ function getProductName($product, $fallbackName)
     }
 
     document.addEventListener("DOMContentLoaded", function() {
-      setStaggeredAnimations();
+        setStaggeredAnimations();
     });
 
     function showCards(type) {
