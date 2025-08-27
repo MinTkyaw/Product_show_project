@@ -36,11 +36,11 @@
                 <!-- Product Image -->
                 <div class="col-lg-6 mb-4">
                     <div class="image-zoom-container" id="imageZoomContainer">
-                        <img src="img/clothing/oneSet1.jpg" alt="Cushion Cover" class="product-image"
+                        <img src="img/clothing/partyDress1.jpg" alt="Cushion Cover" class="product-image"
                             id="mainProductImage">
                         <div class="zoom-lens" id="zoomLens"></div>
                         <div class="zoom-result" id="zoomResult">
-                            <img src="img/clothing/oneSet1.jpg" alt="Zoomed Product" id="zoomResultImg">
+                            <img src="img/clothing/partyDress1.jpg" alt="Zoomed Product" id="zoomResultImg">
                         </div>
                         <div class="zoom-instructions">
                             ✨ Hover to see magical zoom
@@ -51,7 +51,7 @@
                 <!-- Product Information -->
                 <div class="col-lg-6">
                     <!-- Product Title -->
-                    <h1 class="product-title">Women's Readymade Myanmar Traditional Outfit (One Set)</h1>
+                    <h1 class="product-title">WomenWear3</h1>
 
                     <!-- Color Selection -->
                     <div class="color-section mb-4">
@@ -60,10 +60,10 @@
                             <div class="color-option-container text-center">
                                 <img
                                     class="color-option active"
-                                    src="img/clothing/oneSet1.jpg"
+                                    src="img/clothing/partyDress1.jpg"
                                     data-color="Dusty Rose"
-                                    data-image="img/clothing/oneSet1.jpg"
-                                    data-zoom-image="img/clothing/oneSet1.jpg"
+                                    data-image="img/clothing/partyDress1.jpg"
+                                    data-zoom-image="img/clothing/partyDress1.jpg"
                                     alt="Dusty Rose"
                                     title="DustyRose" />
                                 <small class="color-name mt-1 d-block text-tertiary-custom">Dusty Rose</small>
@@ -71,35 +71,35 @@
                             <div class="color-option-container text-center">
                                 <img
                                     class="color-option active"
-                                    src="img/clothing/oneSet2.jpg"
-                                    data-color="Orchid Pink"
-                                    data-image="img/clothing/oneSet2.jpg"
-                                    data-zoom-image="img/clothing/oneSet2.jpg"
-                                    alt="Orchid Pink"
-                                    title="OrchidPink" />
-                                <small class="color-name mt-1 d-block text-tertiary-custom">Orchid Pink</small>
+                                    src="img/clothing/partyDress2.jpg"
+                                    data-color="Pale Silver"
+                                    data-image="img/clothing/partyDress2.jpg"
+                                    data-zoom-image="img/clothing/partyDress2.jpg"
+                                    alt="Pale Silver"
+                                    title="PaleSilver" />
+                                <small class="color-name mt-1 d-block text-tertiary-custom">Pale Silver</small>
                             </div>
                             <div class="color-option-container text-center">
                                 <img
                                     class="color-option active"
-                                    src="img/clothing/oneSet3.jpg"
-                                    data-color="Orchid Pink"
-                                    data-image="img/clothing/oneSet3.jpg"
-                                    data-zoom-image="img/clothing/oneSet3.jpg"
-                                    alt="Dark Plum"
-                                    title="DarkPlum" />
-                                <small class="color-name mt-1 d-block text-tertiary-custom">Dark Plum</small>
+                                    src="img/clothing/partyDress3.jpg"
+                                    data-color="Clay Brown"
+                                    data-image="img/clothing/partyDress3.jpg"
+                                    data-zoom-image="img/clothing/partyDress3.jpg"
+                                    alt="Cool Gray"
+                                    title="CoolGray" />
+                                <small class="color-name mt-1 d-block text-tertiary-custom">Cool Gray</small>
                             </div>
                             <div class="color-option-container text-center">
                                 <img
                                     class="color-option active"
-                                    src="img/clothing/oneSet4.jpg"
-                                    data-color="Sage Gray"
-                                    data-image="img/clothing/oneSet4.jpg"
-                                    data-zoom-image="img/clothing/oneSet4.jpg"
-                                    alt="Sage Gray"
-                                    title="Sage Gray" />
-                                <small class="color-name mt-1 d-block text-tertiary-custom">Sage Gray</small>
+                                    src="img/clothing/partyDress4.jpg"
+                                    data-color="Clay Brown"
+                                    data-image="img/clothing/partyDress4.jpg"
+                                    data-zoom-image="img/clothing/partyDress4.jpg"
+                                    alt="Clay Brown"
+                                    title="ClayBrown" />
+                                <small class="color-name mt-1 d-block text-tertiary-custom">Clay Brown</small>
                             </div>
                         </div>
                         <div class="selected-color mt-3">
@@ -143,16 +143,16 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <ul class="features-list">
-                                    <li>2-Piece Set: Blouse & Longyi (Htamein)</li>
-                                    <li>Premium Cotton or Silk Blend</li>
-                                    <li>Intricate Traditional Patterns</li>
+                                    <li>100% Cotton or Silk Blend</li>
+                                    <li>Traditional Floral Patterns</li>
+                                    <li>Comfortable Wrap Style</li>
                                 </ul>
                             </div>
                             <div class="col-md-6">
                                 <ul class="features-list">
-                                    <li>Comfort Fit with Tailored Finish</li>
                                     <li>Breathable & Lightweight</li>
                                     <li>Machine Washable</li>
+                                    <li>Fade Resistant</li>
                                 </ul>
                             </div>
                         </div>
@@ -187,11 +187,10 @@
                     <!-- Description Tab -->
                     <div class="tab-pane fade show active" id="description" role="tabpanel">
                         <div class="mt-4">
-                            <h3 class="text-primary-custom">Elegant Myanmar Readymade Outfit</h3>
-                            <p class="mb-3">This graceful women's traditional outfit includes a matching blouse and
-                                htamein.
-                                Designed for comfort and cultural charm, perfect for ceremonies, festivals, or daily
-                                elegance.</p>
+                            <h3 class="text-primary-custom">Elegant Htamein for Everyday Wear</h3>
+                            <p class="mb-3">This traditional women's longyi (Htamein) features soft fabric,
+                                vibrant patterns, and a graceful fit. Ideal for daily wear, festivals, or cultural
+                                events.</p>
                         </div>
                     </div>
 
@@ -202,15 +201,15 @@
                                 <tbody>
                                     <tr>
                                         <th scope="row">Material</th>
-                                        <td>Cotton, Silk Blend, or Satin</td>
+                                        <td>100% Cotton or Silk Blend</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">Set Includes</th>
-                                        <td>Blouse + Longyi (Htamein)</td>
+                                        <th scope="row">Length</th>
+                                        <td>40–44 inches (approx.)</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">Fit</th>
-                                        <td>Tailored / Comfort Fit</td>
+                                        <td>Free Size / Adjustable</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">Weight</th>
@@ -235,11 +234,11 @@
                         <div class="care-instructions mt-4">
                             <h3 class="text-primary-custom">Care Instructions</h3>
                             <ul>
-                                <li>Hand wash gently or use delicate machine cycle</li>
+                                <li>Hand wash or machine wash on gentle cycle</li>
                                 <li>Use mild detergent, avoid bleach</li>
-                                <li>Hang dry in shade to preserve fabric quality</li>
-                                <li>Iron blouse and longyi on low to medium heat</li>
-                                <li>Store on hangers or neatly folded</li>
+                                <li>Hang dry in shade to preserve color</li>
+                                <li>Iron on low heat as needed</li>
+                                <li>Store folded or on hangers to prevent creases</li>
                             </ul>
 
                         </div>
