@@ -31,11 +31,7 @@ body {
     color: var(--primary-color) !important;
 }
 
-.navbar-nav .nav-link {
-    font-weight: 500;
-    transition: color 0.3s;
-    font-size: 10px;
-}
+
 
 
 

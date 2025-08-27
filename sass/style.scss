@@ -49,6 +49,10 @@ html{
 .icon-text {
   font-family: "Badhorse";
 }
+.pt-12{
+  margin-top: 12rem;
+}
+
 .hero-section-bg {
   background-image: url(../img/myanmar-bg.svg);
   background-position: center;
@@ -59,6 +63,8 @@ html{
 .icon-font-size {
   font-size: 23px;
 }
+
+
 //card width and height
 
 // Custom footer styles
@@ -72,6 +78,8 @@ footer {
     }
   }
 
+}
+
   // Social icons
   .fab {
     font-size: 1.1rem;
@@ -84,7 +92,7 @@ footer {
       margin-bottom: 1.5rem;
     }
   }
-}
+
 // luxury link
 .text-justify {
   text-align: justify;

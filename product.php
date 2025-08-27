@@ -444,10 +444,10 @@ function getProductName($product, $fallbackName)
       document.body.classList.toggle("lang-my");
 
       // Save language state
-      if (document.body.classList.contains("lang-my")) {
-        localStorage.setItem("selectedLang", "my");
-      } else {
+      if (document.body.classList.contains("lang-en")) {
         localStorage.setItem("selectedLang", "en");
+      } else {
+        localStorage.setItem("selectedLang", "my");
       }
 
       // Re-render current product type title in new language
