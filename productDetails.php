@@ -1,3 +1,31 @@
+<?php
+$host = "localhost";
+$user = "root";
+$password = "";
+$db = "productshow";
+
+$conn = new mysqli($host, $user, $password, $db);
+if ($conn->connect_error) {
+    die(json_encode(['error' => 'Database connection failed']));
+}
+
+$product_id = $_GET['product_id'] ?? 0;
+
+// Get product info
+$stmt = $conn->prepare("SELECT * FROM products WHERE product_id = ?");
+$stmt->bind_param("i", $product_id);
+$stmt->execute();
+$product = $stmt->get_result()->fetch_assoc();
+
+// Get all variants
+$stmt2 = $conn->prepare("SELECT * FROM variants WHERE product_id = ?");
+$stmt2->bind_param("i", $product_id);
+$stmt2->execute();
+$variants = $stmt2->get_result()->fetch_all(MYSQLI_ASSOC);
+
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,56 +64,71 @@
                 <!-- Product Image -->
                 <div class="col-lg-6 mb-4">
                     <div class="image-zoom-container" id="imageZoomContainer">
-                        <img src="img/clothing/oneSet1.jpg" alt="Cushion Cover" class="product-image"
+                        <!-- Main Image -->
+                        <?php if (!empty($variants) && isset($variants[0]['image'])): ?>
+                        <img src="<?php echo htmlspecialchars($variants[0]['image']); ?>"
+                            alt="<?php echo htmlspecialchars($product['name']); ?>" class="product-image"
                             id="mainProductImage">
+                        <?php else: ?>
+                        <img src="img/default.jpg" alt="No image available" class="product-image" id="mainProductImage">
+                        <?php endif; ?>
+
+                        <!-- Zoom Lens + Result -->
                         <div class="zoom-lens" id="zoomLens"></div>
                         <div class="zoom-result" id="zoomResult">
-                            <img src="img/clothing/oneSet1.jpg" alt="Zoomed Product" id="zoomResultImg">
+                            <img src="<?php echo !empty($variants) && isset($variants[0]['image']) 
+                ? htmlspecialchars($variants[0]['image']) 
+                : 'img/default.jpg'; ?>" alt="Zoomed Product" id="zoomResultImg">
                         </div>
                         <div class="zoom-instructions">
                             ✨ Hover to see magical zoom
                         </div>
                     </div>
+
+                    <!-- Thumbnails (Other Variants) -->
+                    <?php if (!empty($variants)): ?>
+                    <div class="mt-3 d-flex gap-2">
+                        <?php foreach ($variants as $variant): ?>
+                        <img src="<?php echo htmlspecialchars($variant['image']); ?>" alt="Variant"
+                            class="variant-thumb" style="width: 70px; height: 70px; object-fit: cover; cursor: pointer;"
+                            onclick="changeImage('<?php echo htmlspecialchars($variant['image']); ?>')">
+                        <?php endforeach; ?>
+                    </div>
+                    <?php endif; ?>
                 </div>
+
+
 
                 <!-- Product Information -->
                 <div class="col-lg-6">
                     <!-- Product Title -->
-                    <h1 class="product-title">Women's Readymade Myanmar Traditional Outfit (One Set)</h1>
+                    <h1 class="product-title">Traditional Men's Longyi</h1>
 
                     <!-- Color Selection -->
                     <div class="color-section mb-4">
                         <h5 class="text-primary-custom mb-3">Available Colors</h5>
                         <div class="color-options d-flex gap-3 flex-wrap">
+                            <?php foreach ($variants as $index => $variant): ?>
                             <div class="color-option-container text-center">
-                                <div class="color-option active" style="background: #a0716d " data-color="DustyRose"
-                                    data-image="img/clothing/oneSet1.jpg" data-zoom-image="img/clothing/oneSet1.jpg"
-                                    title="DustyRose">
+                                <div class="color-option <?php echo $index === 0 ? 'active' : ''; ?>"
+                                    style="background: <?php echo htmlspecialchars($variant['designColor']); ?>;"
+                                    data-color="<?php echo htmlspecialchars($variant['designColor']); ?>"
+                                    data-image="<?php echo htmlspecialchars($variant['image']); ?>"
+                                    data-zoom-image="<?php echo htmlspecialchars($variant['image']); ?>"
+                                    title="<?php echo htmlspecialchars($variant['designColor']); ?>">
                                 </div>
-                                <small class="color-name mt-1 d-block text-tertiary-custom">Dusty Rose</small>
+                                <small class="color-name mt-1 d-block text-tertiary-custom">
+                                    <?php echo htmlspecialchars($variant['designColor']); ?>
+                                </small>
                             </div>
-                            <div class="color-option-container text-center">
-                                <div class="color-option" style="background: #d589c5 ;" data-color="Orchid Pink"
-                                    data-image="img/clothing/oneSet2.jpg" data-zoom-image="img/clothing/oneSet2.jpg"
-                                    title="OrchidPink"></div>
-                                <small class="color-name mt-1 d-block text-tertiary-custom">Orchid Pink</small>
-                            </div>
-                            <div class="color-option-container text-center">
-                                <div class="color-option" style="background: #461c4f " data-color="DarkPlum"
-                                    data-image="img/clothing/oneSet3.jpg" data-zoom-image="img/clothing/oneSet3.jpg"
-                                    title="DarkPlum"></div>
-                                <small class="color-name mt-1 d-block text-tertiary-custom">Dark Plum</small>
-                            </div>
-                            <div class="color-option-container text-center">
-                                <div class="color-option" style="background: #809a8d " data-color="SageGray"
-                                    data-image="img/clothing/oneSet4.jpg" data-zoom-image="img/clothing/oneSet4.jpg"
-                                    title="SageGray"></div>
-                                <small class="color-name mt-1 d-block text-tertiary-custom">Sage Gray</small>
-                            </div>
+                            <?php endforeach; ?>
                         </div>
+
+
+
                         <div class="selected-color mt-3">
                             <span class="text-tertiary-custom">Selected: </span>
-                            <span class="text-primary-custom fw-bold" id="selectedColor">Dusty Rose</span>
+                            <span class="text-primary-custom fw-bold" id="selectedColor">Sky Blue</span>
                         </div>
                     </div>
 
@@ -124,16 +167,16 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <ul class="features-list">
-                                    <li>2-Piece Set: Blouse & Longyi (Htamein)</li>
-                                    <li>Premium Cotton or Silk Blend</li>
-                                    <li>Intricate Traditional Patterns</li>
+                                    <li>100% Cotton or Traditional Fabric</li>
+                                    <li>Classic Checked or Plain Patterns</li>
+                                    <li>Comfortable Everyday Fit</li>
                                 </ul>
                             </div>
                             <div class="col-md-6">
                                 <ul class="features-list">
-                                    <li>Comfort Fit with Tailored Finish</li>
-                                    <li>Breathable & Lightweight</li>
+                                    <li>Breathable & Durable</li>
                                     <li>Machine Washable</li>
+                                    <li>Fade Resistant Colors</li>
                                 </ul>
                             </div>
                         </div>
@@ -168,11 +211,9 @@
                     <!-- Description Tab -->
                     <div class="tab-pane fade show active" id="description" role="tabpanel">
                         <div class="mt-4">
-                            <h3 class="text-primary-custom">Elegant Myanmar Readymade Outfit</h3>
-                            <p class="mb-3">This graceful women's traditional outfit includes a matching blouse and
-                                htamein.
-                                Designed for comfort and cultural charm, perfect for ceremonies, festivals, or daily
-                                elegance.</p>
+                            <h3 class="text-primary-custom">Comfortable & Classic Paso for Men</h3>
+                            <p class="mb-3">This traditional men's longyi (Paso) combines comfort, durability,
+                                and timeless style. Perfect for daily wear, cultural events, or formal occasions.</p>
                         </div>
                     </div>
 
@@ -183,19 +224,19 @@
                                 <tbody>
                                     <tr>
                                         <th scope="row">Material</th>
-                                        <td>Cotton, Silk Blend, or Satin</td>
+                                        <td>100% Cotton or Traditional Fabric</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">Set Includes</th>
-                                        <td>Blouse + Longyi (Htamein)</td>
+                                        <th scope="row">Length</th>
+                                        <td>42–46 inches (approx.)</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">Fit</th>
-                                        <td>Tailored / Comfort Fit</td>
+                                        <td>Free Size / Standard Fit</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">Weight</th>
-                                        <td>Lightweight</td>
+                                        <td>Lightweight to Medium</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">Country of Origin</th>
@@ -216,11 +257,11 @@
                         <div class="care-instructions mt-4">
                             <h3 class="text-primary-custom">Care Instructions</h3>
                             <ul>
-                                <li>Hand wash gently or use delicate machine cycle</li>
-                                <li>Use mild detergent, avoid bleach</li>
-                                <li>Hang dry in shade to preserve fabric quality</li>
-                                <li>Iron blouse and longyi on low to medium heat</li>
-                                <li>Store on hangers or neatly folded</li>
+                                <li>Machine wash cold or hand wash gently</li>
+                                <li>Use mild detergent, do not bleach</li>
+                                <li>Hang dry or tumble dry low</li>
+                                <li>Iron on medium heat if needed</li>
+                                <li>Fold neatly or hang to avoid wrinkles</li>
                             </ul>
 
                         </div>
@@ -300,6 +341,31 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script src="productDetail.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const colorOptions = document.querySelectorAll(".color-option");
+        const mainImage = document.getElementById("mainProductImage");
+        const zoomResultImg = document.getElementById("zoomResultImg");
+
+        colorOptions.forEach(option => {
+            option.addEventListener("click", () => {
+                // update active class
+                document.querySelectorAll(".color-option").forEach(opt => opt.classList.remove(
+                    "active"));
+                option.classList.add("active");
+
+                // update images
+                const newImage = option.dataset.image;
+                const newZoomImage = option.dataset.zoomImage;
+
+                mainImage.src = newImage;
+                zoomResultImg.src = newZoomImage;
+            });
+        });
+    });
+    </script>
+
+    </script>
 </body>
 
 </html>
